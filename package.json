@@ -1,0 +1,16 @@
+{
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3",
+    "tailwindcss": "^0.0.0-insiders.3ba51d1"
+  }
+}
