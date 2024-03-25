@@ -9,6 +9,14 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      animation: {
+        'bg-position': 'bg-position 2s linear infinite',
+        'bounce-bottom': 'bounce-bottom 1s ease-in-out',
+      },
+      transitionTimingFunction: {
+        'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',
+        'cubic-line': 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
+      },
     },
   },
   plugins: [

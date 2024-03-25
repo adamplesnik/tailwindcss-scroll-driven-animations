@@ -4,6 +4,32 @@ import Link from '../components/Link.tsx'
 import Code from '../components/Code.tsx'
 import { CornerRightDown, Github } from 'lucide-react'
 
+const codeExample = `matchUtilities(
+  {
+    'animation-timeline': (value, { modifier }) => {
+      if (modifier) {
+        return {
+          'animation-timeline': \`--\${modifier}\`,
+        }
+      } else {
+        return {
+          animationTimeline: value,
+        }
+      }
+    },
+  },
+  {
+    values: {
+      DEFAULT: 'scroll(y)',
+      auto: 'auto',
+      none: 'none',
+      'scroll-x': 'scroll(x)',
+      view: 'view()',
+    },
+    modifiers: 'any',
+  }
+)
+`
 const Tailwind = () => {
   return (
     <>
@@ -35,9 +61,16 @@ const Tailwind = () => {
         are no exception to this. So I gave it a shot and turned some of their CSS into a plugin.
         This website is the real test; it uses them a lot.
       </Paragraph>
-      {/* prettier-ignore */}
-      <a id={'code-tailwind-1'}></a>
-      <Code>hello world</Code>
+      <Code
+        Icon={Github}
+        linkHref={
+          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L16'
+        }
+        linkText={'adamplesnik/.../tailwind.config.js'}
+      >
+        <a id={'code-tailwind-1'}></a>
+        {codeExample}
+      </Code>
     </>
   )
 }
