@@ -2,7 +2,6 @@
   "name": "tailwind-job",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,7 +13,9 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5",
-    "plugins": ["prettier-plugin-tailwindcss"]
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
