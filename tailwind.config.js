@@ -11,7 +11,7 @@ module.exports = {
       },
       animation: {
         'bg-position': 'bg-position 2s linear infinite',
-        'bounce-bottom': 'bounce-bottom 1s ease-in-out',
+        'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
       },
       transitionTimingFunction: {
         'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',

@@ -30,7 +30,7 @@ const Link = ({
           absoluteStrokeWidth={true}
           strokeWidth={iconStrokeWidth}
           className={
-            'group-hover:animate-bounce-bottom ease-cubic-icon overflow-hidden stroke-violet-600 transition-[max-width,transform] duration-200 group-hover:max-w-full'
+            'group-hover:animate-bounce-bottom ease-cubic-icon stroke-violet-600 group-hover:max-w-full'
           }
         />
       ) : (
