@@ -1,15 +1,20 @@
 import { PropsWithChildren } from 'react'
 
-const Title = ({ size = 1, className = '', children, id = '' }: PropsWithChildren<TitleProps>) => {
+const Heading = ({
+  size = 1,
+  className = '',
+  children,
+  id = '',
+}: PropsWithChildren<TitleProps>) => {
   return (
     <div
       className={
         'relative w-full ' +
         (size === 1
-          ? 'text-4xl font-medium'
+          ? 'py-4 text-4xl font-medium md:py-8'
           : size === 2
-            ? 'text-3xl font-medium'
-            : 'text-xl font-medium') +
+            ? 'pb-4 pt-6 text-3xl font-medium'
+            : 'pb-3 pt-4 text-xl font-medium') +
         (className && ` ${className}`)
       }
     >
@@ -26,4 +31,4 @@ export interface TitleProps {
   id?: string
 }
 
-export default Title
+export default Heading

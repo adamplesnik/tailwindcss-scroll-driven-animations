@@ -17,20 +17,18 @@ function App() {
     <div
       id={'up'}
       className={
-        'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-zinc-900 dark:text-gray-200 ' +
+        'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-slate-900 dark:text-gray-200 ' +
         'scope/content ' +
         mode
       }
     >
       <PageBackground />
-      <div className={'relative z-10 flex w-full max-w-screen-md flex-col gap-4 md:gap-8'}>
+      <div className={'relative z-10 w-full max-w-screen-md'}>
         <Header mode={mode} onClick={switchMode} />
         <div className={'flex w-full pb-4 md:pb-8'}>
           <Photo />
         </div>
-        <div
-          className={'view-timeline/content flex w-full max-w-screen-md flex-col gap-4 md:gap-8'}
-        >
+        <div className={'view-timeline/content w-full'}>
           <MainTitle />
           <Tailwind />
           <Figma />

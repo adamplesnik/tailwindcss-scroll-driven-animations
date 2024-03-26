@@ -8,8 +8,8 @@ const Paragraph = ({
   return (
     <p
       className={
-        'w-full ' +
-        (size === 'regular' ? 'text-base' : size === 'large' ? 'text-lg' : 'text-sm') +
+        'mb-4 w-full ' +
+        (size === 'regular' ? 'text-base leading-7' : size === 'large' ? 'text-lg' : 'text-sm') +
         (className && ` ${className}`)
       }
     >

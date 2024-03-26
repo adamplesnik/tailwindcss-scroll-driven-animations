@@ -1,4 +1,4 @@
-import Title from '../components/Title.tsx'
+import Heading from '../components/Heading.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 import Link from '../components/Link.tsx'
 import Code from '../components/Code.tsx'
@@ -33,9 +33,9 @@ const codeExample = `matchUtilities(
 const Tailwind = () => {
   return (
     <>
-      <Title size={2} id={'tailwind'}>
+      <Heading size={2} id={'tailwind'}>
         Tailwind
-      </Title>
+      </Heading>
       <Paragraph>
         I remember being yelled at by a senior Java developer when I proudly integrated some atomic
         classes into our dinosaur project. It was back in 2018, I didn’t back out and our collection
@@ -62,6 +62,11 @@ const Tailwind = () => {
         </Link>{' '}
         you plan to introduce are no exception to this. So I gave it a shot and turned some of their
         CSS into a plugin. This website is the real test; it uses them a lot.
+      </Paragraph>
+      <Heading size={3}>Llalloasd</Heading>
+      <Paragraph>
+        So I gave it a shot and turned some of their CSS into a plugin. This website is the real
+        test; it uses them a lot.
       </Paragraph>
       <Code
         Icon={Github}

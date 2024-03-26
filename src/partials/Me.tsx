@@ -1,12 +1,12 @@
-import Title from '../components/Title.tsx'
+import Heading from '../components/Heading.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 
 const Me = () => {
   return (
     <>
-      <Title size={2} id={'me'}>
+      <Heading size={2} id={'me'}>
         Me
-      </Title>
+      </Heading>
       <Paragraph>
         I am married, 38 years old, father of two kids, living in Bratislava, Slovakia. While my
         passion for coding is obvious, I also enjoy mountain biking, traveling, and spending quality

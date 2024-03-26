@@ -1,12 +1,12 @@
-import Title from '../components/Title.tsx'
+import Heading from '../components/Heading.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 
 const MainTitle = () => {
   return (
     <>
-      <Title size={1} className={'text-center'}>
+      <Heading size={1} className={'text-center'}>
         Adam Plesník
-      </Title>
+      </Heading>
       <Paragraph size={'small'} className={'text-center text-zinc-600 dark:text-zinc-400'}>
         Bratislava, Slovakia
       </Paragraph>
