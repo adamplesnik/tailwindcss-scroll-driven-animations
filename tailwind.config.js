@@ -102,6 +102,24 @@ module.exports = {
           },
           { values: { DEFAULT: '' }, modifiers: 'any' }
         )
+
+        matchUtilities(
+          {
+            'range-start': (value) => ({
+              animationRangeStart: value,
+            }),
+          },
+          { values: theme('rangeValues') }
+        )
+
+        matchUtilities(
+          {
+            'range-end': (value) => ({
+              animationRangeEnd: value,
+            }),
+          },
+          { values: theme('rangeValues') }
+        )
       },
 
       {
@@ -110,6 +128,11 @@ module.exports = {
             DEFAULT: 'y',
             block: 'block',
             x: 'x',
+          },
+          rangeValues: {
+            DEFAULT: 'normal',
+            contain: 'contain',
+            cover: 'cover',
           },
         },
       }
