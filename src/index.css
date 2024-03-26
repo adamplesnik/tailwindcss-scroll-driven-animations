@@ -1,41 +1,6 @@
 @import 'fonts/inter.css';
+@import 'css/keyframes.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@keyframes bg-position {
-  0%,
-  100% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-}
-
-@keyframes bounce-bottom {
-  0% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-3px);
-  }
-
-  55% {
-    transform: translateY(0);
-  }
-
-  65% {
-    transform: translateY(-2px);
-  }
-
-  82% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}

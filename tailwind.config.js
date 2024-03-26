@@ -3,6 +3,7 @@ import plugin from 'tailwindcss/plugin'
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  darkMode: ['variant', ['@media (prefers-color-scheme: dark) { & }', '&:where(.dark, .dark *)']],
   content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
   theme: {
     extend: {
@@ -12,6 +13,9 @@ module.exports = {
       animation: {
         'bg-position': 'bg-position 2s linear infinite',
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
+        'move-left': 'move-left 400ms ease-in-out forwards',
+        'move-right': 'move-right 400ms ease-in-out forwards',
+        'translate-up': 'translate-up auto ease-in-out',
       },
       transitionTimingFunction: {
         'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',

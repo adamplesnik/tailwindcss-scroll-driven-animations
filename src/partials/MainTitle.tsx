@@ -1,7 +1,7 @@
 import Title from '../components/Title.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 
-const PhotoWithTitle = () => {
+const MainTitle = () => {
   return (
     <>
       <Title size={1} className={'text-center'}>
@@ -19,4 +19,4 @@ const PhotoWithTitle = () => {
   )
 }
 
-export default PhotoWithTitle
+export default MainTitle
