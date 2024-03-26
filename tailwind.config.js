@@ -11,6 +11,7 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       animation: {
+        'add-shadow': 'add-shadow 2s linear infinite',
         'bg-position': 'bg-position 2s linear infinite',
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
         'move-left': 'move-left 400ms ease-in-out forwards',

@@ -5,6 +5,7 @@ import Figma from './partials/Figma.tsx'
 import useLocalStorage from 'use-local-storage'
 import Photo from './components/Photo.tsx'
 import Header from './partials/Header.tsx'
+import Me from './partials/Me.tsx'
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -14,6 +15,7 @@ function App() {
   }
   return (
     <div
+      id={'up'}
       className={
         'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-zinc-900 dark:text-gray-200 ' +
         mode
@@ -28,6 +30,7 @@ function App() {
         <MainTitle />
         <Tailwind />
         <Figma />
+        <Me />
       </div>
     </div>
   )

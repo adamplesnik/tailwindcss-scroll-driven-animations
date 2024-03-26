@@ -33,7 +33,9 @@ const codeExample = `matchUtilities(
 const Tailwind = () => {
   return (
     <>
-      <Title size={2}>Tailwind</Title>
+      <Title size={2} id={'tailwind'}>
+        Tailwind
+      </Title>
       <Paragraph>
         I remember being yelled at by a senior Java developer when I proudly integrated some atomic
         classes into our dinosaur project. It was back in 2018, I didn’t back out and our collection

@@ -1,10 +1,10 @@
 import { PropsWithChildren } from 'react'
 
-const Title = ({ size = 1, className = '', children }: PropsWithChildren<TitleProps>) => {
+const Title = ({ size = 1, className = '', children, id = '' }: PropsWithChildren<TitleProps>) => {
   return (
     <div
       className={
-        'w-full ' +
+        'relative w-full ' +
         (size === 1
           ? 'text-4xl font-medium'
           : size === 2
@@ -13,6 +13,7 @@ const Title = ({ size = 1, className = '', children }: PropsWithChildren<TitlePr
         (className && ` ${className}`)
       }
     >
+      {id ? <span id={id} className={'absolute -top-32'} /> : ''}
       {children}
     </div>
   )
@@ -20,8 +21,9 @@ const Title = ({ size = 1, className = '', children }: PropsWithChildren<TitlePr
 
 export interface TitleProps {
   children: PropsWithChildren
-  className?: string
   size: 1 | 2 | 3
+  className?: string
+  id?: string
 }
 
 export default Title

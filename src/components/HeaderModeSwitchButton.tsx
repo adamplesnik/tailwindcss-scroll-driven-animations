@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react'
 import { LucideIcon } from 'lucide-react'
 
-const ModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButtonProps) => {
+const HeaderModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButtonProps) => {
   return (
     <div
       onClick={onClick}
@@ -23,4 +23,4 @@ export interface ModeSwitchButtonProps {
   pointerEvents: boolean
 }
 
-export default ModeSwitchButton
+export default HeaderModeSwitchButton

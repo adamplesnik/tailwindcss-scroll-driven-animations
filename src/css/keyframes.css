@@ -47,6 +47,15 @@
   }
 }
 
+@keyframes add-shadow {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: theme(boxShadow.lg);
+  }
+}
+
 @keyframes bounce-bottom {
   0% {
     transform: translateY(0);
