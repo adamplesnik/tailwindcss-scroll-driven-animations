@@ -16,7 +16,7 @@ module.exports = {
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
         'move-left': 'move-left 400ms ease-in-out forwards',
         'move-right': 'move-right 400ms ease-in-out forwards',
-        'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
+        'translate-down': 'translate-down auto cubic-bezier(0.03, 0.6, 0, 1.1) forwards',
         'translate-up': 'translate-up auto ease-in-out forwards',
       },
       transitionTimingFunction: {
@@ -109,7 +109,7 @@ module.exports = {
               animationRangeStart: value,
             }),
           },
-          { values: theme('rangeValues') }
+          { values: { DEFAULT: 'entry', exit: 'exit', ...theme('rangeValues') } }
         )
 
         matchUtilities(
@@ -118,7 +118,7 @@ module.exports = {
               animationRangeEnd: value,
             }),
           },
-          { values: theme('rangeValues') }
+          { values: { DEFAULT: 'exit', entry: 'entry', ...theme('rangeValues') } }
         )
       },
 
@@ -130,7 +130,7 @@ module.exports = {
             x: 'x',
           },
           rangeValues: {
-            DEFAULT: 'normal',
+            normal: 'normal',
             contain: 'contain',
             cover: 'cover',
           },

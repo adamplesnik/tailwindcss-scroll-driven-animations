@@ -73,10 +73,6 @@
 }
 
 @keyframes translate-down {
-  0% {
-    transform: translateY(-162px);
-  }
-
   to {
     transform: translateY(0);
   }

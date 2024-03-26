@@ -5,20 +5,23 @@ import HeaderSegment from '../components/HeaderSegment.tsx'
 
 const Header = ({ mode, onClick }: HeaderProps) => {
   return (
-    <div className={'sticky top-8 z-10 flex items-stretch justify-between px-1'}>
+    <div className={'sticky top-8 z-10 flex items-stretch justify-between md:px-1'}>
       <div
         className={
-          'animate-translate-down timeline/content range-end-contain flex translate-y-[-162px] items-stretch'
+          'animate-translate-down timeline range-end-[200px] flex translate-y-[-80px] items-stretch md:translate-y-[-110px]'
         }
       >
         <HeaderSegment>
           <div
             className={
               'animate-bg-position timeline/content flex gap-2 rounded-full ' +
-              'bg-gradient-to-r from-yellow-300/0 from-30% via-purple-600/30 via-50% to-purple-700/0 to-70% bg-[length:500%_100%] '
+              'bg-gradient-to-r from-yellow-300/0 from-30% via-slate-400/30 via-50% to-purple-700/0 to-70% bg-[length:500%_100%] ' +
+              'dark:from-slate-300/0 dark:via-slate-300/30'
             }
           >
-            <HeaderNavAnchor href={'#up'}>&uarr;</HeaderNavAnchor>
+            <HeaderNavAnchor href={'#up'} className={'hidden md:flex'}>
+              &uarr;
+            </HeaderNavAnchor>
             <HeaderNavAnchor href={'#tailwind'}>Tailwind</HeaderNavAnchor>
             <HeaderNavAnchor href={'#figma'}>Figma</HeaderNavAnchor>
             <HeaderNavAnchor href={'#me'}>Me</HeaderNavAnchor>
