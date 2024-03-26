@@ -1,11 +1,17 @@
 import { PropsWithChildren } from 'react'
 
-const HeaderNavAnchor = ({ children, href }: PropsWithChildren<HeaderNavAnchorProps>) => {
+const HeaderNavAnchor = ({
+  children,
+  href,
+  className = '',
+}: PropsWithChildren<HeaderNavAnchorProps>) => {
   return (
     <a
       href={href}
       className={
-        'flex items-center rounded-full bg-gradient-to-r from-fuchsia-300/10 to-violet-500/30 px-2 text-sm font-medium'
+        'flex min-w-12 items-center justify-center rounded-full px-2 text-sm font-medium transition-colors duration-200 ' +
+        'hover:bg-zinc-300/40 dark:hover:bg-zinc-500/60' +
+        (className != '' ? ` ${className}` : '')
       }
     >
       {children}
@@ -16,5 +22,6 @@ const HeaderNavAnchor = ({ children, href }: PropsWithChildren<HeaderNavAnchorPr
 export interface HeaderNavAnchorProps {
   children: PropsWithChildren
   href: string
+  className?: string | undefined
 }
 export default HeaderNavAnchor

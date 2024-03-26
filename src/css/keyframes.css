@@ -1,19 +1,44 @@
-@keyframes bg-position {
-  0%,
-  100% {
-    background-position: 0 0;
+@keyframes add-shadow {
+  0% {
+    box-shadow: none;
   }
-  50% {
-    background-position: 100% 100%;
+  100% {
+    box-shadow: theme(boxShadow.xl);
   }
 }
 
-@keyframes translate-up {
-  from {
+@keyframes bg-position {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes bounce-bottom {
+  0% {
     transform: translateY(0);
   }
-  to {
-    transform: translateY(-60%);
+
+  40% {
+    transform: translateY(-3px);
+  }
+
+  55% {
+    transform: translateY(0);
+  }
+
+  65% {
+    transform: translateY(-2px);
+  }
+
+  82% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -47,37 +72,21 @@
   }
 }
 
-@keyframes add-shadow {
+@keyframes translate-down {
   0% {
-    box-shadow: none;
+    transform: translateY(-162px);
   }
-  100% {
-    box-shadow: theme(boxShadow.lg);
+
+  to {
+    transform: translateY(0);
   }
 }
 
-@keyframes bounce-bottom {
-  0% {
+@keyframes translate-up {
+  from {
     transform: translateY(0);
   }
-
-  40% {
-    transform: translateY(-3px);
-  }
-
-  55% {
-    transform: translateY(0);
-  }
-
-  65% {
-    transform: translateY(-2px);
-  }
-
-  82% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0);
+  to {
+    transform: translateY(-60%);
   }
 }

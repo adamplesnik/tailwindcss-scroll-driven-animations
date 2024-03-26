@@ -11,12 +11,13 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       animation: {
-        'add-shadow': 'add-shadow 2s linear infinite',
-        'bg-position': 'bg-position 2s linear infinite',
+        'add-shadow': 'add-shadow auto linear forwards',
+        'bg-position': 'bg-position auto linear forwards',
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
         'move-left': 'move-left 400ms ease-in-out forwards',
         'move-right': 'move-right 400ms ease-in-out forwards',
-        'translate-up': 'translate-up auto ease-in-out',
+        'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
+        'translate-up': 'translate-up auto ease-in-out forwards',
       },
       transitionTimingFunction: {
         'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',
@@ -29,7 +30,7 @@ module.exports = {
       function ({ matchUtilities, theme }) {
         matchUtilities(
           {
-            'animation-timeline': (value, { modifier }) => {
+            timeline: (value, { modifier }) => {
               if (modifier) {
                 return {
                   'animation-timeline': `--${modifier}`,
@@ -95,7 +96,7 @@ module.exports = {
 
         matchUtilities(
           {
-            'timeline-scope': (value, { modifier }) => ({
+            scope: (value, { modifier }) => ({
               timelineScope: `--${modifier}`,
             }),
           },
