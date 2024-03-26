@@ -60,8 +60,8 @@ const Tailwind = () => {
         <Link href={'#code-tailwind-1'} Icon={CornerRightDown} target={''}>
           Scroll-driven animations
         </Link>{' '}
-        are no exception to this. So I gave it a shot and turned some of their CSS into a plugin.
-        This website is the real test; it uses them a lot.
+        you plan to introduce are no exception to this. So I gave it a shot and turned some of their
+        CSS into a plugin. This website is the real test; it uses them a lot.
       </Paragraph>
       <Code
         Icon={Github}

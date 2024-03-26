@@ -8,7 +8,7 @@ const Header = ({ mode, onClick }: HeaderProps) => {
     <div className={'sticky top-8 z-10 flex items-stretch justify-between md:px-1'}>
       <div
         className={
-          'animate-translate-down timeline range-end-[200px] flex translate-y-[-80px] items-stretch md:translate-y-[-110px]'
+          'animate-translate-down timeline range-end-[200px] flex -translate-y-24 items-stretch md:-translate-y-32 lg:-translate-y-40'
         }
       >
         <HeaderSegment>
