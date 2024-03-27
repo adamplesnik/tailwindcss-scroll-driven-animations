@@ -42,19 +42,6 @@ const Tailwind = () => {
         of Tailwind CSS classes has been growing every day.
       </Paragraph>
       <Paragraph>
-        In addition to the job I'm paid for, I also love working on, even only by a fraction of
-        time, a refactoring of an open-source project{' '}
-        <Link
-          href={'https://github.com/adamplesnik/webumenia.sk/tree/feature/css-refactoring'}
-          Icon={Github}
-          target={'_blank'}
-        >
-          webumenia.sk
-        </Link>
-        . I forked their dev branch and started the process of removing old code, reorganizing
-        dependencies and integrating more Tailwind CSS.
-      </Paragraph>
-      <Paragraph>
         One aspect of Tailwind CSS that I especially love is how it guides me to utilize edge CSS
         features simply by exploring its documentation.{' '}
         <Link href={'#code-tailwind-1'} Icon={CornerRightDown} target={''}>

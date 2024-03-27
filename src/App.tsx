@@ -1,7 +1,7 @@
 import PageBackground from './components/PageBackground.tsx'
 import MainTitle from './partials/MainTitle.tsx'
 import Tailwind from './partials/Tailwind.tsx'
-import Figma from './partials/Figma.tsx'
+import OpenSource from './partials/OpenSource.tsx'
 import useLocalStorage from 'use-local-storage'
 import Photo from './components/Photo.tsx'
 import Header from './partials/Header.tsx'
@@ -15,7 +15,6 @@ function App() {
   }
   return (
     <div
-      id={'up'}
       className={
         'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-gray-900 dark:text-zinc-300 ' +
         'scope/content ' +
@@ -31,7 +30,7 @@ function App() {
         <div className={'view-timeline/content w-full'}>
           <MainTitle />
           <Tailwind />
-          <Figma />
+          <OpenSource />
           <Me />
         </div>
       </div>
