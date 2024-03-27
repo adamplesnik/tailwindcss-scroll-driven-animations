@@ -11,11 +11,15 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       animation: {
-        'add-shadow': 'add-shadow auto linear forwards',
-        'bg-position': 'bg-position auto linear forwards',
-        'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
+        /* Regular CSS animations */
         'move-left': 'move-left 400ms ease-in-out forwards',
         'move-right': 'move-right 400ms ease-in-out forwards',
+        'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
+
+        /* Scroll-driven animations */
+        'add-shadow': 'add-shadow auto linear forwards',
+        'add-shadow-fallback': 'add-shadow 1s linear forwards',
+        'bg-position': 'bg-position auto linear forwards',
         'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
         'translate-up': 'translate-up auto ease-in-out forwards',
       },
@@ -23,6 +27,10 @@ module.exports = {
         'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',
         'cubic-line': 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
       },
+    },
+    supports: {
+      animations: 'animation-timeline: scroll(y)',
+      'no-animations': 'not(animation-timeline: scroll(y))',
     },
   },
   plugins: [
