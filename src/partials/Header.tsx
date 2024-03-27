@@ -20,7 +20,7 @@ const Header = ({ mode, onClick }: HeaderProps) => {
               'dark:from-slate-300/0 dark:via-slate-300/30'
             }
           >
-            <HeaderNavAnchor href={'#tailwind'}>Tailwind</HeaderNavAnchor>
+            <HeaderNavAnchor href={'#animations'}>Animations</HeaderNavAnchor>
             <HeaderNavAnchor href={'#open-source'}>Open Source</HeaderNavAnchor>
             <HeaderNavAnchor href={'#me'}>Me</HeaderNavAnchor>
           </div>

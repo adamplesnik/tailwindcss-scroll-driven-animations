@@ -24,7 +24,7 @@ const Heading = ({
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' pb-2 pt-6 text-lg'}>
+      <h3 className={defaultClasses + ' pb-2 pt-4 text-lg'}>
         {children}
         {anchor}
       </h3>

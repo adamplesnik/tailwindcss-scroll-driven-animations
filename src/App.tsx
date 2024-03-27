@@ -1,6 +1,6 @@
 import PageBackground from './components/PageBackground.tsx'
 import MainTitle from './partials/MainTitle.tsx'
-import Tailwind from './partials/Tailwind.tsx'
+import Animations from './partials/Animations.tsx'
 import OpenSource from './partials/OpenSource.tsx'
 import useLocalStorage from 'use-local-storage'
 import Photo from './components/Photo.tsx'
@@ -29,7 +29,7 @@ function App() {
         </div>
         <div className={'view-timeline/content w-full'}>
           <MainTitle />
-          <Tailwind />
+          <Animations />
           <OpenSource />
           <Me />
         </div>

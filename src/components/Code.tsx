@@ -1,41 +1,17 @@
 import { PropsWithChildren } from 'react'
-import Link from './Link.tsx'
-import { LucideIcon } from 'lucide-react'
 
-const Code = ({
-  children,
-  linkHref = '',
-  linkText = '',
-  Icon = undefined,
-}: PropsWithChildren<CodeProps>) => {
-  return (
-    <div
-      className={
-        'mb-2 rounded-lg border border-zinc-300 bg-zinc-100 md:mb-4 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
-      }
-    >
-      <code className={'block whitespace-pre-wrap p-4 text-sm'}>{children}</code>
-      <div
-        className={
-          'flex items-center gap-1 border-t border-t-zinc-300 bg-zinc-200/10 px-4 py-2 text-xs dark:border-t-slate-700 dark:bg-zinc-800/10 '
-        }
-      >
-        {Icon && <Icon size={14} strokeWidth={2} />}
-        {linkHref && (
-          <Link href={linkHref} target={'_blank'} borderWidth={'narrow'}>
-            {linkText ? linkText : linkHref}
-          </Link>
-        )}
-      </div>
-    </div>
-  )
-}
+const Code = ({ children }: PropsWithChildren<InlineCodeProps>) => (
+  <code
+    className={
+      'font-mono whitespace-nowrap bg-fuchsia-200/40 p-1 px-1 py-0.5 text-sm dark:bg-indigo-200/20 dark:text-zinc-200'
+    }
+  >
+    {children}
+  </code>
+)
 
-export interface CodeProps {
+export interface InlineCodeProps {
   children: PropsWithChildren
-  Icon?: LucideIcon | undefined
-  linkHref?: string | undefined
-  linkText?: string | undefined
 }
 
 export default Code
