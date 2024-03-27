@@ -6,25 +6,25 @@ const Heading = ({
   children,
   id = '',
 }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = 'relative w-full' + (className && ` ${className}`)
-  const anchor = id ? <span id={id} className={'absolute -top-32'} /> : ''
+  const defaultClasses = 'relative w-full font-semibold' + (className && ` ${className}`)
+  const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' py-4 text-4xl font-medium md:py-8'}>
+      <h1 className={defaultClasses + ' py-4 text-4xl md:py-8'}>
         {children}
         {anchor}
       </h1>
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-4 pt-6 text-3xl font-medium'}>
+      <h2 className={defaultClasses + ' pb-4 pt-6 text-3xl'}>
         {children}
         {anchor}
       </h2>
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' pb-4 pt-6 text-xl font-medium '}>
+      <h3 className={defaultClasses + ' pb-2 pt-6 text-lg'}>
         {children}
         {anchor}
       </h3>

@@ -30,7 +30,7 @@ const Link = ({
           absoluteStrokeWidth={true}
           strokeWidth={iconStrokeWidth}
           className={
-            'group-hover:animate-bounce-bottom ease-cubic-icon stroke-violet-600 group-hover:max-w-full'
+            'group-hover:animate-bounce-bottom ease-bounce stroke-violet-600 group-hover:max-w-full'
           }
         />
       ) : (
@@ -39,7 +39,7 @@ const Link = ({
       <span
         className={
           (borderWidth === 'narrow' ? 'h-px' : 'h-[2px]') +
-          ' ease-cubic-line absolute -bottom-px left-0  w-full max-w-0 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 group-hover:max-w-full'
+          ' ease-line absolute -bottom-px left-0  w-full max-w-0 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 group-hover:max-w-full'
         }
       ></span>
     </a>

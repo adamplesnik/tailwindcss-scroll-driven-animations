@@ -6,8 +6,8 @@ const HeaderModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButt
     <div
       onClick={onClick}
       className={
-        (pointerEvents && 'pointer-events-none') +
-        ' ease-cubic-line z-10 flex size-8 cursor-pointer items-center rounded-full p-1 ' +
+        (pointerEvents && 'pointer-events-none ') +
+        'ease-line z-10 flex size-8 cursor-pointer items-center rounded-full p-1 ' +
         'transition-[transform,_background-color] duration-500 ' +
         'hover:rotate-[24deg] hover:bg-slate-300/40 dark:hover:bg-slate-500/60'
       }

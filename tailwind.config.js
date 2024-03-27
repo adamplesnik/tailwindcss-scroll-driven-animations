@@ -18,14 +18,13 @@ module.exports = {
 
         /* Scroll-driven animations */
         'add-shadow': 'add-shadow auto linear forwards',
-        'add-shadow-fallback': 'add-shadow 1s linear forwards',
         'bg-position': 'bg-position auto linear forwards',
         'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
         'translate-up': 'translate-up auto ease-in-out forwards',
       },
       transitionTimingFunction: {
-        'cubic-icon': 'cubic-bezier(0.26, 0.53, 1, 0.63)',
-        'cubic-line': 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
+        bounce: 'cubic-bezier(0.26, 0.53, 1, 0.63)',
+        line: 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
       },
     },
     supports: {
