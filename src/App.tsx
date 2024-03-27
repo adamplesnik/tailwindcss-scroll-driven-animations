@@ -17,7 +17,7 @@ function App() {
     <div
       id={'up'}
       className={
-        'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-slate-900 dark:text-gray-200 ' +
+        'flex justify-center bg-zinc-50 p-8 text-zinc-950 md:p-16 lg:p-20 dark:bg-gray-900 dark:text-zinc-300 ' +
         'scope/content ' +
         mode
       }

@@ -6,22 +6,30 @@ const Heading = ({
   children,
   id = '',
 }: PropsWithChildren<TitleProps>) => {
-  return (
-    <div
-      className={
-        'relative w-full ' +
-        (size === 1
-          ? 'py-4 text-4xl font-medium md:py-8'
-          : size === 2
-            ? 'pb-4 pt-6 text-3xl font-medium'
-            : 'pb-3 pt-4 text-xl font-medium') +
-        (className && ` ${className}`)
-      }
-    >
-      {id ? <span id={id} className={'absolute -top-32'} /> : ''}
-      {children}
-    </div>
-  )
+  const defaultClasses = 'relative w-full' + (className && ` ${className}`)
+  const anchor = id ? <span id={id} className={'absolute -top-32'} /> : ''
+  if (size === 1) {
+    return (
+      <h1 className={defaultClasses + ' py-4 text-4xl font-medium md:py-8'}>
+        {children}
+        {anchor}
+      </h1>
+    )
+  } else if (size === 2) {
+    return (
+      <h2 className={defaultClasses + ' pb-4 pt-6 text-3xl font-medium'}>
+        {children}
+        {anchor}
+      </h2>
+    )
+  } else {
+    return (
+      <h3 className={defaultClasses + ' pb-4 pt-6 text-xl font-medium '}>
+        {children}
+        {anchor}
+      </h3>
+    )
+  }
 }
 
 export interface TitleProps {

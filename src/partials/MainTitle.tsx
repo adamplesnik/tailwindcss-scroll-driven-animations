@@ -11,9 +11,8 @@ const MainTitle = () => {
         Bratislava, Slovakia
       </Paragraph>
       <Paragraph size={'large'} className={'text-center'}>
-        Front-end developer specialized in crafting UIs with particular focus on Tailwind CSS and
-        reusable components. Proficient in Vue, React UI development and adept at refactoring UI
-        parts of Java, Angular, or PHP projects.
+        As a front-end developer, I love creating, polishing and improving user interfaces, with a
+        particular focus on Tailwind CSS and building reusable components.
       </Paragraph>
     </>
   )
