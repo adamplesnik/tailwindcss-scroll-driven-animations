@@ -37,17 +37,9 @@ module.exports = {
       function ({ matchUtilities, theme }) {
         matchUtilities(
           {
-            timeline: (value, { modifier }) => {
-              if (modifier) {
-                return {
-                  'animation-timeline': `--${modifier}`,
-                }
-              } else {
-                return {
-                  animationTimeline: value,
-                }
-              }
-            },
+            timeline: (value, { modifier }) => ({
+              'animation-timeline': modifier ? `--${modifier}` : value,
+            }),
           },
           {
             values: {
@@ -63,17 +55,9 @@ module.exports = {
 
         matchUtilities(
           {
-            'scroll-timeline': (value, { modifier }) => {
-              if (modifier) {
-                return {
-                  scrollTimeline: `--${modifier} ${value}`,
-                }
-              } else {
-                return {
-                  scrollTimeline: `none ${value}`,
-                }
-              }
-            },
+            'scroll-timeline': (value, { modifier }) => ({
+              scrollTimeline: (modifier ? `--${modifier} ` : 'none ') + value,
+            }),
           },
           {
             values: theme('timelineValues'),
@@ -83,17 +67,9 @@ module.exports = {
 
         matchUtilities(
           {
-            'view-timeline': (value, { modifier }) => {
-              if (modifier) {
-                return {
-                  viewTimeline: `--${modifier} ${value}`,
-                }
-              } else {
-                return {
-                  viewTimeline: `none ${value}`,
-                }
-              }
-            },
+            'view-timeline': (value, { modifier }) => ({
+              viewTimeline: (modifier ? `--${modifier} ` : 'none ') + value,
+            }),
           },
           {
             values: theme('timelineValues'),
