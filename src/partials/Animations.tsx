@@ -1,9 +1,16 @@
-import Heading from '../components/Heading.tsx'
-import Paragraph from '../components/Paragraph.tsx'
-import Link from '../components/Link.tsx'
-import CodeBlock from '../components/CodeBlock.tsx'
 import { CornerRightDown, Github } from 'lucide-react'
 import Code from '../components/Code.tsx'
+import CodeBlock from '../components/CodeBlock.tsx'
+import Heading from '../components/Heading.tsx'
+import Link from '../components/Link.tsx'
+import Paragraph from '../components/Paragraph.tsx'
+import {
+  codeExampleRange,
+  codeExampleScope,
+  codeExampleSupports,
+  codeExampleTimeline,
+  codeExampleView,
+} from '../js/animationCodeExamples.ts'
 
 const Animations = () => {
   return (
@@ -50,7 +57,15 @@ const Animations = () => {
         <Code>.scroll-timeline</Code> and <Code>.view-timeline</Code> are meant to be used with
         modifiers to set the timeline name.
       </Paragraph>
-      <CodeBlock>{codeExampleView}</CodeBlock>
+      <CodeBlock
+        Icon={Github}
+        linkHref={
+          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L113'
+        }
+        linkText={'LINKKKKKKKKK XXXXXX'}
+      >
+        {codeExampleView}
+      </CodeBlock>
       <Heading size={3}>Range</Heading>
       <Paragraph>
         Animation range controls start and end of an animation. Utility classes{' '}
@@ -92,44 +107,3 @@ const Animations = () => {
 }
 
 export default Animations
-
-const codeExampleTimeline = `timeline: (value, { modifier }) => {
-  if (modifier) {
-    return {
-      'animation-timeline': \`--\${modifier}\`,
-    }
-  } else {
-    return {
-      animationTimeline: value,
-    }
-  }
-}`
-
-const codeExampleView = `'view-timeline': (value, { modifier }) => {
-  if (modifier) {
-    return {
-      viewTimeline: \`--\${modifier} \${value}\`,
-    }
-  } else {
-    return {
-      viewTimeline: \`none \${value}\`,
-    }
-  }
-}`
-
-const codeExampleRange = `'range-start': (value) => ({
-    animationRangeStart: value,
-  }),
-},
-{ values: { DEFAULT: 'entry', exit: 'exit', ...theme('rangeValues') } }`
-
-const codeExampleScope = `{
-  scope: (value, { modifier }) => ({
-    timelineScope: \`--\${modifier}\`,
-  }),
-  },`
-
-const codeExampleSupports = `supports: {
-  animations: 'animation-timeline: scroll(y)',
-  'no-animations': 'not(animation-timeline: scroll(y))',
-}`
