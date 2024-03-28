@@ -12,11 +12,9 @@ export const codeExampleRange = `'range-start': (value) => ({
 },
 { values: { DEFAULT: 'entry', exit: 'exit', ...theme('rangeValues') } }`
 
-export const codeExampleScope = `{
-  scope: (value, { modifier }) => ({
-    timelineScope: \`--\${modifier}\`,
-  }),
-  },`
+export const codeExampleScope = `scope: (value, { modifier }) => ({
+  timelineScope: \`--\${modifier}\`,
+}),`
 
 export const codeExampleSupports = `supports: {
   animations: 'animation-timeline: scroll(y)',

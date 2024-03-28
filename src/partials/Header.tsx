@@ -15,12 +15,15 @@ const Header = ({ mode, onClick }: HeaderProps) => {
         <HeaderSegment>
           <div
             className={
-              'animate-bg-position timeline/content flex gap-2 rounded-full ' +
+              'animate-bg-position timeline/content flex gap-1 rounded-full sm:gap-2 ' +
               'bg-gradient-to-r from-yellow-300/0 from-30% via-slate-400/30 via-50% to-purple-700/0 to-70% bg-[length:500%_100%] ' +
               'dark:from-slate-300/0 dark:via-slate-300/30'
             }
           >
-            <HeaderNavAnchor href={'#animations'}>Animations</HeaderNavAnchor>
+            <HeaderNavAnchor href={'#animations'}>
+              <span className={'sm:hidden'}>Anim</span>
+              <span className={'hidden sm:inline-block'}>Animations</span>
+            </HeaderNavAnchor>
             <HeaderNavAnchor href={'#open-source'}>Open Source</HeaderNavAnchor>
             <HeaderNavAnchor href={'#me'}>Me</HeaderNavAnchor>
           </div>

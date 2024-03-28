@@ -14,7 +14,7 @@ const CodeBlock = ({
         'mb-2 rounded-lg border border-zinc-300 bg-zinc-100 md:mb-4 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
       }
     >
-      <code className={'block whitespace-pre-wrap p-4 text-sm'}>{children}</code>
+      <code className={'block overflow-y-auto whitespace-pre p-4 text-sm'}>{children}</code>
       {linkHref && (
         <div
           className={

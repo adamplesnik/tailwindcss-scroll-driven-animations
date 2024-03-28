@@ -21,7 +21,7 @@ function App() {
       <PageBackground />
       <div className={'relative z-10 w-full max-w-screen-md'}>
         <Header mode={mode} onClick={switchMode} />
-        <div className={'flex w-full pb-4 md:pb-8'}>
+        <div className={'supports-no-animations:pt-4 flex w-full pb-4 md:pb-8'}>
           <Photo />
         </div>
         <div className={'view-timeline/content w-full'}>
