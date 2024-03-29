@@ -8,7 +8,7 @@ const Skeleton = ({ width = '200px' }) => {
 
 const skeletonCollection = ['96%', '100%', '92%', '100%', '93%', '87%', '55%']
 
-const Demo = () => {
+const PluginDemo = () => {
   return (
     <div className="mb-8 h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-300 bg-zinc-100/70 dark:border-zinc-700 dark:bg-black/10">
       <div className="text-sm scope/demo supports-animations:-mt-14 supports-animations:sm:-mt-8">
@@ -46,4 +46,4 @@ const Demo = () => {
   )
 }
 
-export default Demo
+export default PluginDemo

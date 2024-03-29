@@ -1,10 +1,10 @@
-import PageBackground from './components/PageBackground.tsx'
-import MainTitle from './partials/MainTitle.tsx'
-import Animations from './partials/Animations.tsx'
-import OpenSource from './partials/OpenSource.tsx'
 import useLocalStorage from 'use-local-storage'
+import PageBackground from './components/PageBackground.tsx'
 import Photo from './components/Photo.tsx'
+import Animations from './partials/Animations.tsx'
+import Demo from './partials/Demo.tsx'
 import Header from './partials/Header.tsx'
+import MainTitle from './partials/MainTitle.tsx'
 import Me from './partials/Me.tsx'
 
 function App() {
@@ -17,17 +17,17 @@ function App() {
     isLight ? classList.add('dark') : classList.remove('dark')
   }
   return (
-    <div className={'scope/content flex justify-center'}>
+    <div className={'flex justify-center scope/content'}>
       <PageBackground />
       <div className={'relative z-10 w-full max-w-screen-md'}>
         <Header mode={mode} onClick={switchMode} />
-        <div className={'supports-no-animations:pt-4 flex w-full pb-4 md:pb-8'}>
+        <div className={'flex w-full pb-4 supports-no-animations:pt-4 md:pb-8'}>
           <Photo />
         </div>
-        <div className={'view-timeline/content w-full'}>
+        <div className={'w-full view-timeline/content'}>
           <MainTitle />
           <Animations />
-          <OpenSource />
+          <Demo />
           <Me />
         </div>
       </div>
