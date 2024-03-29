@@ -9,7 +9,7 @@ A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animat
 Install the plugin from npm:
 
 ```sh
-npm install @adam.plesnik/taiwlindcss-scroll-driven-animations
+npm install @adam.plesnik/tailwindcss-scroll-driven-animations
 ```
 
 Then add the plugin to your `tailwind.config.js`:
@@ -17,7 +17,7 @@ Then add the plugin to your `tailwind.config.js`:
 ```js
 module.exports = {
   plugins: [
-    require('@adam.plesnik/taiwlindcss-scroll-driven-animations'),
+    require('@adam.plesnik/tailwindcss-scroll-driven-animations'),
     // ...
   ],
 }
