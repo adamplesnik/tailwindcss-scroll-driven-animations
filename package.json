@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npx swc ./src/index.ts --out-dir ./dist"
+  },
   "prettier": {
     "printWidth": 100,
     "semi": false,
@@ -9,8 +12,11 @@
     "tailwindcss": ">=3.2.0"
   },
   "devDependencies": {
+    "@swc/cli": "^0.3.10",
+    "@swc/core": "^1.4.11",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "tailwindcss": "^0.0.0-insiders.3ba51d1"
+    "swcify": "^1.0.1",
+    "tailwindcss": "^0.0.0-insiders.3ba51d1",
+    "typescript": "^5.4.3"
   }
 }
