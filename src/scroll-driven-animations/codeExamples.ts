@@ -1,6 +1,20 @@
-export const codeExampleTimeline = `timeline: (value, { modifier }) => ({
-  'animation-timeline': modifier ? \`--\${modifier}\` : value,
-}),`
+export const codeExampleTimeline = `matchUtilities(
+  {
+    timeline: (value, { modifier }) => ({
+      'animation-timeline': modifier ? \`--\${modifier}\` : value,
+    }),
+  },
+  {
+    values: {
+      DEFAULT: 'scroll(y)',
+      auto: 'auto',
+      none: 'none',
+      'scroll-x': 'scroll(x)',
+      view: 'view()',
+    },
+    modifiers: 'any',
+  }
+)`
 
 export const codeExampleView = `'view-timeline': (value, { modifier }) => ({
   viewTimeline: (modifier ? \`--\${modifier} \` : 'none ') + value,

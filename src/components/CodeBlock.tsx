@@ -1,6 +1,8 @@
 import { PropsWithChildren } from 'react'
 import Link from './Link.tsx'
 import { LucideIcon } from 'lucide-react'
+import Highlight from 'react-highlight'
+import 'highlight.js/styles/vs.css'
 
 const CodeBlock = ({
   children,
@@ -14,7 +16,9 @@ const CodeBlock = ({
         'mb-2 rounded-lg border border-zinc-300 bg-zinc-100 md:mb-4 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
       }
     >
-      <code className={'block overflow-y-auto whitespace-pre p-4 text-sm'}>{children}</code>
+      <Highlight className={'block overflow-y-auto whitespace-pre p-4 text-sm'}>
+        {children}
+      </Highlight>
       {linkHref && (
         <div
           className={
