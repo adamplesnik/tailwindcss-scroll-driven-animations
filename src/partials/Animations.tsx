@@ -4,6 +4,7 @@ import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
 import Link from '../components/Link.tsx'
 import Paragraph from '../components/Paragraph.tsx'
+import Demo from '../scroll-driven-animations/Demo.tsx'
 import {
   codeExampleRange,
   codeExampleScope,
@@ -33,7 +34,7 @@ const Animations = () => {
         CSS into a plugin. This website is the real test; it uses them a lot.
       </Paragraph>
       <Heading size={3} id={'code'}>
-        Animation Timelines
+        Animation Timeline
       </Heading>
       <Paragraph>
         The single most impressive feature of scroll-driven animations is an anonymous animation
@@ -102,6 +103,8 @@ const Animations = () => {
       >
         {codeExampleSupports}
       </CodeBlock>
+      <Heading size={3}>Demo</Heading>
+      <Demo />
     </>
   )
 }

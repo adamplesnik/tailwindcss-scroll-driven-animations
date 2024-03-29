@@ -1,0 +1,17 @@
+.function {
+  @apply text-fuchsia-700 dark:text-fuchsia-300;
+}
+
+.literal-property,
+.constant,
+.string-property {
+  @apply text-sky-700 dark:text-sky-300;
+}
+
+.operator {
+  @apply opacity-60;
+}
+
+.punctuation {
+  @apply opacity-40;
+}

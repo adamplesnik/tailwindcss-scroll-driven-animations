@@ -1,8 +1,7 @@
-import { PropsWithChildren } from 'react'
-import Link from './Link.tsx'
 import { LucideIcon } from 'lucide-react'
-import Highlight from 'react-highlight'
-import 'highlight.js/styles/vs.css'
+import Prism from 'prismjs'
+import { PropsWithChildren, useEffect } from 'react'
+import Link from './Link.tsx'
 
 const CodeBlock = ({
   children,
@@ -10,15 +9,23 @@ const CodeBlock = ({
   linkText = '',
   Icon = undefined,
 }: PropsWithChildren<CodeProps>) => {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
+
   return (
     <div
       className={
         'mb-2 rounded-lg border border-zinc-300 bg-zinc-100 md:mb-4 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
       }
     >
-      <Highlight className={'block overflow-y-auto whitespace-pre p-4 text-sm'}>
+      <code
+        className={
+          'language-javascript block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300'
+        }
+      >
         {children}
-      </Highlight>
+      </code>
       {linkHref && (
         <div
           className={
