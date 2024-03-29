@@ -21,7 +21,7 @@ const Demo = () => {
         <div className="px-4">
           <Code>.scope/demo</Code>
         </div>
-        <div className="m-4 rounded-lg border border-dashed border-slate-300 p-8 dark:border-slate-600">
+        <div className="mx-4 mb-4 mt-2 rounded-lg border border-dashed border-fuchsia-300 p-8 dark:border-cyan-800">
           <Skeleton></Skeleton>
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>

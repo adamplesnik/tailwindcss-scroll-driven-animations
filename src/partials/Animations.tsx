@@ -115,8 +115,8 @@ const Animations = () => {
       </Paragraph>
       <Demo />
       <Paragraph>
-        To better understand the impact of each utility class, take a look at the code example. This
-        comparison will help you visualize how each class in the demo affects the outcome. For a
+        To better understand the impact of each utility class in the demo, take a look at its code
+        below. This comparison will help you visualize how each class affects the animation. For a
         comprehensive overview of the topic, refer to the{' '}
         <Link
           href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations"
