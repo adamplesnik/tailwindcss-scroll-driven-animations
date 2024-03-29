@@ -10,10 +10,12 @@ const skeletonCollection = ['96%', '100%', '92%', '100%', '93%', '87%', '55%']
 
 const Demo = () => {
   return (
-    <div className="relative h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-300 bg-zinc-100/70 dark:border-zinc-700 dark:bg-black/10">
-      <div className="-mt-8 text-sm scope/demo">
-        <div className="range-start-exit-crossing sticky top-0 z-10 -translate-y-16 animate-translate-down border-b border-b-zinc-300 bg-white/20 px-8 py-4 backdrop-blur timeline/demo range-end dark:border-b-zinc-600 dark:bg-slate-800/60">
-          <Code>.range-start-exit-crossing</Code> <Code>.range-end</Code>{' '}
+    <div className="mb-8 h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-300 bg-zinc-100/70 dark:border-zinc-700 dark:bg-black/10">
+      <div className="-mt-14 text-sm scope/demo sm:-mt-8">
+        <div className="range-start-exit-crossing sticky top-0 z-10 flex -translate-y-24 animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 px-8 py-4 backdrop-blur timeline/demo range-end sm:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
+          <Code>.animate...</Code>
+          <Code>.range-start-exit-crossing</Code>
+          <Code>.range-end</Code>
           <Code>.timeline/demo</Code>
         </div>
         <div className="px-4">
@@ -27,7 +29,7 @@ const Demo = () => {
             <div className="-ml-8 h-px w-4 bg-fuchsia-500 dark:bg-cyan-500" />
             <Code>.view-timeline/demo</Code>
             <div className="h-px flex-1 border-t border-dashed border-t-fuchsia-500 dark:border-t-cyan-600"></div>
-            <span className="text-xs font-bold">Trigger when exits the screen</span>
+            <span className="hidden text-xs font-bold sm:inline-block">Trigger on exit</span>
             <div className="-mr-8 h-px w-4 bg-fuchsia-500 dark:bg-cyan-500" />
           </div>
           <div className="mb-8">

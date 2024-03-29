@@ -37,7 +37,7 @@ export const codeExampleSupports = `supports: {
 
 export const codeExampleDemo = `<div class="scope/demo">
   <!-- The --demo timeline has scope outside its defining element. -->
-  <div class="animate-translate-dow timeline/demo range-start-exit-crossing range-end">
+  <div class="animate-translate-down timeline/demo range-start-exit-crossing range-end">
     <!-- Controlled by the --demo timeline. -->
   </div>
   <div>
