@@ -15,7 +15,7 @@ const Me = () => {
         time with my family.
       </Paragraph>
       <Paragraph>
-        I can speak English and French fluently, and because I love Portugal, I'm also learning
+        I speak English and French fluently, and because I love Portugal, I'm also learning
         Portuguese.
       </Paragraph>
       <Heading size={3}>Open Source</Heading>
