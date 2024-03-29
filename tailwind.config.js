@@ -33,5 +33,5 @@ module.exports = {
       'no-animations': 'not(animation-timeline: scroll(y))',
     },
   },
-  plugins: [require('@adam.plesnik/taiwlindcss-scroll-driven-animations')],
+  plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations')],
 }
