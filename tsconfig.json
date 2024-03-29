@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "stripInternal": true,
+    "target": "es2020"
+  },
+  "include": ["./src/index.ts"]
+}

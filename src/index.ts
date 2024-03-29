@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 
-module.exports = plugin(
+export = plugin(
   function ({ matchUtilities, theme }) {
     matchUtilities(
       {
