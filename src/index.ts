@@ -59,7 +59,18 @@ module.exports = plugin(
           animationRangeStart: value,
         }),
       },
-      { values: { DEFAULT: 'entry', exit: 'exit', ...theme('rangeValues') } }
+      {
+        values: {
+          DEFAULT: 'entry',
+          exit: 'exit',
+          normal: 'normal',
+          contain: 'contain',
+          cover: 'cover',
+          'entry-crossing': 'entry-crossing',
+          'exit-crossing': 'exit-crossing',
+        },
+        modifiers: 'any',
+      }
     )
 
     matchUtilities(
@@ -68,7 +79,17 @@ module.exports = plugin(
           animationRangeEnd: value,
         }),
       },
-      { values: { DEFAULT: 'exit', entry: 'entry', ...theme('rangeValues') } }
+      {
+        values: {
+          DEFAULT: 'exit',
+          entry: 'entry',
+          normal: 'normal',
+          contain: 'contain',
+          cover: 'cover',
+          'entry-crossing': 'entry-crossing',
+          'exit-crossing': 'exit-crossing',
+        },
+      }
     )
   },
 
@@ -78,13 +99,6 @@ module.exports = plugin(
         DEFAULT: 'y',
         block: 'block',
         x: 'x',
-      },
-      rangeValues: {
-        normal: 'normal',
-        contain: 'contain',
-        cover: 'cover',
-        'entry-crossing': 'entry-crossing',
-        'exit-crossing': 'exit-crossing',
       },
     },
   }

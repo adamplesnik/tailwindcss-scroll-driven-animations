@@ -6,5 +6,11 @@
     "strictMode": true,
     "lazy": false,
     "noInterop": false
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false
+    }
   }
 }
