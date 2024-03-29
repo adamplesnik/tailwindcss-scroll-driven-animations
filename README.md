@@ -1,8 +1,27 @@
 # Scroll-driven Animations for Tailwind CSS
 
+A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
+
 `unofficial` `experimental` `chrome-115+`
 
-A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
+## Installation
+
+Install the plugin from npm:
+
+```sh
+npm install @adam.plesnik/taiwlindcss-scroll-driven-animations
+```
+
+Then add the plugin to your `tailwind.config.js`:
+
+```js
+module.exports = {
+  plugins: [
+    require('@adam.plesnik/taiwlindcss-scroll-driven-animations'),
+    // ...
+  ],
+}
+```
 
 ## Usage
 

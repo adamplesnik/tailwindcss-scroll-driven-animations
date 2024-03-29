@@ -1,6 +1,6 @@
 {
   "name": "@adam.plesnik/taiwlindcss-scroll-driven-animations",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
     "build": "npx swc ./src/index.js --out-dir ./dist"
@@ -12,7 +12,7 @@
     "trailingComma": "es5"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.2.0"
+    "tailwindcss": ">=3.4.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.3.10",
@@ -22,7 +22,7 @@
     "tailwindcss": "^0.0.0-insiders.3ba51d1",
     "typescript": "^5.4.3"
   },
-  "description": "`unofficial` `experimental` `chrome-115+`",
+  "description": "A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.",
   "files": [
     "dist"
   ],
@@ -36,7 +36,8 @@
     "scroll",
     "driven",
     "animations",
-    "css"
+    "css",
+    "tailwind"
   ],
   "license": "MIT",
   "bugs": {
