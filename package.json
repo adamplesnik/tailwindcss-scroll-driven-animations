@@ -26,7 +26,7 @@
     "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
-    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.0.7",
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.0.9",
     "@types/node": "^20.11.30",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.66",
