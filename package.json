@@ -1,9 +1,9 @@
 {
   "name": "@adam.plesnik/tailwindcss-scroll-driven-animations",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
-    "build": "npx swc ./src/index.js --out-dir ./dist"
+    "build": "swc ./src/index.js --out-dir ./dist"
   },
   "prettier": {
     "printWidth": 100,
@@ -26,7 +26,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamplesnik/tailwindcss-scroll-driven-animations.git"
