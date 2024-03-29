@@ -19,6 +19,7 @@ module.exports = {
         /* Scroll-driven animations */
         'add-shadow': 'add-shadow auto linear forwards',
         'bg-position': 'bg-position auto linear forwards',
+        demo: 'translate-down auto ease-in-out forwards',
         'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
         'translate-up': 'translate-up auto ease-in-out forwards',
       },

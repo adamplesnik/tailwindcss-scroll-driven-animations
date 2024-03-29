@@ -83,6 +83,8 @@ module.exports = plugin(
         normal: 'normal',
         contain: 'contain',
         cover: 'cover',
+        'entry-crossing': 'entry-crossing',
+        'exit-crossing': 'exit-crossing',
       },
     },
   }

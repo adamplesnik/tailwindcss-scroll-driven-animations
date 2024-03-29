@@ -6,6 +6,7 @@ import Link from '../components/Link.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 import Demo from '../scroll-driven-animations/Demo.tsx'
 import {
+  codeExampleDemo,
   codeExampleRange,
   codeExampleScope,
   codeExampleSupports,
@@ -105,6 +106,7 @@ const Animations = () => {
       </CodeBlock>
       <Heading size={3}>Demo</Heading>
       <Demo />
+      <CodeBlock language="html">{codeExampleDemo}</CodeBlock>
     </>
   )
 }

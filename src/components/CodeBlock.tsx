@@ -5,9 +5,10 @@ import Link from './Link.tsx'
 
 const CodeBlock = ({
   children,
+  Icon = undefined,
+  language = 'javascript',
   linkHref = '',
   linkText = '',
-  Icon = undefined,
 }: PropsWithChildren<CodeProps>) => {
   useEffect(() => {
     Prism.highlightAll()
@@ -20,9 +21,7 @@ const CodeBlock = ({
       }
     >
       <code
-        className={
-          'language-javascript block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300'
-        }
+        className={`language-${language} block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300`}
       >
         {children}
       </code>
@@ -45,6 +44,7 @@ const CodeBlock = ({
 export interface CodeProps {
   children: PropsWithChildren
   Icon?: LucideIcon | undefined
+  language?: 'javascript' | 'css' | 'html'
   linkHref?: string | undefined
   linkText?: string | undefined
 }

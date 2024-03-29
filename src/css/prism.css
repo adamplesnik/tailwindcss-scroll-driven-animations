@@ -1,14 +1,17 @@
-.function {
+.function,
+.tag {
   @apply text-fuchsia-700 dark:text-fuchsia-300;
 }
 
 .literal-property,
 .constant,
-.string-property {
+.string-property,
+.attr-value {
   @apply text-sky-700 dark:text-sky-300;
 }
 
-.operator {
+.operator,
+.comment {
   @apply opacity-60;
 }
 
