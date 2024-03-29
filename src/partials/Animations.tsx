@@ -1,4 +1,4 @@
-import { BookText, CornerRightDown, Github } from 'lucide-react'
+import { BookText, CornerRightDown, Github, Squirrel } from 'lucide-react'
 import Code from '../components/Code.tsx'
 import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
@@ -97,9 +97,7 @@ const Animations = () => {
       </Paragraph>
       <CodeBlock
         Icon={Github}
-        linkHref={
-          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L16'
-        }
+        linkHref={'https://github.com/adamplesnik/tailwind-job/tailwind.config.js#L16'}
         linkText={'LINKKKKKKKKK XXXXXX'}
       >
         {codeExampleSupports}
@@ -113,6 +111,11 @@ const Animations = () => {
         classes <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit
         the timeline duration.
       </Paragraph>
+      <div className="mb-4 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm supports-no-animations:flex">
+        <Squirrel className="text-amber-500" strokeWidth="1.5" />
+        Scroll-driven animations are not yet supported by your browser. Use Chrome 115 or newer to
+        see the demo working correctly.
+      </div>
       <Demo />
       <Paragraph>
         To better understand the impact of each utility class in the demo, take a look at its code
