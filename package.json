@@ -1,6 +1,9 @@
 {
+  "name": "@adam.plesnik/taiwlindcss-scroll-driven-animations",
+  "version": "0.0.2",
+  "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
-    "build": "npx swc ./src/index.ts --out-dir ./dist"
+    "build": "npx swc ./src/index.js --out-dir ./dist"
   },
   "prettier": {
     "printWidth": 100,
@@ -18,5 +21,26 @@
     "swcify": "^1.0.1",
     "tailwindcss": "^0.0.0-insiders.3ba51d1",
     "typescript": "^5.4.3"
-  }
+  },
+  "description": "`unofficial` `experimental` `chrome-115+`",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamplesnik/tailwindcss-scroll-driven-animations.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "scroll",
+    "driven",
+    "animations",
+    "css"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/issues"
+  },
+  "homepage": "https://github.com/adamplesnik/tailwindcss-scroll-driven-animations#readme"
 }
