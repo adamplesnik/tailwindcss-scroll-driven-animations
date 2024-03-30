@@ -22,8 +22,7 @@
     "lucide-react": "^0.363.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "use-local-storage": "^3.0.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.0.9",

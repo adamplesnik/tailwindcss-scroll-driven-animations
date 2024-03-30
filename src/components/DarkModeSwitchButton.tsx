@@ -1,13 +1,13 @@
 import { MouseEventHandler } from 'react'
 import { LucideIcon } from 'lucide-react'
 
-const HeaderModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButtonProps) => {
+const DarkModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButtonProps) => {
   return (
     <div
       onClick={onClick}
       className={
         (pointerEvents && 'pointer-events-none ') +
-        'ease-line z-10 flex size-8 cursor-pointer items-center rounded-full p-1 ' +
+        'z-10 flex size-8 cursor-pointer items-center rounded-full p-1 ease-line ' +
         'transition-[transform,_background-color] duration-500 ' +
         'hover:rotate-[24deg] hover:bg-slate-300/40 dark:hover:bg-slate-500/60'
       }
@@ -23,4 +23,4 @@ export interface ModeSwitchButtonProps {
   pointerEvents: boolean
 }
 
-export default HeaderModeSwitchButton
+export default DarkModeSwitchButton

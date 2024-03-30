@@ -1,9 +1,8 @@
-import HeaderModeSwitch from '../components/HeaderModeSwitch.tsx'
-import { MouseEventHandler } from 'react'
+import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
 import HeaderSegment from '../components/HeaderSegment.tsx'
 
-const Header = ({ mode, onClick }: HeaderProps) => {
+const Header = () => {
   return (
     <div className={'sticky top-8 z-10 flex items-stretch justify-between md:px-1'}>
       <div
@@ -29,14 +28,9 @@ const Header = ({ mode, onClick }: HeaderProps) => {
           </div>
         </HeaderSegment>
       </div>
-      <HeaderModeSwitch mode={mode} onClick={onClick} />
+      <DarkModeSwitch />
     </div>
   )
-}
-
-export interface HeaderProps {
-  mode: string
-  onClick: MouseEventHandler
 }
 
 export default Header
