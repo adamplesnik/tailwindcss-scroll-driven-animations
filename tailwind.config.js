@@ -12,8 +12,6 @@ module.exports = {
       },
       animation: {
         /* Regular CSS animations */
-        'move-left': 'move-left 400ms ease-in-out forwards',
-        'move-right': 'move-right 400ms ease-in-out forwards',
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
 
         /* Scroll-driven animations */

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Moon, Sun } from 'lucide-react'
 import { MouseEventHandler, useState } from 'react'
 import DarkModeSwitchButton from './DarkModeSwitchButton.tsx'
@@ -19,12 +20,16 @@ const DarkModeSwitch = () => {
     <HeaderSegment>
       <DarkModeSwitchButton Icon={Sun} onClick={switchMode} pointerEvents={!darkMode} />
       <DarkModeSwitchButton Icon={Moon} onClick={switchMode} pointerEvents={darkMode} />
-      <div
-        className={
-          (darkMode ? 'animate-move-right' : 'animate-move-left') +
-          ' absolute z-0 size-8 rounded-full bg-white/60 dark:bg-zinc-500/60'
-        }
-      ></div>
+      <motion.div
+        layout
+        transition={{
+          delay: 0.12,
+          duration: 0.67,
+          ease: [0.65, 0.05, 0.17, 0.99],
+        }}
+        style={darkMode ? { right: '0.25rem' } : { left: '0.25rem ' }}
+        className="absolute z-0 size-8 rounded-full bg-white/60 dark:bg-zinc-500/60"
+      ></motion.div>
     </HeaderSegment>
   )
 }

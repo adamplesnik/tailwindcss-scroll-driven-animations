@@ -42,36 +42,6 @@
   }
 }
 
-@keyframes move-left {
-  0% {
-    transform: translateX(calc(100% + theme(spacing.2)));
-  }
-
-  50% {
-    border-bottom-left-radius: 1px;
-    border-top-left-radius: 1px;
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes move-right {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    border-bottom-right-radius: 1px;
-    border-top-right-radius: 1px;
-  }
-
-  100% {
-    transform: translateX(calc(100% + theme(spacing.2)));
-  }
-}
-
 @keyframes translate-down {
   to {
     transform: translateY(0);

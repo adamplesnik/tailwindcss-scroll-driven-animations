@@ -6,7 +6,7 @@ const DarkModeSwitchButton = ({ Icon, onClick, pointerEvents }: ModeSwitchButton
     <div
       onClick={onClick}
       className={
-        (pointerEvents && 'pointer-events-none ') +
+        (pointerEvents ? 'pointer-events-none ' : '') +
         'z-10 flex size-8 cursor-pointer items-center rounded-full p-1 ease-line ' +
         'transition-[transform,_background-color] duration-500 ' +
         'hover:rotate-[24deg] hover:bg-slate-300/40 dark:hover:bg-slate-500/60'
