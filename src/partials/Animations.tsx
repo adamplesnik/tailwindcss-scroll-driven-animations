@@ -45,9 +45,9 @@ const Animations = () => {
       <CodeBlock
         Icon={Github}
         linkHref={
-          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L40'
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L5'
         }
-        linkText={'XXXXX'}
+        linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
       >
         {codeExampleTimeline}
       </CodeBlock>
@@ -60,9 +60,9 @@ const Animations = () => {
       <CodeBlock
         Icon={Github}
         linkHref={
-          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L113'
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L37'
         }
-        linkText={'LINKKKKKKKKK XXXXXX'}
+        linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
       >
         {codeExampleView}
       </CodeBlock>
@@ -75,9 +75,9 @@ const Animations = () => {
       <CodeBlock
         Icon={Github}
         linkHref={
-          'https://github.com/adamplesnik/tailwind-job/blob/e8b3fd14b40b96ccce55ae1846bc7d09d1af6a86/tailwind.config.js#L113'
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L58'
         }
-        linkText={'LINKKKKKKKKK XXXXXX'}
+        linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
       >
         {codeExampleRange}
       </CodeBlock>
@@ -87,7 +87,15 @@ const Animations = () => {
         timeline. Utility <Code>.scope</Code> should be used with a modifier to define the timeline
         name set by <Code>.scroll-timeline</Code> or <Code>.view-timeline</Code>.
       </Paragraph>
-      <CodeBlock>{codeExampleScope}</CodeBlock>
+      <CodeBlock
+        Icon={Github}
+        linkHref={
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L49'
+        }
+        linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
+      >
+        {codeExampleScope}
+      </CodeBlock>
       <Heading size={3}>Browser Support</Heading>
       <Paragraph>
         Scroll-driven animations are not broadly supported yet. I added two <Code>@supports</Code>{' '}
@@ -95,8 +103,8 @@ const Animations = () => {
       </Paragraph>
       <CodeBlock
         Icon={Github}
-        linkHref={'https://github.com/adamplesnik/tailwind-job/tailwind.config.js#L16'}
-        linkText={'LINKKKKKKKKK XXXXXX'}
+        linkHref={'https://github.com/adamplesnik/tailwind-job/blob/main/tailwind.config.js#L28'}
+        linkText={'tailwind-job/tailwind.config.js'}
       >
         {codeExampleSupports}
       </CodeBlock>
