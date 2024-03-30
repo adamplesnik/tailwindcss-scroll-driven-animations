@@ -2,10 +2,10 @@ import { BookText, Squirrel } from 'lucide-react'
 import CodeBlock from '../components/CodeBlock'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
-import { codeExampleDemo } from '../scroll-driven-animations/codeExamples'
+import { codeExampleDemo } from '../components/codeExamples'
 import Heading from '../components/Heading'
 import Code from '../components/Code'
-import PluginDemo from '../scroll-driven-animations/PluginDemo'
+import PluginDemo from '../components/PluginDemo'
 
 const Demo = () => {
   return (

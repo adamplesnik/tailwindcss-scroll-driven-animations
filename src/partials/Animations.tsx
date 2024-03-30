@@ -10,7 +10,7 @@ import {
   codeExampleSupports,
   codeExampleTimeline,
   codeExampleView,
-} from '../scroll-driven-animations/codeExamples.ts'
+} from '../components/codeExamples.ts'
 
 const Animations = () => {
   return (
