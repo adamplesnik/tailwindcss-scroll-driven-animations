@@ -103,8 +103,10 @@ const Animations = () => {
       </Paragraph>
       <CodeBlock
         Icon={Github}
-        linkHref={'https://github.com/adamplesnik/tailwind-job/blob/main/tailwind.config.js#L28'}
-        linkText={'tailwind-job/tailwind.config.js'}
+        linkHref={
+          'https://github.com/adamplesnik/tailwind-job-application/blob/main/tailwind.config.js#L28'
+        }
+        linkText={'tailwind-job-application/tailwind.config.js'}
       >
         {codeExampleSupports}
       </CodeBlock>
