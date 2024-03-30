@@ -17,10 +17,8 @@ const Link = ({
       target={target}
       className={
         'relative inline-flex items-center gap-1 bg-gradient-to-r from-fuchsia-400 to-violet-800 bg-[length:200%_100%] bg-clip-text text-transparent ' +
-        'group transition-[background-size] duration-700' +
-        'hover:bg-[length:100%_2000%]' +
-        'dark:to-violet-700' +
-        (className && ` ${className}`)
+        'group transition-[background-size] duration-700 hover:bg-[length:100%_2000%] dark:to-violet-700' +
+        (className ? ` ${className}` : '')
       }
     >
       <span>{children}</span>
@@ -30,7 +28,7 @@ const Link = ({
           absoluteStrokeWidth={true}
           strokeWidth={iconStrokeWidth}
           className={
-            'group-hover:animate-bounce-bottom ease-bounce stroke-violet-600 group-hover:max-w-full'
+            'stroke-violet-600 ease-bounce group-hover:max-w-full group-hover:animate-bounce-bottom'
           }
         />
       ) : (
@@ -39,7 +37,7 @@ const Link = ({
       <span
         className={
           (borderWidth === 'narrow' ? 'h-px' : 'h-[2px]') +
-          ' ease-line absolute -bottom-px left-0  w-full max-w-0 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 group-hover:max-w-full'
+          ' absolute -bottom-px left-0 w-full  max-w-0 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 ease-line group-hover:max-w-full'
         }
       ></span>
     </a>
