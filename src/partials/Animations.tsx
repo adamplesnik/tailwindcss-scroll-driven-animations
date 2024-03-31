@@ -24,13 +24,21 @@ const Animations = () => {
         of Tailwind CSS classes has been growing every day.
       </Paragraph>
       <Paragraph>
-        One of many stand-out features of Tailwind CSS is how it guides me to utilize edge CSS
+        One of many stand-out features of Tailwind CSS is how it guides me to utilize the edge
         features simply by exploring its documentation.{' '}
         <Link href={'#code'} Icon={CornerRightDown} target={''}>
           Scroll-driven animations
         </Link>{' '}
-        you plan to introduce are no exception to this. So I gave it a shot and turned some of their
-        CSS into a plugin. This website is the real test; it uses them a lot.
+        you plan to introduce are no exception to this. I gave it a shot and turned some of their
+        CSS into a{' '}
+        <Link
+          href="https://https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
+          target="_blank"
+          Icon={Github}
+        >
+          plugin
+        </Link>
+        . This website is the real test; it uses them a lot.
       </Paragraph>
       <Heading size={3} id={'code'}>
         Animation Timeline

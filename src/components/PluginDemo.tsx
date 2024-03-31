@@ -12,7 +12,7 @@ const PluginDemo = () => {
   return (
     <div className="mb-8 h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-300 bg-zinc-100/70 dark:border-zinc-700 dark:bg-black/10">
       <div className="text-sm scope/demo supports-animations:-mt-14 supports-animations:sm:-mt-8">
-        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 px-8 py-4 backdrop-blur timeline/demo range-start-exit-crossing range-end supports-animations:-translate-y-24 supports-animations:sm:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
+        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 px-8 py-4 backdrop-blur timeline/demo range-start-exit-crossing range-end supports-animations:-translate-y-24 supports-animations:sm:-translate-y-16 md:px-12 dark:border-b-zinc-600 dark:bg-slate-800/60">
           <Code>.animate...</Code>
           <Code>.range-start-exit-crossing</Code>
           <Code>.range-end</Code>

@@ -1,11 +1,11 @@
-import { BookText, Github, Squirrel } from 'lucide-react'
+import { BookText, WandSparkles } from 'lucide-react'
+import Code from '../components/Code'
 import CodeBlock from '../components/CodeBlock'
+import Heading from '../components/Heading'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
-import { codeExampleDemo } from '../components/codeExamples'
-import Heading from '../components/Heading'
-import Code from '../components/Code'
 import PluginDemo from '../components/PluginDemo'
+import { codeExampleDemo } from '../components/codeExamples'
 
 const Demo = () => {
   return (
@@ -14,23 +14,15 @@ const Demo = () => {
         Demo
       </Heading>
       <Paragraph>
-        This demo showcases the usage of the{' '}
-        <Link
-          href="https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
-          Icon={Github}
-          target="_blank"
-        >
-          scroll-driven animations plugin
-        </Link>{' '}
-        to reveal the navigation bar. The <Code>.view-timeline/demo</Code> utility sets up the
-        animation timeline, which is then scoped out of the defining element by{' '}
-        <Code>.scope/demo</Code>. The navigation bar has the <Code>.timeline/demo</Code> CSS class,
-        enabling it to be regulated by the timeline. Utility classes{' '}
-        <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit the
-        timeline duration.
+        This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
+        <Code>.view-timeline/demo</Code> utility sets up the animation timeline, which is then
+        scoped out of the defining element by <Code>.scope/demo</Code>. The navigation bar has the{' '}
+        <Code>.timeline/demo</Code> CSS class, enabling it to be regulated by the timeline. Utility
+        classes <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit
+        the timeline duration.
       </Paragraph>
-      <div className="mb-4 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm supports-no-animations:flex">
-        <Squirrel className="text-amber-500" strokeWidth="1.5" />
+      <div className="mb-4 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm supports-no-animations:flex dark:border-amber-600 dark:bg-stone-700/30">
+        <WandSparkles className="size-8 text-amber-500 dark:text-amber-600" strokeWidth="1" />
         Scroll-driven animations are not yet supported by your browser. Use Chrome 115 or newer to
         see the demo working correctly.
       </div>

@@ -23,6 +23,7 @@ const DarkModeSwitch = () => {
       <motion.div
         layout
         transition={{
+          type: 'spring',
           delay: 0.12,
           duration: 0.67,
           ease: [0.65, 0.05, 0.17, 0.99],
