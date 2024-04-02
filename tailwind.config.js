@@ -12,10 +12,9 @@ module.exports = {
       animation: {
         /* Regular CSS animations */
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
+        'bike-out': 'bike-out 5s cubic-bezier(0.45, 0.15, 0.17, 0.79) forwards',
 
         /* Scroll-driven animations */
-        'add-shadow': 'add-shadow auto linear forwards',
-        'bg-position': 'bg-position auto linear forwards',
         demo: 'translate-down auto ease-in-out forwards',
         'translate-down': 'translate-down auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
         'translate-up': 'translate-up auto ease-in-out forwards',

@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { Moon, Sun } from 'lucide-react'
 import { MouseEventHandler, useState } from 'react'
 import DarkModeSwitchButton from './DarkModeSwitchButton.tsx'
-import HeaderSegment from './HeaderSegment.tsx'
 
 const DarkModeSwitch = () => {
   const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -17,7 +16,7 @@ const DarkModeSwitch = () => {
   }
 
   return (
-    <HeaderSegment>
+    <div className="relative flex items-stretch gap-2">
       <DarkModeSwitchButton Icon={Sun} onClick={switchMode} pointerEvents={!darkMode} />
       <DarkModeSwitchButton Icon={Moon} onClick={switchMode} pointerEvents={darkMode} />
       <motion.div
@@ -28,10 +27,10 @@ const DarkModeSwitch = () => {
           duration: 0.67,
           ease: [0.65, 0.05, 0.17, 0.99],
         }}
-        style={darkMode ? { right: '0.25rem' } : { left: '0.25rem ' }}
+        style={darkMode ? { right: '0' } : { left: '0 ' }}
         className="absolute z-0 size-8 rounded-full bg-white/60 dark:bg-zinc-500/60"
       ></motion.div>
-    </HeaderSegment>
+    </div>
   )
 }
 

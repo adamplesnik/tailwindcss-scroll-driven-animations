@@ -9,7 +9,11 @@ const Paragraph = ({
     <p
       className={
         'mb-4 w-full ' +
-        (size === 'regular' ? 'text-base leading-7' : size === 'large' ? 'text-lg' : 'text-sm') +
+        (size === 'regular'
+          ? 'text-base leading-7'
+          : size === 'large'
+            ? 'text-lg'
+            : 'text-sm font-medium') +
         (className && ` ${className}`)
       }
     >
