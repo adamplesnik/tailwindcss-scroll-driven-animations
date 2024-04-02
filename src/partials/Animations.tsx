@@ -1,8 +1,7 @@
-import { CornerRightDown, Github } from 'lucide-react'
+import { Github } from 'lucide-react'
 import Code from '../components/Code.tsx'
 import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
-import Link from '../components/Link.tsx'
 import Paragraph from '../components/Paragraph.tsx'
 import {
   codeExampleRange,
@@ -10,7 +9,7 @@ import {
   codeExampleSupports,
   codeExampleTimeline,
   codeExampleView,
-} from '../components/codeExamples.ts'
+} from '../utils/codeExamples.ts'
 
 const Animations = () => {
   return (
@@ -18,28 +17,6 @@ const Animations = () => {
       <Heading size={2} id={'animations'}>
         Animations
       </Heading>
-      <Paragraph>
-        I remember being yelled at by a senior Java developer when I proudly integrated some atomic
-        classes into our dinosaur project. It was back in 2018, I didn’t back out and our collection
-        of Tailwind CSS classes has been growing every day.
-      </Paragraph>
-      <Paragraph>
-        One of many stand-out features of Tailwind CSS is how it guides me to utilize the edge
-        features simply by exploring its documentation.{' '}
-        <Link href={'#code'} Icon={CornerRightDown} target={''}>
-          Scroll-driven animations
-        </Link>{' '}
-        you plan to introduce are no exception to this. I gave it a shot and turned some of their
-        CSS into a{' '}
-        <Link
-          href="https://https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
-          target="_blank"
-          Icon={Github}
-        >
-          plugin
-        </Link>
-        . This website is the real test; it uses them a lot.
-      </Paragraph>
       <Heading size={3} id={'code'}>
         Animation Timeline
       </Heading>

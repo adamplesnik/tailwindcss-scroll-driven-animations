@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
 import PluginDemo from '../components/PluginDemo'
-import { codeExampleDemo } from '../components/codeExamples'
+import { codeExampleDemo } from '../utils/codeExamples'
 
 const Demo = () => {
   return (
