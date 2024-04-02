@@ -28,7 +28,7 @@ const DarkModeSwitch = () => {
           ease: [0.65, 0.05, 0.17, 0.99],
         }}
         style={darkMode ? { right: '0' } : { left: '0 ' }}
-        className="absolute z-0 size-8 rounded-full bg-white/60 dark:bg-zinc-500/60"
+        className="absolute z-0 size-8 rounded-full bg-white/60 dark:bg-slate-500/60"
       ></motion.div>
     </div>
   )
