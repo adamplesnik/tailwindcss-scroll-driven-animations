@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { Moon, Sun } from 'lucide-react'
 import { MouseEventHandler, useState } from 'react'
-import DarkModeSwitchButton from './DarkModeSwitchButton.tsx'
 
 const DarkModeSwitch = () => {
   const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -16,20 +15,18 @@ const DarkModeSwitch = () => {
   }
 
   return (
-    <div className="relative flex items-stretch gap-2">
-      <DarkModeSwitchButton Icon={Sun} onClick={switchMode} pointerEvents={!darkMode} />
-      <DarkModeSwitchButton Icon={Moon} onClick={switchMode} pointerEvents={darkMode} />
+    <div
+      className="flex size-8 cursor-pointer flex-col overflow-hidden rounded-full transition-colors hover:bg-white/40 dark:hover:bg-slate-500/60"
+      onClick={switchMode}
+    >
       <motion.div
-        layout
-        transition={{
-          type: 'spring',
-          delay: 0.12,
-          duration: 0.67,
-          ease: [0.65, 0.05, 0.17, 0.99],
-        }}
-        style={darkMode ? { right: '0' } : { left: '0 ' }}
-        className="absolute z-0 size-8 rounded-full bg-white/60 dark:bg-slate-500/60"
-      ></motion.div>
+        animate={{ y: !darkMode ? 0 : '-2rem' }}
+        transition={{ ease: [0.65, 0.05, 0.17, 0.99], duration: 0.5, delay: 0.2 }}
+        className="group flex flex-col"
+      >
+        <Sun className="size-8 p-1 transition-transform duration-700 ease-line group-hover:rotate-[22deg]" />
+        <Moon className="size-8 p-1 transition-transform duration-700 ease-line group-hover:-rotate-[22deg]" />
+      </motion.div>
     </div>
   )
 }
