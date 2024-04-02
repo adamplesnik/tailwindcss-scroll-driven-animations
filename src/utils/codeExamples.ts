@@ -20,11 +20,22 @@ export const codeExampleView = `'view-timeline': (value, { modifier }) => ({
   viewTimeline: (modifier ? \`--\${modifier} \` : 'none ') + value,
 }),`
 
-export const codeExampleRange = `'range-start': (value) => ({
+export const codeExampleRange = `{
+  'range-start': (value) => ({
     animationRangeStart: value,
   }),
 },
-{ values: { DEFAULT: 'entry', exit: 'exit', ...theme('rangeValues') } }`
+{
+  values: {
+    DEFAULT: 'entry',
+    exit: 'exit',
+    normal: 'normal',
+    contain: 'contain',
+    cover: 'cover',
+    'entry-crossing': 'entry-crossing',
+    'exit-crossing': 'exit-crossing',
+  },
+}`
 
 export const codeExampleScope = `scope: (value, { modifier }) => ({
   timelineScope: \`--\${modifier}\`,
