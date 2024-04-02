@@ -11,7 +11,7 @@ function App() {
     <div className="flex flex-col items-center justify-center">
       <PageBackground />
       <Nav />
-      <div className={'relative z-10 w-full max-w-screen-md p-8 md:p-16 lg:p-20'}>
+      <div className="relative z-10 w-full max-w-screen-md p-8 md:p-16 lg:p-20">
         <div className="w-full">
           <MainTitle />
           <Intro />

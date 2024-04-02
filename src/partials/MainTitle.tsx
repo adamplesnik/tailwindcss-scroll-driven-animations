@@ -16,7 +16,7 @@ const MainTitle = () => {
         >
           Scroll-driven Animations plugin
         </Link>{' '}
-        I wrote and published.
+        I&nbsp;wrote and published.
       </Heading>
       <Paragraph size={'small'} className={'text-zinc-600 dark:text-zinc-400'}>
         Bratislava, Slovakia,{' '}

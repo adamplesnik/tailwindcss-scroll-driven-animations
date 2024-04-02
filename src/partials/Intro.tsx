@@ -11,8 +11,8 @@ const Intro = () => {
         of Tailwind CSS classes has been growing every day.
       </Paragraph>
       <Paragraph>
-        One of many stand-out features of Tailwind CSS is how it guides me to utilize the edge
-        features simply by exploring its documentation.{' '}
+        One of many stand-out features of Tailwind CSS is how it guides developers to utilize the
+        edge CSS features simply by exploring its documentation.{' '}
         <Link href={'#code'} Icon={CornerRightDown} target={''}>
           Scroll-driven animations
         </Link>{' '}
