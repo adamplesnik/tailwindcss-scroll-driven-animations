@@ -69,7 +69,6 @@ export = plugin(
           'entry-crossing': 'entry-crossing',
           'exit-crossing': 'exit-crossing',
         },
-        modifiers: 'any',
       }
     )
 
