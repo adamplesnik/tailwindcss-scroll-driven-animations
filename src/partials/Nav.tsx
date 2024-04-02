@@ -1,4 +1,3 @@
-import { Bike } from 'lucide-react'
 import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
 
@@ -10,10 +9,7 @@ const Nav = () => {
         dark:border-b-slate-600/50 dark:bg-slate-800/60"
     >
       <div className="flex w-full max-w-screen-md items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
-        <div className="group flex gap-2">
-          <Bike className="group-hover:animate-bike-out size-4 self-center" />
-          <span className="mr-8 self-center text-xs font-bold">AP</span>
-        </div>
+        <span className="mr-8 self-center text-xs font-bold">AP</span>
         <HeaderNavAnchor href={'#animations'}>
           <span className={'sm:hidden'}>Anim</span>
           <span className={'hidden sm:inline-block'}>Animations</span>

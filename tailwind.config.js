@@ -12,7 +12,6 @@ module.exports = {
       animation: {
         /* Regular CSS animations */
         'bounce-bottom': 'bounce-bottom 550ms ease-in-out 220ms',
-        'bike-out': 'bike-out 5s cubic-bezier(0.45, 0.15, 0.17, 0.79) forwards',
 
         /* Scroll-driven animations */
         demo: 'translate-down auto ease-in-out forwards',

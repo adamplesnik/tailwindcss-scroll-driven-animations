@@ -24,21 +24,6 @@
   }
 }
 
-@keyframes bike-out {
-  7% {
-    transform: scaleX(-100%);
-  }
-  50% {
-    transform: scaleX(-100%) translateX(300px);
-  }
-  50.001% {
-    transform: scaleX(100%) translateX(-300px);
-  }
-  100% {
-    transform: translateX(0) scaleX(100%);
-  }
-}
-
 @keyframes translate-down {
   to {
     transform: translateY(0);
