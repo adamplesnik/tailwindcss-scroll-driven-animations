@@ -13,7 +13,7 @@ const Intro = () => {
       <Paragraph>
         One of many stand-out features of Tailwind CSS is how it guides developers to utilize the
         edge CSS features simply by exploring its documentation.{' '}
-        <Link href={'#code'} Icon={CornerRightDown} target={''}>
+        <Link href={'#plugin'} Icon={CornerRightDown} target={''}>
           Scroll-driven animations
         </Link>{' '}
         you plan to introduce are no exception to this.

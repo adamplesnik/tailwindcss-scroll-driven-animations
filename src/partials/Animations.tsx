@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react'
+import { Github, Minus } from 'lucide-react'
 import Code from '../components/Code.tsx'
 import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
@@ -14,9 +14,31 @@ import {
 const Animations = () => {
   return (
     <>
-      <Heading size={2} id={'animations'}>
-        Animations
+      <Heading size={2} id={'plugin'}>
+        Plugin
       </Heading>
+      <Paragraph>
+        The plugin provides utilities for a subset of CSS scroll-driven animation properties.
+        <ul className="">
+          <li>
+            <Minus className="inline" />
+            <Code>animation-timeline</Code>
+          </li>
+          <li>
+            <Minus className="inline" />
+            <Code>scroll-timeline, view-timeline</Code>
+          </li>
+          <li>
+            <Minus className="inline" />
+            <Code>animation-range-start, animation-range-end</Code>
+          </li>
+          <li>
+            <Minus className="inline" />
+            <Code>timeline-scope</Code>
+          </li>
+        </ul>
+      </Paragraph>
+
       <Heading size={3} id={'code'}>
         Animation Timeline
       </Heading>
