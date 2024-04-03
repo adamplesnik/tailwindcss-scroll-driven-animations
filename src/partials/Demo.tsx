@@ -22,17 +22,17 @@ const Demo = () => {
       <Heading size={2}>Demos</Heading>
       <Heading size={3}>Anonymous Scroll Timeline</Heading>
       <Paragraph>
-        This demo showcases how to set a simple progress bar just by adding CSS to the page. We
-        define the anonymous scroll timeline by adding <Code>.timeline</Code> to the progressbar.
+        This demo showcases how to create a simple progress bar just by adding one utility class to
+        the element. We define the anonymous scroll timeline by adding <Code>.timeline</Code> to the
+        progress bar.
       </Paragraph>
       <ProgressBarDemo />
       <CodeBlock language="html">{progressBarDemo}</CodeBlock>
       <CodeBlock language="css">{progressBarKeyframes}</CodeBlock>
       <Heading size={3}>Anonymous View Timeline</Heading>
       <Paragraph>
-        This demo showcases how to set a simple progress bar just by adding CSS to the element
-        inside a scroller. We define the anonymous view timeline by adding{' '}
-        <Code>.timeline-view</Code> to the element.
+        This demo showcases how to make the element appear after entering the view frame. We define
+        the anonymous view timeline by adding <Code>.timeline-view</Code> to this element.
       </Paragraph>
       <AppearDemo />
       <CodeBlock language="html">{appearDemo}</CodeBlock>
