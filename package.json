@@ -15,8 +15,7 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "plugins": [
-      "prettier-plugin-tailwindcss",
-      "prettier-plugin-organize-imports"
+      "prettier-plugin-tailwindcss"
     ]
   },
   "dependencies": {
@@ -43,7 +42,6 @@
     "postcss": "^8.4.38",
     "postcss-import": "^16.1.0",
     "prettier": "^3.2.5",
-    "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",

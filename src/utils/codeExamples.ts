@@ -45,17 +45,3 @@ export const codeExampleSupports = `supports: {
   animations: 'animation-timeline: scroll(y)',
   'no-animations': 'not(animation-timeline: scroll(y))',
 }`
-
-export const codeExampleDemo = `<div class="scope/demo">
-  <!-- The --demo timeline has scope outside its defining element. -->
-  <div class="animate-translate-down timeline/demo range-start-exit-crossing range-end">
-    <!-- Controlled by the --demo timeline. -->
-  </div>
-  <div>
-    ...
-    <div className="view-timeline/demo">
-      <!-- Element setting the --demo timeline. -->
-    </div>
-    ...
-  </div>
-</div>`
