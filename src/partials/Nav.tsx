@@ -11,9 +11,12 @@ const Nav = () => {
     >
       <div className="flex w-full max-w-screen-md items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
         <HeaderNavAnchor to="/">Plugin</HeaderNavAnchor>
-        <HeaderNavAnchor to="/usage">Usage and Demos</HeaderNavAnchor>
+        <HeaderNavAnchor to="/usage">
+          <span className="sm:hidden">Usage</span>
+          <span className="hidden sm:inline">Usage and Demos</span>
+        </HeaderNavAnchor>
         <HeaderNavAnchor to="https://adamplesnik.com" external>
-          Me <ArrowUpRight className="size-4 ml-2" />
+          Me <ArrowUpRight className="ml-2 size-4" />
         </HeaderNavAnchor>
         <div className="flex-1" />
         <DarkModeSwitch />
