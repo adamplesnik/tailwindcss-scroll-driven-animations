@@ -9,7 +9,7 @@ const Nav = () => {
         shadow-lg backdrop-blur-sm timeline range-end-[200px] supports-animations:-translate-y-24 md:px-1 supports-animations:md:-translate-y-32 supports-animations:lg:-translate-y-40
         dark:border-b-slate-600/50 dark:bg-slate-800/60"
     >
-      <div className="flex w-full max-w-screen-md items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
+      <div className="flex w-full max-w-screen-lg items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
         <HeaderNavAnchor to="/">Plugin</HeaderNavAnchor>
         <HeaderNavAnchor to="/usage">
           <span className="sm:hidden">Usage</span>
