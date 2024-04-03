@@ -1,3 +1,4 @@
+import Code from '../components/Code'
 import Skeleton from '../components/Skeleton'
 import DemoPlaceholderContent from './DemoPlaceholderContent'
 import DemoTriggerLine from './DemoTriggerLine'
@@ -30,7 +31,7 @@ const AppearDemo = () => {
         </div>
         <DemoTriggerLine className="" explanation="0% when the element enters the frame" />
         <div className="flex h-24 w-full animate-appear items-center justify-center gap-4 rounded bg-sky-500/40 p-4 timeline-view dark:bg-fuchsia-300/60">
-          <span>'Luke, he is your father!'</span>
+          <Code>.animate-appear</Code> <Code>.timeline-view</Code>
         </div>
         <DemoTriggerLine className="" explanation="100% when the element leaves the frame" />
         <div className="my-8">

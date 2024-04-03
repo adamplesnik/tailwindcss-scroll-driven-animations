@@ -40,9 +40,9 @@ const Demo = () => {
       <Heading size={3}>Range and Animation Timeline Name</Heading>
       <Paragraph>
         This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
-        <Code>.view-timeline/demo</Code> utility sets up the animation timeline, which is then
-        scoped out of the defining element by <Code>.scope/demo</Code>. The navigation bar has the{' '}
-        <Code>.timeline/demo</Code> CSS class, enabling it to be regulated by the timeline. Utility
+        <Code>.view-timeline/range</Code> utility sets up the animation timeline, which is then
+        scoped out of the defining element by <Code>.scope/range</Code>. The navigation bar has the{' '}
+        <Code>.timeline/range</Code> CSS class, enabling it to be regulated by the timeline. Utility
         classes <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit
         the timeline duration.
       </Paragraph>

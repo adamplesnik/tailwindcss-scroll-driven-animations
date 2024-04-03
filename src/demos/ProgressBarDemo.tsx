@@ -1,3 +1,4 @@
+import Code from '../components/Code'
 import Skeleton from '../components/Skeleton'
 import DemoPlaceholderContent from './DemoPlaceholderContent'
 import DemoTriggerLine from './DemoTriggerLine'
@@ -8,7 +9,9 @@ const skeletonCollection = ['96%', '100%', '92%', '100%', '93%', '87%', '55%']
 const ProgressBarDemo = () => {
   return (
     <DemoWrapper>
-      <div className="animate-scale-to-right sticky top-0 z-10 h-3 w-full rounded-md bg-sky-600/70 timeline dark:bg-fuchsia-300/70"></div>
+      <div className="sticky top-0 z-10 flex w-full animate-scale-to-right gap-2 overflow-hidden rounded-md bg-sky-500/80 timeline dark:bg-fuchsia-500/80">
+        <Code>.animate-scale-to-right</Code> <Code>.timeline</Code>
+      </div>
       <div className="mt-4">
         <DemoPlaceholderContent>
           <DemoTriggerLine
