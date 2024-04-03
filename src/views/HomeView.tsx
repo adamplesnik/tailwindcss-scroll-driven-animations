@@ -3,7 +3,7 @@ import Animations from '../partials/Animations.tsx'
 import Intro from '../partials/Intro.tsx'
 import MainTitle from '../partials/MainTitle.tsx'
 
-function Home() {
+function HomeView() {
   return (
     <Page>
       <MainTitle />
@@ -13,4 +13,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomeView

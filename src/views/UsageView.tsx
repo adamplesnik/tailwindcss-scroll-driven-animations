@@ -3,7 +3,7 @@ import Heading from '../components/Heading'
 import Page from '../layouts/Page'
 import Demo from '../partials/Demo'
 
-const Usage = () => {
+const UsageView = () => {
   return (
     <Page>
       <Heading size={1}>How to Use This Plugin</Heading>
@@ -20,4 +20,4 @@ const Usage = () => {
   )
 }
 
-export default Usage
+export default UsageView
