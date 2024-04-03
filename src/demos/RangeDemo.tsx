@@ -1,4 +1,3 @@
-import Code from '../components/Code'
 import Skeleton from '../components/Skeleton'
 import DemoPlaceholderContent from './DemoPlaceholderContent'
 import DemoTriggerLine from './DemoTriggerLine'
@@ -13,18 +12,15 @@ const RangeDemo = () => {
         <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 p-4 backdrop-blur timeline/range range-start-exit-crossing range-end supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
           Navbar
         </div>
-        <div className="px-4 supports-no-animations:mt-2">
-          <Code>.scope/range</Code>
-        </div>
         <DemoPlaceholderContent>
           <Skeleton />
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>
-          <DemoTriggerLine
-            code=".view-timeline/range"
-            explanation="Trigger on exit"
-            className="my-8 view-timeline/range"
-          />
+          <DemoTriggerLine explanation="0% when the element starts to leave the frame" />
+          <div className="w-full rounded bg-sky-500/40 p-4 timeline-view view-timeline/range dark:bg-fuchsia-300/60">
+            Show the navbar
+          </div>
+          <DemoTriggerLine explanation="100% when the element leaves the frame" />
           <div className="mb-8">
             {skeletonCollection.map((width, key) => (
               <Skeleton width={width} key={key} />

@@ -25,18 +25,18 @@ const Demo = () => {
         This demo showcases how to set a simple progress bar just by adding CSS to the page. We
         define the anonymous scroll timeline by adding <Code>.timeline</Code> to the progressbar.
       </Paragraph>
+      <ProgressBarDemo />
       <CodeBlock language="html">{progressBarDemo}</CodeBlock>
       <CodeBlock language="css">{progressBarKeyframes}</CodeBlock>
-      <ProgressBarDemo />
       <Heading size={3}>Anonymous View Timeline</Heading>
       <Paragraph>
         This demo showcases how to set a simple progress bar just by adding CSS to the element
         inside a scroller. We define the anonymous view timeline by adding{' '}
         <Code>.timeline-view</Code> to the element.
       </Paragraph>
+      <AppearDemo />
       <CodeBlock language="html">{appearDemo}</CodeBlock>
       <CodeBlock language="css">{appearKeyframes}</CodeBlock>
-      <AppearDemo />
       <Heading size={3}>Range and Animation Timeline Name</Heading>
       <Paragraph>
         This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
@@ -46,9 +46,9 @@ const Demo = () => {
         classes <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit
         the timeline duration.
       </Paragraph>
+      <RangeDemo />
       <CodeBlock language="html">{rangeDemo}</CodeBlock>
       <CodeBlock language="css">{rangeKeyframes}</CodeBlock>
-      <RangeDemo />
       <Heading size={3}>Conclusion</Heading>
       <Paragraph>
         To better understand the impact of each utility class in the demo, take a look at its code.

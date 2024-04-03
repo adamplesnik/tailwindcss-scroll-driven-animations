@@ -28,11 +28,11 @@ const AppearDemo = () => {
             <Skeleton width={width} key={key} />
           ))}
         </div>
-        <DemoTriggerLine className="" explanation="0% when the element enters the frame." />
-        <div className="animate-appear dark:bg-fuchsia-300/7 flex h-24 w-full items-center justify-center rounded bg-sky-500/40 p-4 timeline-view dark:bg-fuchsia-200/60">
-          'Luke, he is your father!'
+        <DemoTriggerLine className="" explanation="0% when the element enters the frame" />
+        <div className="flex h-24 w-full animate-appear items-center justify-center gap-4 rounded bg-sky-500/40 p-4 timeline-view dark:bg-fuchsia-300/60">
+          <span>'Luke, he is your father!'</span>
         </div>
-        <DemoTriggerLine className="" explanation="100% when the element leaves the frame." />
+        <DemoTriggerLine className="" explanation="100% when the element leaves the frame" />
         <div className="my-8">
           {skeletonCollection.map((width, key) => (
             <Skeleton width={width} key={key} />

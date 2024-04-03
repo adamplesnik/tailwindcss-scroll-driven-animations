@@ -8,7 +8,7 @@ const UsageView = () => {
   return (
     <Page>
       <Heading size={1}>How to Use This Plugin</Heading>
-      <div className="mb-4 mt-8 flex items-center gap-4 rounded-lg border border-sky-300 bg-sky-100 p-2 text-sm  dark:border-sky-600 dark:bg-sky-700/30">
+      <div className="mb-4 mt-8 flex items-center gap-4 rounded-lg border border-sky-300 bg-sky-100 px-4 py-3 text-sm  dark:border-sky-600 dark:bg-sky-700/30">
         <Info className="size-6 shrink-0 text-sky-500 dark:text-sky-600" strokeWidth="1.5" />
         Documentation is in progress.
       </div>
