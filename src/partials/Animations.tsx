@@ -26,11 +26,11 @@ const Animations = () => {
           </li>
           <li>
             <Minus className="inline" />
-            <Code>scroll-timeline, view-timeline</Code>
+            <Code>scroll-timeline</Code>, <Code>view-timeline</Code>
           </li>
           <li>
             <Minus className="inline" />
-            <Code>animation-range-start, animation-range-end</Code>
+            <Code>animation-range-start</Code>, <Code>animation-range-end</Code>
           </li>
           <li>
             <Minus className="inline" />

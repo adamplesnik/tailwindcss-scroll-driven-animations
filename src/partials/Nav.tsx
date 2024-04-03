@@ -10,9 +10,7 @@ const Nav = () => {
         dark:border-b-slate-600/50 dark:bg-slate-800/60"
     >
       <div className="flex w-full max-w-screen-md items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
-        <HeaderNavAnchor href="#plugin">
-          <span className="hidden sm:inline-block">Plugin</span>
-        </HeaderNavAnchor>
+        <HeaderNavAnchor href="#plugin">Plugin</HeaderNavAnchor>
         <HeaderNavAnchor href="#demo">Demo</HeaderNavAnchor>
         <HeaderNavAnchor href="#me">Me</HeaderNavAnchor>
         <div className="flex-1" />
