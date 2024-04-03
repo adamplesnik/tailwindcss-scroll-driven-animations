@@ -16,7 +16,8 @@ const ProgressBarDemo = () => {
         <DemoPlaceholderContent>
           <DemoTriggerLine
             className="-mt-8 mb-8"
-            explanation="scroll(y) = 0%"
+            percentage={0}
+            explanation="scroll(y)"
             iconClassName="rotate-45"
           />
           <Skeleton />
@@ -30,7 +31,8 @@ const ProgressBarDemo = () => {
           ))}
           <DemoTriggerLine
             className="-mb-8 mt-8"
-            explanation="scroll(y) = 100%"
+            percentage={100}
+            explanation="scroll(y)"
             iconClassName="-rotate-45"
           />
         </DemoPlaceholderContent>

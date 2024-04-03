@@ -23,11 +23,11 @@ const RangeDemo = () => {
           <Skeleton />
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>
-          <DemoTriggerLine explanation="0% when the element starts leaving the frame" />
-          <div className="w-full rounded bg-sky-500/40 p-4 view-timeline/range dark:bg-fuchsia-300/60">
+          <DemoTriggerLine percentage={0} explanation="The element starts leaving the frame" />
+          <div className="w-full rounded bg-sky-500/40 p-4 view-timeline/navbar dark:bg-fuchsia-300/60">
             <Code>.view-timeline/navbar</Code>
           </div>
-          <DemoTriggerLine explanation="100% when the element leaves the frame" />
+          <DemoTriggerLine percentage={100} explanation="The element leaves the frame" />
           <div className="mb-8">
             {skeletonCollection.map((width, key) => (
               <Skeleton width={width} key={key} />
