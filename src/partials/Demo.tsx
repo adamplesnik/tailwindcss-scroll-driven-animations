@@ -37,14 +37,14 @@ const Demo = () => {
       <AppearDemo />
       <CodeBlock language="html">{appearDemo}</CodeBlock>
       <CodeBlock language="css">{appearKeyframes}</CodeBlock>
-      <Heading size={3}>Range and Animation Timeline Name</Heading>
+      <Heading size={3}>Range, Scope and Animation Timeline Name</Heading>
       <Paragraph>
         This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
-        <Code>.view-timeline/range</Code> utility sets up the animation timeline, which is then
-        scoped out of the defining element by <Code>.scope/range</Code>. The navigation bar has the{' '}
-        <Code>.timeline/range</Code> CSS class, enabling it to be regulated by the timeline. Utility
-        classes <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> is set to limit
-        the timeline duration.
+        <Code>.view-timeline/navbar</Code> utility sets up the animation timeline, which is then
+        scoped out of the defining element by <Code>.scope/navbar</Code>. The navigation bar is
+        controlled by this timeline with the <Code>.timeline/navbar</Code> utility. Utility classes{' '}
+        <Code>.range-start-exit-crossing</Code> and <Code>.range-end</Code> are set to limit the
+        timeline duration.
       </Paragraph>
       <RangeDemo />
       <CodeBlock language="html">{rangeDemo}</CodeBlock>

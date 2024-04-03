@@ -16,14 +16,14 @@ export const progressBarKeyframes = `@keyframes scale-to-right {
   }
 }`
 
-export const rangeDemo = `<div class="scope/range">
-  <!-- The --range timeline has scope outside its defining element -->
-  <div class="animate-translate-down timeline/range range-start-exit-crossing range-end">
+export const rangeDemo = `<div class="scope/navbar">
+  <!-- The --navbar timeline has scope outside its defining element -->
+  <div class="animate-translate-down timeline/navbar range-start-exit-crossing range-end">
     <!-- Navbar is shown when the controlling element starts to leave the frame -->
   </div>
   <div>
     ...
-    <div className="view-timeline/range">
+    <div className="view-timeline/navbar">
       <!-- Controlling element -->
     </div>
     ...
