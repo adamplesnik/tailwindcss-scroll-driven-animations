@@ -12,7 +12,7 @@ const UsageTable = ({ items }: UsageTableProps) => {
       {items.map((item, index) => (
         <>
           <UsageTableRow className={item.className} code={item.code} key={index} />
-          <Separator />
+          <Separator key={'sep' + index} />
         </>
       ))}
     </div>

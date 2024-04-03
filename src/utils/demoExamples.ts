@@ -7,16 +7,57 @@ export const progressBarDemo = `<div>
   </div>
 </div>`
 
-export const rangeDemo = `<div class="scope/demo">
-  <!-- The --demo timeline has scope outside its defining element. -->
-  <div class="animate-translate-down timeline/demo range-start-exit-crossing range-end">
-    <!-- The nav bar is controlled by the --demo timeline. -->
+export const progressBarKeyframes = `@keyframes scale-to-right {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}`
+
+export const rangeDemo = `<div class="scope/range">
+  <!-- The --range timeline has scope outside its defining element. -->
+  <div class="animate-translate-down timeline/range range-start-exit-crossing range-end">
+    <!-- The nav bar is controlled by the --range timeline. -->
   </div>
   <div>
     ...
-    <div className="view-timeline/demo">
-      <!-- Element setting the --demo timeline. -->
+    <div className="view-timeline/range">
+      <!-- Element setting the --range timeline. -->
     </div>
     ...
   </div>
 </div>`
+
+export const rangeKeyframes = `@keyframes translate-down {
+  to {
+    transform: translateY(0);
+  }
+}`
+
+export const appearDemo = `<div>
+  ...
+  <div class="animate-appear timeline-view">
+    <!-- The progress bar is controlled by the anonymous view timeline. -->
+  </div>
+  ...
+</div>`
+
+export const appearKeyframes = `@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  33% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}`

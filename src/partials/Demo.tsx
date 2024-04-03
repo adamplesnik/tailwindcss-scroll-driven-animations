@@ -6,7 +6,15 @@ import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
 import ProgressBarDemo from '../demos/ProgressBarDemo'
 import RangeDemo from '../demos/RangeDemo'
-import { progressBarDemo, rangeDemo } from '../utils/demoExamples'
+import {
+  appearDemo,
+  appearKeyframes,
+  progressBarDemo,
+  progressBarKeyframes,
+  rangeDemo,
+  rangeKeyframes,
+} from '../utils/demoExamples'
+import AppearDemo from '../demos/AppearDemo'
 
 const Demo = () => {
   return (
@@ -18,7 +26,17 @@ const Demo = () => {
         define the anonymous scroll timeline by adding <Code>.timeline</Code> to the progressbar.
       </Paragraph>
       <CodeBlock language="html">{progressBarDemo}</CodeBlock>
+      <CodeBlock language="css">{progressBarKeyframes}</CodeBlock>
       <ProgressBarDemo />
+      <Heading size={3}>Anonymous View Timeline</Heading>
+      <Paragraph>
+        This demo showcases how to set a simple progress bar just by adding CSS to the element
+        inside a scroller. We define the anonymous view timeline by adding{' '}
+        <Code>.timeline-view</Code> to the element.
+      </Paragraph>
+      <CodeBlock language="html">{appearDemo}</CodeBlock>
+      <CodeBlock language="css">{appearKeyframes}</CodeBlock>
+      <AppearDemo />
       <Heading size={3}>Range and Animation Timeline Name</Heading>
       <Paragraph>
         This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
@@ -29,6 +47,7 @@ const Demo = () => {
         the timeline duration.
       </Paragraph>
       <CodeBlock language="html">{rangeDemo}</CodeBlock>
+      <CodeBlock language="css">{rangeKeyframes}</CodeBlock>
       <RangeDemo />
       <Heading size={3}>Conclusion</Heading>
       <Paragraph>
