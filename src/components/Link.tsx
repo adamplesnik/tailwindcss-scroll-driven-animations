@@ -38,7 +38,13 @@ const Link = ({
       )}
       <span
         className={
-          (borderWidth === 'narrow' ? 'h-px' : borderWidth === 'none' ? 'hidden' : 'h-[2px]') +
+          (borderWidth === 'narrow'
+            ? 'h-px'
+            : borderWidth === 'none'
+              ? 'hidden'
+              : borderWidth === 'huge'
+                ? 'h-1'
+                : 'h-[2px]') +
           ' absolute -bottom-px left-0 w-full  max-w-0 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 ease-line group-hover:max-w-full'
         }
       ></span>
@@ -50,7 +56,7 @@ export interface LinkProps {
   children: PropsWithChildren
   href: string
   target: string
-  borderWidth?: undefined | 'narrow' | 'none'
+  borderWidth?: undefined | 'narrow' | 'none' | 'huge'
   className?: string
   Icon?: LucideIcon | undefined
   iconSize?: number | 16

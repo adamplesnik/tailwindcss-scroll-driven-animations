@@ -7,16 +7,16 @@ const MainTitle = () => {
     <>
       <Heading size={1}>
         Hello, I am Adam Plesník. This website serves as my application for the Tailwind Labs Design
-        Engineer position. It features the{' '}
+        Engineer position. It features the Scroll-driven Animations{' '}
         <Link
           href="https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
           target="_blank"
-          borderWidth="none"
+          borderWidth="huge"
           inline
         >
-          Scroll-driven Animations plugin
+          plugin
         </Link>{' '}
-        I&nbsp;wrote and published.
+        I&nbsp;created.
       </Heading>
       <Paragraph size={'small'} className={'text-zinc-600 dark:text-zinc-400'}>
         Bratislava, Slovakia,{' '}
