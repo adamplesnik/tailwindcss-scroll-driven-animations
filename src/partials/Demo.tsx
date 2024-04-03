@@ -4,7 +4,7 @@ import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
-import PluginDemo from '../components/PluginDemo'
+import Range from '../demos/Range'
 import { codeExampleDemo } from '../utils/codeExamples'
 
 const Demo = () => {
@@ -26,7 +26,7 @@ const Demo = () => {
         Scroll-driven animations are not yet supported by your browser. Use Chrome 115 or newer to
         see the demo working correctly.
       </div>
-      <PluginDemo />
+      <Range />
       <Paragraph>
         To better understand the impact of each utility class in the demo, take a look at its code
         below. This comparison will help you visualize how each class affects the animation. For a

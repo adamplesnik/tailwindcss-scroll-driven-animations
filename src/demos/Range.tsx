@@ -1,14 +1,9 @@
-import Code from './Code'
-
-const Skeleton = ({ width = '200px' }) => {
-  return (
-    <div style={{ width: width }} className="mb-2 h-6 rounded-full bg-gray-200 dark:bg-slate-700" />
-  )
-}
+import Code from '../components/Code'
+import Skeleton from '../components/Skeleton'
 
 const skeletonCollection = ['96%', '100%', '92%', '100%', '93%', '87%', '55%']
 
-const PluginDemo = () => {
+const Range = () => {
   return (
     <div className="mb-8 h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-300 bg-zinc-100/70 dark:border-zinc-700 dark:bg-black/10">
       <div className="text-sm scope/demo supports-animations:-mt-14 supports-animations:sm:-mt-8">
@@ -22,7 +17,7 @@ const PluginDemo = () => {
           <Code>.scope/demo</Code>
         </div>
         <div className="mx-4 mb-4 mt-2 rounded-lg border border-dashed border-fuchsia-300 p-8 dark:border-cyan-800">
-          <Skeleton></Skeleton>
+          <Skeleton />
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>
           <div className="my-8 flex items-center gap-4 view-timeline/demo">
@@ -46,4 +41,4 @@ const PluginDemo = () => {
   )
 }
 
-export default PluginDemo
+export default Range

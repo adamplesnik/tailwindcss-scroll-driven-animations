@@ -20,6 +20,7 @@ const DarkModeSwitch = () => {
       onClick={switchMode}
     >
       <motion.div
+        initial={{ y: !darkMode ? 0 : '-2rem' }}
         animate={{ y: !darkMode ? 0 : '-2rem' }}
         transition={{ ease: [0.65, 0.05, 0.17, 0.99], duration: 0.5, delay: 0.2 }}
         className="group flex flex-col"

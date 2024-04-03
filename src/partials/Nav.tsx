@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react'
+import { ArrowUpRight, Github } from 'lucide-react'
 import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
 
@@ -10,9 +10,11 @@ const Nav = () => {
         dark:border-b-slate-600/50 dark:bg-slate-800/60"
     >
       <div className="flex w-full max-w-screen-md items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
-        <HeaderNavAnchor href="#plugin">Plugin</HeaderNavAnchor>
-        <HeaderNavAnchor href="#demo">Demo</HeaderNavAnchor>
-        <HeaderNavAnchor href="#me">Me</HeaderNavAnchor>
+        <HeaderNavAnchor to="/">Plugin</HeaderNavAnchor>
+        <HeaderNavAnchor to="/usage">Usage and Demos</HeaderNavAnchor>
+        <HeaderNavAnchor to="https://adamplesnik.com" external>
+          Me <ArrowUpRight className="size-4 ml-2" />
+        </HeaderNavAnchor>
         <div className="flex-1" />
         <DarkModeSwitch />
         <a
