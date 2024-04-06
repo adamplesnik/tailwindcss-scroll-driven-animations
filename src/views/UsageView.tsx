@@ -17,7 +17,7 @@ const UsageView = () => {
           className="size-6 shrink-0 text-amber-500 dark:text-amber-600"
           strokeWidth="1"
         />
-        Scroll-driven animations are not yet supported by your browser. Use Chrome 115 or newer to
+        Scroll-driven animations are not yet supported by your browser. Use Chrome 116 or newer to
         see the demos working correctly.
       </div>
       <Usage />
