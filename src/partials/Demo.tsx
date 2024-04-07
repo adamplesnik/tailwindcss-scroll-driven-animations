@@ -20,7 +20,9 @@ const Demo = () => {
   return (
     <>
       <Heading size={2}>Demos</Heading>
-      <Heading size={3}>Anonymous Scroll Timeline</Heading>
+      <Heading size={3} id="timeline">
+        Anonymous Scroll Timeline
+      </Heading>
       <Paragraph>
         This demo showcases how to create a simple progress bar just by adding one utility class to
         the element. We define the anonymous scroll timeline by adding <Code>.timeline</Code> to the
@@ -29,7 +31,9 @@ const Demo = () => {
       <ProgressBarDemo />
       <CodeBlock language="html">{progressBarDemo}</CodeBlock>
       <CodeBlock language="css">{progressBarKeyframes}</CodeBlock>
-      <Heading size={3}>Anonymous View Timeline</Heading>
+      <Heading size={3} id="view-timeline">
+        Anonymous View Timeline
+      </Heading>
       <Paragraph>
         This demo showcases how to make the element appear after entering the view frame. We define
         the anonymous view timeline by adding <Code>.timeline-view</Code> to this element.
@@ -37,7 +41,9 @@ const Demo = () => {
       <AppearDemo />
       <CodeBlock language="html">{appearDemo}</CodeBlock>
       <CodeBlock language="css">{appearKeyframes}</CodeBlock>
-      <Heading size={3}>Range, Scope and Animation Timeline Name</Heading>
+      <Heading size={3} id="range">
+        Range, Scope and Animation Timeline Name
+      </Heading>
       <Paragraph>
         This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
         <Code>.view-timeline/navbar</Code> utility sets up the animation timeline, which is then

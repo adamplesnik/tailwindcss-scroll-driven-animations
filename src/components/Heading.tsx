@@ -1,13 +1,26 @@
+import { ArrowRight } from 'lucide-react'
 import { PropsWithChildren } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Heading = ({
   size = 1,
   className = '',
   children,
   id = '',
+  href = '',
 }: PropsWithChildren<TitleProps>) => {
   const defaultClasses = 'relative w-full font-semibold' + (className && ` ${className}`)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
+  const link = href ? (
+    <NavLink to={href} className="group flex gap-1 text-xs text-fuchsia-500 dark:text-cyan-500">
+      <span className="border-b border-b-transparent transition-colors group-hover:border-b-current">
+        Demo
+      </span>
+      <ArrowRight className="size-4" />
+    </NavLink>
+  ) : (
+    ''
+  )
   if (size === 1) {
     return (
       <h1 className={defaultClasses + ' py-4 text-3xl md:py-8'}>
@@ -24,9 +37,10 @@ const Heading = ({
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' pb-2 pt-4 text-xl'}>
+      <h3 className={defaultClasses + ' flex items-center gap-4 pb-2 pt-4 text-xl'}>
         {children}
         {anchor}
+        {link}
       </h3>
     )
   }
@@ -36,6 +50,7 @@ export interface TitleProps {
   children: PropsWithChildren
   size: 1 | 2 | 3
   className?: string
+  href?: string
   id?: string
 }
 

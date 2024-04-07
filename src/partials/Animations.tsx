@@ -39,7 +39,7 @@ const Animations = () => {
         </li>
       </ul>
 
-      <Heading size={3} id={'code'}>
+      <Heading size={3} id={'code'} href="/usage#timeline">
         Animation Timeline
       </Heading>
       <Paragraph>
@@ -58,7 +58,9 @@ const Animations = () => {
       >
         {codeExampleTimeline}
       </CodeBlock>
-      <Heading size={3}>Scroll and View Timeline</Heading>
+      <Heading size={3} href="/usage#view-timeline">
+        Scroll and View Timeline
+      </Heading>
       <Paragraph>
         Scroll and View timelines provide user with better control over the animations. Both{' '}
         <Code>.scroll-timeline</Code> and <Code>.view-timeline</Code> are meant to be used with
@@ -73,7 +75,9 @@ const Animations = () => {
       >
         {codeExampleView}
       </CodeBlock>
-      <Heading size={3}>Range</Heading>
+      <Heading size={3} href="/usage#range">
+        Range
+      </Heading>
       <Paragraph>
         Animation range controls start and end of an animation. Utility classes{' '}
         <Code>.range-start</Code> and <Code>.range-end</Code> can be used for setting the start and
@@ -88,7 +92,9 @@ const Animations = () => {
       >
         {codeExampleRange}
       </CodeBlock>
-      <Heading size={3}>Scope</Heading>
+      <Heading size={3} href="/usage#range">
+        Scope
+      </Heading>
       <Paragraph>
         Timeline scope allows to control animated elements outside the parent which defines the
         timeline. Utility <Code>.scope</Code> should be used with a modifier to define the timeline
