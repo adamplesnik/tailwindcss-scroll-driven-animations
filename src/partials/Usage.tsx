@@ -26,20 +26,28 @@ const viewTimelineClasses = [
 const Usage = () => {
   return (
     <div>
-      <Heading size={2}>Usage</Heading>
-      <Heading size={3}>Animation Timeline</Heading>
+      <Heading size={2} id="usage">
+        Usage
+      </Heading>
+      <Heading size={3} href="#timeline">
+        Animation Timeline
+      </Heading>
       <Paragraph>
         Utility class specifying the timeline that is used to control the progress of a CSS
         animation.
       </Paragraph>
       <UsageTable items={animationTimelineClasses} />
-      <Heading size={3}>Scroll Timeline</Heading>
+      <Heading size={3} href="#range">
+        Scroll Timeline
+      </Heading>
       <Paragraph>
         Utility class setting the named scroll progress timeline, which is set on a scrollable
         element.
       </Paragraph>
       <UsageTable items={scrollTimelineClasses} />
-      <Heading size={3}>View Timeline</Heading>
+      <Heading size={3} href="#range">
+        View Timeline
+      </Heading>
       <Paragraph>
         Utility class setting the named view progress timeline, which is set on a subject inside
         another scrollable element.

@@ -58,7 +58,7 @@ const Animations = () => {
       >
         {codeExampleTimeline}
       </CodeBlock>
-      <Heading size={3} href="/usage#view-timeline">
+      <Heading size={3} href="/usage#range">
         Scroll and View Timeline
       </Heading>
       <Paragraph>

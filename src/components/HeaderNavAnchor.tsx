@@ -12,8 +12,8 @@ const HeaderNavAnchor = ({
       to={href}
       className={({ isActive }) =>
         'flex items-center justify-center rounded-full px-2 text-sm font-medium transition-colors duration-200 md:min-w-12 ' +
-        'hover:bg-white/40 dark:hover:bg-slate-500/60 ' +
-        (isActive ? 'bg-white/30 dark:bg-slate-500/50 ' : '') +
+        'hover:bg-fuchsia-400/40 dark:hover:bg-slate-500/60 ' +
+        (isActive ? 'bg-fuchsia-400/30 dark:bg-slate-500/50 ' : '') +
         (className != '' ? ` ${className}` : '')
       }
       target={external ? '_blank' : ''}
