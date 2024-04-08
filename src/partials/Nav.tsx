@@ -11,9 +11,9 @@ const Nav = () => {
     >
       <div className="flex w-full max-w-screen-lg items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
         <HeaderNavAnchor to="/#plugin">Plugin</HeaderNavAnchor>
-        <HeaderNavAnchor to="/usage#usage">
-          <span className="sm:hidden">Usage</span>
-          <span className="hidden sm:inline">Usage and Demos</span>
+        <HeaderNavAnchor to="/docs#documentation">
+          <span className="sm:hidden">Docs</span>
+          <span className="hidden sm:inline">Documentation</span>
         </HeaderNavAnchor>
         <HeaderNavAnchor to="https://adamplesnik.com" external>
           Me <ArrowUpRight className="ml-2 size-4" />

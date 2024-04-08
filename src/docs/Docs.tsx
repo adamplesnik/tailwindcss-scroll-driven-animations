@@ -1,6 +1,6 @@
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
-import UsageTable from '../usage/UsageTable'
+import DocsTable from './DocsTable'
 
 const animationTimelineClasses = [
   { className: 'timeline', code: 'animation-timeline: scroll(y)' },
@@ -45,11 +45,11 @@ const viewTimelineClasses = [
   { className: 'view-timeline-block/{name}', code: 'view-timeline: --{name} block' },
 ]
 
-const Usage = () => {
+const Docs = () => {
   return (
     <div>
-      <Heading size={2} id="usage">
-        Usage
+      <Heading size={2} id="documentation">
+        Documentation
       </Heading>
       <Heading size={3} href="#timeline" hrefType="demo" id="documentation-animation-timeline">
         Animation Timeline
@@ -58,7 +58,7 @@ const Usage = () => {
         Utility class specifying the timeline that is used to control the progress of a CSS
         animation.
       </Paragraph>
-      <UsageTable items={animationTimelineClasses} />
+      <DocsTable items={animationTimelineClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scroll-timeline">
         Scroll Timeline
@@ -67,7 +67,7 @@ const Usage = () => {
         Utility class setting the named scroll progress timeline, which is set on a scrollable
         element.
       </Paragraph>
-      <UsageTable items={scrollTimelineClasses} />
+      <DocsTable items={scrollTimelineClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-view-timeline">
         View Timeline
@@ -76,7 +76,7 @@ const Usage = () => {
         Utility class setting the named view progress timeline, which is set on a subject inside
         another scrollable element.
       </Paragraph>
-      <UsageTable items={viewTimelineClasses} />
+      <DocsTable items={viewTimelineClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-range-start">
         Animation Range Start
@@ -85,7 +85,7 @@ const Usage = () => {
         Animation range start controls where along the timeline an animation will start. It is set
         on the animated element.
       </Paragraph>
-      <UsageTable items={rangeStartClasses} />
+      <DocsTable items={rangeStartClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-range-end">
         Animation Range End
@@ -94,7 +94,7 @@ const Usage = () => {
         Animation range end controls where along the timeline an animation will end. It is set on
         the animated element.
       </Paragraph>
-      <UsageTable items={rangeEndClasses} />
+      <DocsTable items={rangeEndClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
         Timeline Scope
@@ -102,9 +102,9 @@ const Usage = () => {
       <Paragraph>
         Timeline scope allows to control animations outside the element which defines the timeline.
       </Paragraph>
-      <UsageTable items={scopeClasses} />
+      <DocsTable items={scopeClasses} />
     </div>
   )
 }
 
-export default Usage
+export default Docs

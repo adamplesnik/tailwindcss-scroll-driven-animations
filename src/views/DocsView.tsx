@@ -2,9 +2,9 @@ import { Info, WandSparkles } from 'lucide-react'
 import Heading from '../components/Heading'
 import Page from '../layouts/Page'
 import Demo from '../partials/Demo'
-import Usage from '../partials/Usage'
+import Docs from '../docs/Docs'
 
-const UsageView = () => {
+const DocsView = () => {
   return (
     <Page>
       <Heading size={1}>How to Use This Plugin</Heading>
@@ -20,11 +20,11 @@ const UsageView = () => {
         Scroll-driven animations are not yet supported by your browser. Use Chrome 116 or newer to
         see the demos working correctly.
       </div>
-      <Usage />
+      <Docs />
 
       <Demo />
     </Page>
   )
 }
 
-export default UsageView
+export default DocsView
