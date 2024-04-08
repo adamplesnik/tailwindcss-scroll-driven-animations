@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
 import HomeView from './views/HomeView'
-import UsageView from './views/UsageView'
+import DocsView from './views/DocsView'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/usage',
-    element: <UsageView />,
+    element: <DocsView />,
+  },
+  {
+    path: '/docs',
+    element: <DocsView />,
   },
 ])
 

@@ -39,7 +39,7 @@ const Animations = () => {
         </li>
       </ul>
 
-      <Heading size={3} id={'code'} href="/usage#timeline">
+      <Heading size={3} id={'code'} href="/docs#documentation-animation-timeline">
         Animation Timeline
       </Heading>
       <Paragraph>
@@ -58,7 +58,7 @@ const Animations = () => {
       >
         {codeExampleTimeline}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/docs#documentation-scroll-timeline">
         Scroll and View Timeline
       </Heading>
       <Paragraph>
@@ -75,7 +75,7 @@ const Animations = () => {
       >
         {codeExampleView}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/docs#documentation-range-start">
         Range
       </Heading>
       <Paragraph>
@@ -92,13 +92,13 @@ const Animations = () => {
       >
         {codeExampleRange}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/docs#documentation-scope">
         Scope
       </Heading>
       <Paragraph>
-        Timeline scope allows to control animated elements outside the parent which defines the
-        timeline. Utility <Code>.scope</Code> should be used with a modifier to define the timeline
-        name set by <Code>.scroll-timeline</Code> or <Code>.view-timeline</Code>.
+        Timeline scope allows to control animations outside the element which defines the timeline.
+        Utility <Code>.scope</Code> should be used with a modifier to define the timeline name set
+        by <Code>.scroll-timeline</Code> or <Code>.view-timeline</Code>.
       </Paragraph>
       <CodeBlock
         Icon={Github}

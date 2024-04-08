@@ -1,4 +1,4 @@
-const UsageTableRow = ({ className, code }: UsageTableRowProps) => {
+const DocsTableRow = ({ className, code }: DocsTableRowProps) => {
   return (
     <div className="flex flex-col gap-1 font-mono text-sm sm:flex-row sm:gap-4">
       <div className="w-64 px-2 opacity-80">.{className}</div>
@@ -7,9 +7,9 @@ const UsageTableRow = ({ className, code }: UsageTableRowProps) => {
   )
 }
 
-export interface UsageTableRowProps {
+export interface DocsTableRowProps {
   className: string
   code: string
 }
 
-export default UsageTableRow
+export default DocsTableRow

@@ -1,7 +1,7 @@
 import Separator from '../components/Separator'
-import UsageTableRow from './UsageTableRow'
+import DocsTableRow from './DocsTableRow'
 
-const UsageTable = ({ items }: UsageTableProps) => {
+const DocsTable = ({ items }: DocsTableProps) => {
   return (
     <div className="mb-4 flex flex-col gap-2">
       <div className="flex gap-1 text-sm font-bold sm:gap-4">
@@ -12,7 +12,7 @@ const UsageTable = ({ items }: UsageTableProps) => {
       <Separator />
       {items.map((item, index) => (
         <>
-          <UsageTableRow className={item.className} code={item.code} key={index} />
+          <DocsTableRow className={item.className} code={item.code} key={index} />
           <Separator key={'sep' + index} />
         </>
       ))}
@@ -20,7 +20,7 @@ const UsageTable = ({ items }: UsageTableProps) => {
   )
 }
 
-export interface UsageTableProps {
+export interface DocsTableProps {
   items: Item[]
 }
 
@@ -29,4 +29,4 @@ export interface Item {
   code: string
 }
 
-export default UsageTable
+export default DocsTable
