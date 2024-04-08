@@ -3,6 +3,7 @@ import { ScrollRestoration } from 'react-router-dom'
 import PageBackground from '../components/PageBackground'
 import Nav from '../partials/Nav'
 import Footer from '../partials/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 function Page({ children }: PropsWithChildren<PageProps>) {
   return (
@@ -14,6 +15,7 @@ function Page({ children }: PropsWithChildren<PageProps>) {
         <Footer />
       </div>
       <ScrollRestoration />
+      <Analytics />
     </div>
   )
 }

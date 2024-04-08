@@ -19,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "framer-motion": "^11.0.24",
     "lucide-react": "^0.363.0",
     "prismjs": "^1.29.0",
