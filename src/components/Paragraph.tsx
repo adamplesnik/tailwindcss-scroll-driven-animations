@@ -8,7 +8,7 @@ const Paragraph = ({
   return (
     <p
       className={
-        'mb-4 w-full ' +
+        'mb-5 w-full ' +
         (size === 'regular'
           ? 'text-base leading-7'
           : size === 'large'
