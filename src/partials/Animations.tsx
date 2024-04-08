@@ -96,9 +96,9 @@ const Animations = () => {
         Scope
       </Heading>
       <Paragraph>
-        Timeline scope allows to control animated elements outside the parent which defines the
-        timeline. Utility <Code>.scope</Code> should be used with a modifier to define the timeline
-        name set by <Code>.scroll-timeline</Code> or <Code>.view-timeline</Code>.
+        Timeline scope allows to control animations outside the element which defines the timeline.
+        Utility <Code>.scope</Code> should be used with a modifier to define the timeline name set
+        by <Code>.scroll-timeline</Code> or <Code>.view-timeline</Code>.
       </Paragraph>
       <CodeBlock
         Icon={Github}
