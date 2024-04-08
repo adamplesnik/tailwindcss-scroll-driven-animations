@@ -8,15 +8,16 @@ const Heading = ({
   children,
   id = '',
   href = '',
+  hrefType = 'documentation',
 }: PropsWithChildren<TitleProps>) => {
   const defaultClasses = 'relative w-full font-semibold' + (className && ` ${className}`)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   const link = href ? (
     <NavLink to={href} className="group flex gap-1 text-xs text-fuchsia-500 dark:text-cyan-500">
       <span className="border-b border-b-transparent transition-colors group-hover:border-b-current">
-        Demo
+        {hrefType === 'documentation' ? 'Documentation' : 'Demo'}
       </span>
-      <ArrowRight className="size-4" />
+      <ArrowRight className={'size-4' + (hrefType === 'demo' ? ' rotate-90' : '')} />
     </NavLink>
   ) : (
     ''
@@ -51,6 +52,7 @@ export interface TitleProps {
   size: 1 | 2 | 3
   className?: string
   href?: string
+  hrefType?: 'documentation' | 'demo'
   id?: string
 }
 

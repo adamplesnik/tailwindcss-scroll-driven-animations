@@ -39,7 +39,7 @@ const Animations = () => {
         </li>
       </ul>
 
-      <Heading size={3} id={'code'} href="/usage#timeline">
+      <Heading size={3} id={'code'} href="/usage#documentation-animation-timeline">
         Animation Timeline
       </Heading>
       <Paragraph>
@@ -58,7 +58,7 @@ const Animations = () => {
       >
         {codeExampleTimeline}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/usage#documentation-scroll-timeline">
         Scroll and View Timeline
       </Heading>
       <Paragraph>
@@ -75,7 +75,7 @@ const Animations = () => {
       >
         {codeExampleView}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/usage#documentation-range-start">
         Range
       </Heading>
       <Paragraph>
@@ -92,7 +92,7 @@ const Animations = () => {
       >
         {codeExampleRange}
       </CodeBlock>
-      <Heading size={3} href="/usage#range">
+      <Heading size={3} href="/usage#documentation-scope">
         Scope
       </Heading>
       <Paragraph>

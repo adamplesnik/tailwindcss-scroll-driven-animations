@@ -51,7 +51,7 @@ const Usage = () => {
       <Heading size={2} id="usage">
         Usage
       </Heading>
-      <Heading size={3} href="#timeline">
+      <Heading size={3} href="#timeline" hrefType="demo" id="documentation-animation-timeline">
         Animation Timeline
       </Heading>
       <Paragraph>
@@ -59,7 +59,8 @@ const Usage = () => {
         animation.
       </Paragraph>
       <UsageTable items={animationTimelineClasses} />
-      <Heading size={3} href="#range">
+
+      <Heading size={3} href="#range" hrefType="demo" id="documentation-scroll-timeline">
         Scroll Timeline
       </Heading>
       <Paragraph>
@@ -67,7 +68,8 @@ const Usage = () => {
         element.
       </Paragraph>
       <UsageTable items={scrollTimelineClasses} />
-      <Heading size={3} href="#range">
+
+      <Heading size={3} href="#range" hrefType="demo" id="documentation-view-timeline">
         View Timeline
       </Heading>
       <Paragraph>
@@ -75,14 +77,8 @@ const Usage = () => {
         another scrollable element.
       </Paragraph>
       <UsageTable items={viewTimelineClasses} />
-      <Heading size={3} href="#range">
-        Timeline Scope
-      </Heading>
-      <Paragraph>
-        Timeline scope allows to control animations outside the element which defines the timeline.
-      </Paragraph>
-      <UsageTable items={scopeClasses} />
-      <Heading size={3} href="#range">
+
+      <Heading size={3} href="#range" hrefType="demo" id="documentation-range-start">
         Animation Range Start
       </Heading>
       <Paragraph>
@@ -90,7 +86,8 @@ const Usage = () => {
         on the animated element.
       </Paragraph>
       <UsageTable items={rangeStartClasses} />
-      <Heading size={3} href="#range">
+
+      <Heading size={3} href="#range" hrefType="demo" id="documentation-range-end">
         Animation Range End
       </Heading>
       <Paragraph>
@@ -98,6 +95,14 @@ const Usage = () => {
         the animated element.
       </Paragraph>
       <UsageTable items={rangeEndClasses} />
+
+      <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
+        Timeline Scope
+      </Heading>
+      <Paragraph>
+        Timeline scope allows to control animations outside the element which defines the timeline.
+      </Paragraph>
+      <UsageTable items={scopeClasses} />
     </div>
   )
 }
