@@ -1,6 +1,7 @@
 import { LucideIcon } from 'lucide-react'
 import Prism from 'prismjs'
 import { PropsWithChildren, useEffect } from 'react'
+import Link from './Link'
 
 const CodeBlock = ({
   children,
@@ -31,9 +32,9 @@ const CodeBlock = ({
           }
         >
           {Icon && <Icon size={14} strokeWidth={2} />}
-          {/* <Link href={linkHref} target={'_blank'} borderWidth={'narrow'}>
+          <Link href={linkHref} target={'_blank'} borderWidth={'narrow'}>
             {linkText ? linkText : linkHref}
-          </Link> */}
+          </Link>
         </div>
       )}
     </div>
