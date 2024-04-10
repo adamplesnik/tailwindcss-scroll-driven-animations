@@ -3,15 +3,15 @@ import Heading from '../components/Heading'
 import Page from '../layouts/Page'
 import Demo from '../partials/Demo'
 import Docs from '../docs/Docs'
+import Paragraph from '../components/Paragraph'
 
 const DocsView = () => {
   return (
     <Page>
-      <Heading size={1}>How to Use This Plugin</Heading>
-      <div className="mb-4 mt-8 flex items-center gap-4 rounded-lg border border-sky-300 bg-sky-100 px-4 py-3 text-sm  dark:border-sky-600 dark:bg-sky-700/30">
-        <Info className="size-6 shrink-0 text-sky-500 dark:text-sky-600" strokeWidth="1.5" />
-        Documentation is in progress.
-      </div>
+      <Heading size={1}>Scroll-driven Animations</Heading>
+      <Paragraph size="small" className="opacity-50">
+        Tailwind CSS Plugin
+      </Paragraph>
       <div className="mb-4 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm supports-no-animations:flex dark:border-amber-600 dark:bg-stone-700/30">
         <WandSparkles
           className="size-6 shrink-0 text-amber-500 dark:text-amber-600"
@@ -21,7 +21,6 @@ const DocsView = () => {
         see the demos working correctly.
       </div>
       <Docs />
-
       <Demo />
     </Page>
   )

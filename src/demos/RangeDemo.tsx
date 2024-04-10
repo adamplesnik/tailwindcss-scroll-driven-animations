@@ -10,7 +10,7 @@ const RangeDemo = () => {
   return (
     <DemoWrapper>
       <div className="text-sm scope/navbar supports-animations:-mt-14 supports-animations:sm:-mt-8">
-        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-sky-500/40 p-4 backdrop-blur timeline/navbar range-on-exit supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-fuchsia-300/60 ">
+        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 bg-sky-400/60 p-4 backdrop-blur timeline/navbar range-on-exit supports-animations:-translate-y-16 dark:bg-fuchsia-600/60 ">
           <Code>.animate...</Code>
           <Code>.timeline/navbar</Code>
           <Code>.range-on-exit</Code>
