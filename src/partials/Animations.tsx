@@ -85,7 +85,7 @@ const Animations = () => {
       <CodeBlock
         Icon={Github}
         linkHref={
-          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L57'
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L56'
         }
         linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
       >
