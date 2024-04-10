@@ -19,7 +19,7 @@ const rangeClasses = [
   { className: 'range-on-entry', code: 'animation-range: entry 0% entry 100%' },
   { className: 'range-on-exit', code: 'animation-range: exit 0% exit 100%' },
   {
-    className: 'range-on/{startValue},{endValue}',
+    className: 'range/{startValue},{endValue}',
     code: 'animation-range: cover {value} cover {endValue}',
   },
 ]
