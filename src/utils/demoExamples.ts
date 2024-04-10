@@ -8,9 +8,6 @@ export const progressBarDemo = `<div>
 </div>`
 
 export const progressBarKeyframes = `@keyframes scale-to-right {
-  from {
-    width: 0;
-  }
   to {
     width: 100%;
   }
@@ -19,7 +16,7 @@ export const progressBarKeyframes = `@keyframes scale-to-right {
 export const rangeDemo = `<div class="scope/navbar">
   <!-- The --navbar timeline has scope outside its defining element -->
   <div class="animate-translate-down timeline/navbar range-on-exit">
-    <!-- Navbar is shown when the controlling element starts to leave the frame -->
+    <!-- Navbar is shown when the controlling element leaves the frame -->
   </div>
   <div>
     ...
@@ -39,7 +36,7 @@ export const rangeKeyframes = `@keyframes translate-down {
 export const appearDemo = `<div>
   ...
   <div class="animate-appear timeline-view">
-    <!-- The element is controlled by its own anonymous view() timeline. -->
+    <!-- This element is controlled by its own anonymous view() timeline. -->
   </div>
   ...
 </div>`
@@ -59,5 +56,22 @@ export const appearKeyframes = `@keyframes appear {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}`
+
+export const multiRange = `<div class="scope/demo">
+  <!-- The --demo timeline has scope outside its defining element -->
+  <div class="animate-scale-to-right range-on-entry timeline/demo">
+    <!-- This element is controlled by the --demo timeline -->
+  </div>
+  ...
+  <div className="view-timeline/demo">
+    <!-- Controlling element -->
+  </div>
+</div>`
+
+export const multiRangeKeyframes = `@keyframes scale-to-right {
+  to {
+    width: 100%;
   }
 }`

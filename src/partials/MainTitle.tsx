@@ -18,7 +18,7 @@ const MainTitle = () => {
         </Link>{' '}
         I&nbsp;created.
       </Heading>
-      <Paragraph size={'small'} className={'text-zinc-600 dark:text-zinc-400'}>
+      <Paragraph size={'small'} className={'pb-12 pt-6 text-zinc-600 dark:text-zinc-400'}>
         Bratislava, Slovakia,{' '}
         <Link href="https://adamplesnik.com" target="_blank" borderWidth="narrow">
           adamplesnik.com

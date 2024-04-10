@@ -8,12 +8,12 @@ const skeletonCollection = ['96%', '100%', '92%', '100%', '93%', '87%', '55%']
 const ProgressBarDemo = () => {
   return (
     <DemoWrapper>
-      <div className="sticky top-0 z-10 flex w-full animate-scale-to-right gap-2 overflow-hidden rounded-md bg-sky-500/80 timeline dark:bg-fuchsia-500/80">
+      <div className="sticky top-0 z-10 flex w-0 animate-scale-to-right gap-2 overflow-hidden rounded-md bg-sky-500/80 timeline dark:bg-fuchsia-500/80">
         <Code>.animate-scale-to-right</Code> <Code>.timeline</Code>
       </div>
       <div className="px-4 sm:px-8">
         <DemoTriggerLine
-          className="mb-6"
+          className="mb-6 mt-4"
           percentage={0}
           explanation="scroll(y)"
           iconClassName="rotate-45"
@@ -28,7 +28,7 @@ const ProgressBarDemo = () => {
           <Skeleton width={width} key={key} />
         ))}
         <DemoTriggerLine
-          className="mt-6"
+          className="mb-6 mt-4"
           percentage={100}
           explanation="scroll(y)"
           iconClassName="-rotate-45"

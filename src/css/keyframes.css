@@ -43,9 +43,6 @@
 }
 
 @keyframes scale-to-right {
-  from {
-    width: 0;
-  }
   to {
     width: 100%;
   }

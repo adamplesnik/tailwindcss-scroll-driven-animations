@@ -24,25 +24,21 @@ const Heading = ({
   )
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' py-4 text-3xl font-semibold md:py-8'}>
+      <h1 className={defaultClasses + ' py-2 text-3xl font-semibold'}>
         {children}
         {anchor}
       </h1>
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-4 pt-12 text-4xl font-semibold has-[+h3]:pb-0'}>
+      <h2 className={defaultClasses + ' pb-4 pt-16 text-4xl font-semibold has-[+h3]:pb-0'}>
         {children}
         {anchor}
       </h2>
     )
   } else {
     return (
-      <h3
-        className={
-          defaultClasses + ' flex items-center gap-4 pb-4 pt-12 text-xl font-bold sm:pt-16'
-        }
-      >
+      <h3 className={defaultClasses + ' mt-2 flex items-center gap-4 pb-4 pt-16 text-xl font-bold'}>
         {children}
         {anchor}
         {link}

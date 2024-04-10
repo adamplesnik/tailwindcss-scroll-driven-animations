@@ -1,9 +1,8 @@
-import { BookText } from 'lucide-react'
 import Code from '../components/Code'
 import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
-import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
+import AppearDemo from '../demos/AppearDemo'
 import ProgressBarDemo from '../demos/ProgressBarDemo'
 import RangeDemo from '../demos/RangeDemo'
 import {
@@ -14,7 +13,6 @@ import {
   rangeDemo,
   rangeKeyframes,
 } from '../utils/demoExamples'
-import AppearDemo from '../demos/AppearDemo'
 
 const Demo = () => {
   return (
@@ -54,20 +52,6 @@ const Demo = () => {
       <RangeDemo />
       <CodeBlock language="html">{rangeDemo}</CodeBlock>
       <CodeBlock language="css">{rangeKeyframes}</CodeBlock>
-      <Heading size={3}>Conclusion</Heading>
-      <Paragraph>
-        To better understand the impact of each utility class in the demo, take a look at its code.
-        These comparisons will help you visualize how selected class affect the animations. For a
-        comprehensive overview of the topic, refer to the{' '}
-        <Link
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations"
-          Icon={BookText}
-          target="_blank"
-        >
-          MDN documentation
-        </Link>
-        .
-      </Paragraph>
     </>
   )
 }

@@ -75,7 +75,7 @@ const Animations = () => {
       >
         {codeExampleView}
       </CodeBlock>
-      <Heading size={3} href="/docs#documentation-range-start">
+      <Heading size={3} href="/docs#documentation-range">
         Range
       </Heading>
       <Paragraph>

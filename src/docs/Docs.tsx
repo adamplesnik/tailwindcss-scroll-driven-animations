@@ -1,6 +1,8 @@
+import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 import MultiRangeDemo from '../demos/MultiRangeDemo'
+import { multiRange, multiRangeKeyframes } from '../utils/demoExamples'
 import DocsTable from './DocsTable'
 
 const animationTimelineClasses = [
@@ -69,7 +71,7 @@ const Docs = () => {
         another scrollable element.
       </Paragraph>
       <DocsTable items={viewTimelineClasses} />
-      <Heading size={3} href="#range" hrefType="demo" id="documentation-range-start">
+      <Heading size={3} id="documentation-range">
         Animation Range
       </Heading>
       <Paragraph>
@@ -81,6 +83,8 @@ const Docs = () => {
         Scroll the container to see each how range utility class affects the animation.
       </Paragraph>
       <MultiRangeDemo />
+      <CodeBlock language="html">{multiRange}</CodeBlock>
+      <CodeBlock language="css">{multiRangeKeyframes}</CodeBlock>
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
         Timeline Scope
       </Heading>

@@ -22,11 +22,19 @@ const RangeDemo = () => {
           <Skeleton />
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>
-          <DemoTriggerLine percentage={0} explanation="The element starts leaving the frame" />
+          <DemoTriggerLine
+            percentage={0}
+            explanation="The element starts leaving the frame"
+            className="mt-8"
+          />
           <div className="w-full rounded p-4 view-timeline/navbar">
             <Code>.view-timeline/navbar</Code>
           </div>
-          <DemoTriggerLine percentage={100} explanation="The element leaves the frame" />
+          <DemoTriggerLine
+            percentage={100}
+            explanation="The element leaves the frame"
+            className="mb-8"
+          />
           <div className="mb-8">
             {skeletonCollection.map((width, key) => (
               <Skeleton width={width} key={key} />

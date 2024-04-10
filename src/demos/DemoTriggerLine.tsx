@@ -1,10 +1,12 @@
+import { addWithSpace } from '../utils/addWithSpace'
+
 const DemoTriggerLine = ({
   className = '',
   explanation = '',
   percentage = undefined,
 }: DemoTriggerLineProps) => {
   return (
-    <div className={'flex h-8 items-center' + (className ? ` ${className}` : '')}>
+    <div className={'flex items-center' + addWithSpace(className)}>
       <div className="h-0.5 min-w-4 flex-1 bg-fuchsia-500/50 dark:bg-cyan-500"></div>
       {percentage || explanation ? (
         <div className="flex items-center gap-1 px-4">
