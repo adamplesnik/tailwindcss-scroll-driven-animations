@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import { PropsWithChildren } from 'react'
 import { NavLink } from 'react-router-dom'
+import { addWithSpace } from '../utils/addWithSpace'
 
 const Heading = ({
   size = 1,
@@ -10,7 +11,8 @@ const Heading = ({
   href = '',
   hrefType = 'documentation',
 }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = 'relative w-full' + (className && ` ${className}`)
+  const defaultClasses =
+    'relative w-full text-zinc-900 dark:text-zinc-300' + addWithSpace(className)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   const link = href ? (
     <NavLink to={href} className="group flex gap-1 text-xs text-fuchsia-500 dark:text-cyan-500">
@@ -24,7 +26,7 @@ const Heading = ({
   )
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' py-2 text-3xl font-semibold'}>
+      <h1 className={defaultClasses + ' py-2 text-3xl font-semibold '}>
         {children}
         {anchor}
       </h1>

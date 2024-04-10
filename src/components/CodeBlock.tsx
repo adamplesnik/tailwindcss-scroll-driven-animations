@@ -17,7 +17,7 @@ const CodeBlock = ({
   return (
     <div
       className={
-        'mb-4 rounded-lg border border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
+        'mb-4 rounded-lg border border-zinc-300 bg-zinc-100 text-zinc-900 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
       }
     >
       <code
