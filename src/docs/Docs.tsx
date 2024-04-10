@@ -1,5 +1,6 @@
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
+import MultiRangeDemo from '../demos/MultiRangeDemo'
 import DocsTable from './DocsTable'
 
 const animationTimelineClasses = [
@@ -68,7 +69,6 @@ const Docs = () => {
         another scrollable element.
       </Paragraph>
       <DocsTable items={viewTimelineClasses} />
-
       <Heading size={3} href="#range" hrefType="demo" id="documentation-range-start">
         Animation Range
       </Heading>
@@ -77,7 +77,10 @@ const Docs = () => {
         on the animated element.
       </Paragraph>
       <DocsTable items={rangeClasses} />
-
+      <Paragraph size="small" className="pt-6">
+        Scroll the container to see each how range utility class affects the animation.
+      </Paragraph>
+      <MultiRangeDemo />
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
         Timeline Scope
       </Heading>

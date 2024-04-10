@@ -31,14 +31,18 @@ const Heading = ({
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-4 pt-12 text-4xl font-semibold'}>
+      <h2 className={defaultClasses + ' pb-4 pt-12 text-4xl font-semibold has-[+h3]:pb-0'}>
         {children}
         {anchor}
       </h2>
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' flex items-center gap-4 pb-4 pt-8 text-xl font-bold'}>
+      <h3
+        className={
+          defaultClasses + ' flex items-center gap-4 pb-4 pt-12 text-xl font-bold sm:pt-16'
+        }
+      >
         {children}
         {anchor}
         {link}

@@ -50,12 +50,12 @@ export const appearKeyframes = `@keyframes appear {
     transform: scale(0.5);
   }
 
-  33% {
+  40% {
     opacity: 1;
     transform: scale(1.1);
   }
 
-  50%,
+  60%,
   100% {
     opacity: 1;
     transform: scale(1);

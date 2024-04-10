@@ -10,12 +10,12 @@ const RangeDemo = () => {
   return (
     <DemoWrapper>
       <div className="text-sm scope/navbar supports-animations:-mt-14 supports-animations:sm:-mt-8">
-        <div className="range-on-exit sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 p-4 backdrop-blur timeline/navbar supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
+        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-sky-500/40 p-4 backdrop-blur timeline/navbar range-on-exit supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-fuchsia-300/60 ">
           <Code>.animate...</Code>
           <Code>.timeline/navbar</Code>
           <Code>.range-on-exit</Code>
         </div>
-        <div className="px-4 supports-no-animations:mt-2">
+        <div className="mt-4 px-4 sm:px-8">
           <Code>.scope/navbar</Code>
         </div>
         <DemoPlaceholderContent>
@@ -23,7 +23,7 @@ const RangeDemo = () => {
           <Skeleton width={'100%'}></Skeleton>
           <Skeleton width={'78%'}></Skeleton>
           <DemoTriggerLine percentage={0} explanation="The element starts leaving the frame" />
-          <div className="w-full rounded bg-sky-500/40 p-4 view-timeline/navbar dark:bg-fuchsia-300/60">
+          <div className="w-full rounded p-4 view-timeline/navbar">
             <Code>.view-timeline/navbar</Code>
           </div>
           <DemoTriggerLine percentage={100} explanation="The element leaves the frame" />
