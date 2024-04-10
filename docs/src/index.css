@@ -1,11 +1,6 @@
+@import 'css/keyframes.css';
 @import 'css/prism.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@keyframes appear {
-  to {
-    width: auto;
-  }
-}

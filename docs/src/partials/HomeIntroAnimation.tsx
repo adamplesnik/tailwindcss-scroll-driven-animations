@@ -25,7 +25,7 @@ const introAnimTSX = `{text.map((letter, index) => (
 const HomeIntroAnimation = () => {
   const text = Array.from('Scroll. Your next superpower.')
   return (
-    <div className="h-[1920px] w-full">
+    <div className="h-[1920px] w-full view-timeline/show-anim">
       <div className="sticky top-32">
         <div className="flex w-full font-bold text-3xl sm:text-7xl">
           {text.map((letter, index) => (
@@ -40,8 +40,15 @@ const HomeIntroAnimation = () => {
             </span>
           ))}
         </div>
-        <CodeBlock language="css">{introAnimCSS}</CodeBlock>
-        <CodeBlock language="tsx">{introAnimTSX}</CodeBlock>
+        <div className="animate-width h-4 bg-red-500 timeline/show-anim w-0 range-start-contain range-end-contain" />
+        <div className="animate-width h-4 bg-cyan-500 timeline/show-anim w-0 range-start-contain range-end-contain" />
+        <div className="animate-slide-from-left -translate-x-[2000px] timeline">
+          <span className="text-xl">Unleash the scroll-driven su</span>
+          <CodeBlock language="css">{introAnimCSS}</CodeBlock>
+        </div>
+        <div className="">
+          <CodeBlock language="tsx">{introAnimTSX}</CodeBlock>
+        </div>
       </div>
     </div>
   )

@@ -7,6 +7,8 @@ export default {
     extend: {
       animation: {
         appear: 'appear auto linear forwards',
+        'slide-from-left': 'slide-from-left auto linear forwards',
+        width: 'width auto linear forwards',
       },
     },
     supports: {
