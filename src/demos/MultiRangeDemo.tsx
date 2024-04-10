@@ -1,7 +1,6 @@
 import Code from '../components/Code'
 import DemoAnimationExampleRow from '../components/DemoAnimationExampleRow'
 import Skeleton from '../components/Skeleton'
-import DemoPlaceholderContent from '../demos/DemoPlaceholderContent'
 import DemoWrapper from '../demos/DemoWrapper'
 import DemoTriggerLine from './DemoTriggerLine'
 

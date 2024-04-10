@@ -1,6 +1,5 @@
 import Code from '../components/Code'
 import Skeleton from '../components/Skeleton'
-import DemoPlaceholderContent from './DemoPlaceholderContent'
 import DemoTriggerLine from './DemoTriggerLine'
 import DemoWrapper from './DemoWrapper'
 
