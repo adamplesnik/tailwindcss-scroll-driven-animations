@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "localforage": "^1.10.0",
+    "lucide-react": "^0.367.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +20,7 @@
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.1.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

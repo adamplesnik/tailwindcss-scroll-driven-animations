@@ -4,7 +4,15 @@ export default {
     files: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
   },
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        appear: 'appear auto linear forwards',
+      },
+    },
+    supports: {
+      animations: 'animation-timeline: scroll(y)',
+      'no-animations': 'not(animation-timeline: scroll(y))',
+    },
   },
-  plugins: [],
+  plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations')],
 }
