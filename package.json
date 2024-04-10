@@ -3,8 +3,12 @@
   "version": "0.1.1",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
-    "build": "swc ./src/index.js --out-dir ./dist"
+    "build": "swc ./src/index.js --out-dir ./dist",
+    "dev-docs": "npm run --workspace=docs dev"
   },
+  "workspaces": [
+    "docs"
+  ],
   "prettier": {
     "printWidth": 100,
     "semi": false,
