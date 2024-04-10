@@ -1,9 +1,9 @@
-import { Info, WandSparkles } from 'lucide-react'
+import { WandSparkles } from 'lucide-react'
 import Heading from '../components/Heading'
+import Paragraph from '../components/Paragraph'
+import Docs from '../docs/Docs'
 import Page from '../layouts/Page'
 import Demo from '../partials/Demo'
-import Docs from '../docs/Docs'
-import Paragraph from '../components/Paragraph'
 
 const DocsView = () => {
   return (
