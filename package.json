@@ -1,9 +1,9 @@
 {
   "name": "@adam.plesnik/tailwindcss-scroll-driven-animations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
-    "build": "swc ./src/index.js --out-dir ./dist"
+    "build": "swc ./src/index.ts --out-dir ./dist"
   },
   "prettier": {
     "printWidth": 100,
