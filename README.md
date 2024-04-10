@@ -28,7 +28,7 @@ module.exports = {
 The plugin provides utilities for a subset of CSS scroll-driven animation properties.
 
 - `animation-timeline`
-- `animation-range-start`, `animation-range-end`
+- `animation-range`
 - `scroll-timeline`, `view-timeline`
 - `timeline-scope`
 
@@ -42,7 +42,7 @@ Scroll and View timelines provide user with better control over the animations. 
 
 ### Range
 
-Animation range controls start and end of an animation. Utility classes `.range-start` and `.range-end` can be used for setting the start and the end of the range. They default to `entry` and `exit` respectively.
+Animation range controls start and end of an animation. Utility class `.range` offers various options along with a possibility to use length modifiers.
 
 ### Scope
 

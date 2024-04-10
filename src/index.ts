@@ -55,39 +55,18 @@ export = plugin(
 
     matchUtilities(
       {
-        'range-start': (value) => ({
-          animationRangeStart: value,
+        range: (value, { modifier }) => ({
+          animationRange: splitAndCombine(value, modifier),
         }),
       },
       {
         values: {
-          DEFAULT: 'entry',
-          exit: 'exit',
-          normal: 'normal',
-          contain: 'contain',
-          cover: 'cover',
-          'entry-crossing': 'entry-crossing',
-          'exit-crossing': 'exit-crossing',
+          DEFAULT: 'cover cover',
+          'on-entry': 'entry entry',
+          'on-exit': 'exit exit',
+          contain: 'contain contain',
         },
-      }
-    )
-
-    matchUtilities(
-      {
-        'range-end': (value) => ({
-          animationRangeEnd: value,
-        }),
-      },
-      {
-        values: {
-          DEFAULT: 'exit',
-          entry: 'entry',
-          normal: 'normal',
-          contain: 'contain',
-          cover: 'cover',
-          'entry-crossing': 'entry-crossing',
-          'exit-crossing': 'exit-crossing',
-        },
+        modifiers: 'any',
       }
     )
   },
@@ -102,3 +81,13 @@ export = plugin(
     },
   }
 )
+
+function splitAndCombine(values: string, modifiers: string | null) {
+  const defaultValueArray = ['0', '100%']
+  const valueArray = (values || '').split(' ')
+  const modifierArray = (modifiers || defaultValueArray.join(',')).split(',')
+
+  const combinedValues = [valueArray[0], modifierArray[0], valueArray[1], modifierArray[1]]
+
+  return combinedValues.join(' ')
+}
