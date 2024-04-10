@@ -34,7 +34,7 @@ const RangeDemo = () => {
         <DemoPlaceholderContent className="scope/range-demo">
           <div className="sticky top-12 border rounded-lg bg-zinc-400/20 backdrop-blur overflow-hidden">
             <DemoAnimationExampleRow
-              animations="range-start-contain range-end-contain"
+              animations="range-on-entry/10px,200px"
               bgColor="bg-pink-500"
               timeline="timeline/range-demo"
             />
