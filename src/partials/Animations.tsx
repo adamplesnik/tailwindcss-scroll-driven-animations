@@ -18,7 +18,7 @@ const Animations = () => {
         Plugin
       </Heading>
       <Paragraph>
-        The plugin provides utilities for a subset of CSS scroll-driven animation properties.
+        The plugin provides utilities for a subset of CSS scroll-driven animation properties:
       </Paragraph>
       <ul className="mb-4">
         <li>
@@ -31,7 +31,7 @@ const Animations = () => {
         </li>
         <li>
           <Minus className="inline" />
-          <Code>animation-range-start</Code>, <Code>animation-range-end</Code>
+          <Code>animation-range</Code>
         </li>
         <li>
           <Minus className="inline" />
@@ -79,9 +79,8 @@ const Animations = () => {
         Range
       </Heading>
       <Paragraph>
-        Animation range controls start and end of an animation. Utility classes{' '}
-        <Code>.range-start</Code> and <Code>.range-end</Code> can be used for setting the start and
-        the end of the range. They default to <Code>entry</Code> and <Code>exit</Code> respectively.
+        Animation range controls start and end of an animation. Utility class <Code>.range</Code>{' '}
+        offers multiple options with default value set to <Code>cover</Code>.
       </Paragraph>
       <CodeBlock
         Icon={Github}

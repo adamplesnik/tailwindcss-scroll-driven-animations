@@ -13,24 +13,15 @@ const animationTimelineClasses = [
 
 const scopeClasses = [{ className: 'scope/{name}', code: 'timeline-scope: --{name}' }]
 
-const rangeStartClasses = [
-  { className: 'range-start', code: 'animation-range-start: entry' },
-  { className: 'range-start-exit', code: 'animation-range-start: exit' },
-  { className: 'range-start-normal', code: 'animation-range-start: normal' },
-  { className: 'range-start-contain', code: 'animation-range-start: contain' },
-  { className: 'range-start-cover', code: 'animation-range-start: cover' },
-  { className: 'range-start-entry-crossing', code: 'animation-range-start: entry-crossing' },
-  { className: 'range-start-exit-crossing', code: 'animation-range-start: exit-crossing' },
-]
-
-const rangeEndClasses = [
-  { className: 'range-end', code: 'animation-range-end: exit' },
-  { className: 'range-end-entry', code: 'animation-range-end: entry' },
-  { className: 'range-end-normal', code: 'animation-range-end: normal' },
-  { className: 'range-end-contain', code: 'animation-range-end: contain' },
-  { className: 'range-end-cover', code: 'animation-range-end: cover' },
-  { className: 'range-end-entry-crossing', code: 'animation-range-end: entry-crossing' },
-  { className: 'range-end-exit-crossing', code: 'animation-range-end: exit-crossing' },
+const rangeClasses = [
+  { className: 'range', code: 'animation-range: cover 0% cover 100%' },
+  { className: 'range-contain', code: 'animation-range: contain 0% contain 100%' },
+  { className: 'range-on-entry', code: 'animation-range: entry 0% entry 100%' },
+  { className: 'range-on-exit', code: 'animation-range: exit 0% exit 100%' },
+  {
+    className: 'range-on/{startValue},{endValue}',
+    code: 'animation-range: cover {value} cover {endValue}',
+  },
 ]
 
 const scrollTimelineClasses = [
@@ -79,22 +70,13 @@ const Docs = () => {
       <DocsTable items={viewTimelineClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-range-start">
-        Animation Range Start
+        Animation Range
       </Heading>
       <Paragraph>
         Animation range start controls where along the timeline an animation will start. It is set
         on the animated element.
       </Paragraph>
-      <DocsTable items={rangeStartClasses} />
-
-      <Heading size={3} href="#range" hrefType="demo" id="documentation-range-end">
-        Animation Range End
-      </Heading>
-      <Paragraph>
-        Animation range end controls where along the timeline an animation will end. It is set on
-        the animated element.
-      </Paragraph>
-      <DocsTable items={rangeEndClasses} />
+      <DocsTable items={rangeClasses} />
 
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
         Timeline Scope

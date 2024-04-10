@@ -28,7 +28,7 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.1.0",
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.2.1",
     "@types/node": "^20.11.30",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.66",

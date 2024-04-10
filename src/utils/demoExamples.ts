@@ -18,7 +18,7 @@ export const progressBarKeyframes = `@keyframes scale-to-right {
 
 export const rangeDemo = `<div class="scope/navbar">
   <!-- The --navbar timeline has scope outside its defining element -->
-  <div class="animate-translate-down timeline/navbar range-start-exit-crossing range-end">
+  <div class="animate-translate-down timeline/navbar range-on-exit">
     <!-- Navbar is shown when the controlling element starts to leave the frame -->
   </div>
   <div>

@@ -10,11 +10,10 @@ const RangeDemo = () => {
   return (
     <DemoWrapper>
       <div className="text-sm scope/navbar supports-animations:-mt-14 supports-animations:sm:-mt-8">
-        <div className="sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 p-4 backdrop-blur timeline/navbar range-start-exit-crossing range-end supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
+        <div className="range-on-exit sticky top-0 z-10 flex animate-translate-down flex-wrap gap-1 border-b border-b-zinc-300 bg-white/20 p-4 backdrop-blur timeline/navbar supports-animations:-translate-y-16 dark:border-b-zinc-600 dark:bg-slate-800/60">
           <Code>.animate...</Code>
           <Code>.timeline/navbar</Code>
-          <Code>.range-start-exit-crossing</Code>
-          <Code>.range-end</Code>
+          <Code>.range-on-exit</Code>
         </div>
         <div className="px-4 supports-no-animations:mt-2">
           <Code>.scope/navbar</Code>
