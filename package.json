@@ -3,8 +3,8 @@
   "version": "0.2.1",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
-    "build": "swc ./src/index.ts --out-dir ./dist",
-    "dev-docs": "npm run --workspace=docs dev"
+    "dev-docs": "npm run --workspace=docs dev",
+    "build": "swc ./src/index.ts --out-dir ./dist"
   },
   "workspaces": [
     "docs"
