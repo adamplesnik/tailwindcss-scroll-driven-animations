@@ -1,0 +1,27 @@
+.token .language-javascript {
+  @apply text-gray-950 dark:text-zinc-300;
+}
+
+.function,
+.tag,
+.atrule {
+  @apply text-fuchsia-700 dark:text-fuchsia-300;
+}
+
+.literal-property,
+.constant,
+.string-property,
+.attr-value,
+.property {
+  @apply text-sky-700 dark:text-sky-300;
+}
+
+.operator,
+.comment,
+.attr-name {
+  @apply opacity-60;
+}
+
+.punctuation {
+  @apply opacity-40;
+}
