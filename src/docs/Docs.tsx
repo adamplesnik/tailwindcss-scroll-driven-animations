@@ -3,7 +3,8 @@ import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 import MultiRangeDemo from '../demos/MultiRangeDemo'
-import { multiRange, multiRangeKeyframes } from '../utils/demoExamples'
+import SupportsDemo from '../demos/SupportsDemo'
+import { multiRange, multiRangeKeyframes, supports } from '../utils/demoExamples'
 import DocsTable from './DocsTable'
 
 const animationTimelineClasses = [
@@ -101,10 +102,12 @@ const Docs = () => {
         Fallback Styling
       </Heading>
       <Paragraph>
-        Use the modifier <Code>no-animations:</Code> to apply fallback styling in browsers which do
+        Use the <Code>no-animations</Code> modifier to apply fallback styling in browsers which do
         not support scroll-driven animations yet.
       </Paragraph>
-      <DocsTable items={supportsClasses} />
+      <DocsTable items={supportsClasses} noDots />
+      <SupportsDemo />
+      <CodeBlock language="html">{supports}</CodeBlock>
     </div>
   )
 }

@@ -75,3 +75,10 @@ export const multiRangeKeyframes = `@keyframes scale-to-right {
     width: 100%;
   }
 }`
+
+export const supports = `<div>
+  <div class="animate-translate-down timeline -translate-y-20 no-animations:translate-y-0">
+    <!-- This element falls back to translate-y-0 -->
+  </div>
+  ...   
+</div>`

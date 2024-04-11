@@ -9,7 +9,7 @@ const ProgressBarDemo = () => {
   return (
     <DemoWrapper>
       <div className="sticky top-0 z-10 flex w-0 animate-scale-to-right gap-2 overflow-hidden rounded-md bg-sky-500/80 timeline dark:bg-fuchsia-500/80">
-        <Code>.animate-scale-to-right</Code> <Code>.timeline</Code>
+        <Code>animate-scale-to-right</Code> <Code>timeline</Code>
       </div>
       <div className="px-4 sm:px-8">
         <DemoTriggerLine

@@ -1,7 +1,7 @@
 import Separator from '../components/Separator'
 import DocsTableRow from './DocsTableRow'
 
-const DocsTable = ({ items }: DocsTableProps) => {
+const DocsTable = ({ items, noDots = false }: DocsTableProps) => {
   return (
     <div className="flex flex-col gap-2 py-2">
       <div className="flex gap-1 text-xs font-bold sm:gap-4">
@@ -12,7 +12,7 @@ const DocsTable = ({ items }: DocsTableProps) => {
       <Separator />
       {items.map((item, index) => (
         <>
-          <DocsTableRow className={item.className} code={item.code} key={index} />
+          <DocsTableRow className={item.className} code={item.code} key={index} noDots={noDots} />
           <Separator key={'sep' + index} />
         </>
       ))}
@@ -22,6 +22,7 @@ const DocsTable = ({ items }: DocsTableProps) => {
 
 export interface DocsTableProps {
   items: Item[]
+  noDots?: boolean
 }
 
 export interface Item {

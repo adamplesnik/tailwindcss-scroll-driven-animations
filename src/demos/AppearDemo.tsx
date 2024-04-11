@@ -28,7 +28,7 @@ const AppearDemo = () => {
       </div>
       <DemoTriggerLine percentage={0} explanation="The element enters the frame" />
       <div className="flex h-24 w-full animate-appear flex-wrap items-center gap-x-4 gap-y-1 rounded bg-sky-500/40 p-4 timeline-view dark:bg-fuchsia-300/60">
-        <Code>.animate-appear</Code> <Code>.timeline-view</Code>
+        <Code>animate-appear</Code> <Code>timeline-view</Code>
       </div>
       <DemoTriggerLine percentage={100} explanation="The element leaves the frame" />
       <div className="my-8">

@@ -7,7 +7,7 @@ const DemoAnimationExampleRow = ({ animations, timeline }: DemoAnimationExampleR
     <div className="flex items-center gap-2 sm:flex-col sm:items-start">
       <div className="w-36 flex-shrink-0">
         {animationClasses.map((animation) => (
-          <Code key={animation}>.{animation}</Code>
+          <Code key={animation}>{animation}</Code>
         ))}
       </div>
       <div className="relative w-full flex-1 rounded-full bg-slate-300/40 text-sm sm:flex-none dark:bg-slate-300/20">

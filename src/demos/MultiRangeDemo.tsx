@@ -35,7 +35,7 @@ const MultiRangeDemo = () => {
         </div>
         <DemoTriggerLine />
         <div className="px-2 py-4 view-timeline/demo sm:px-4">
-          <Code>.view-timeline/demo</Code>
+          <Code>view-timeline/demo</Code>
         </div>
         <DemoTriggerLine />
         <div className="py-8">
