@@ -105,7 +105,7 @@ const Docs = () => {
         Use the <Code>no-animations</Code> modifier to apply fallback styling in browsers which do
         not support scroll-driven animations yet.
       </Paragraph>
-      <DocsTable items={supportsClasses} noDots />
+      <DocsTable items={supportsClasses} />
       <SupportsDemo />
       <CodeBlock language="html">{supports}</CodeBlock>
     </div>
