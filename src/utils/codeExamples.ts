@@ -41,7 +41,4 @@ export const codeExampleScope = `scope: (value, { modifier }) => ({
   timelineScope: \`--\${modifier}\`,
 }),`
 
-export const codeExampleSupports = `supports: {
-  animations: 'animation-timeline: scroll(y)',
-  'no-animations': 'not(animation-timeline: scroll(y))',
-}`
+export const codeExampleSupports = `addVariant('no-animations', '@supports not (animation-range: cover)')`

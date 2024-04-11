@@ -12,7 +12,7 @@ const DocsView = () => {
       <Paragraph size="small" className="opacity-50">
         Tailwind CSS Plugin
       </Paragraph>
-      <div className="mt-12 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm supports-no-animations:flex dark:border-amber-600 dark:bg-stone-700/30">
+      <div className="no-animations:flex mt-12 hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm dark:border-amber-600 dark:bg-stone-700/30">
         <WandSparkles
           className="size-6 shrink-0 text-amber-500 dark:text-amber-600"
           strokeWidth="1"

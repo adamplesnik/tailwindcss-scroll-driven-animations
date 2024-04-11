@@ -1,3 +1,4 @@
+import Code from '../components/Code'
 import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
@@ -37,6 +38,10 @@ const viewTimelineClasses = [
   { className: 'view-timeline/{name}', code: 'view-timeline: --{name} y' },
   { className: 'view-timeline-x/{name}', code: 'view-timeline: --{name} x' },
   { className: 'view-timeline-block/{name}', code: 'view-timeline: --{name} block' },
+]
+
+const supportsClasses = [
+  { className: 'no-animations:...', code: '@supports not (animation-range: cover) { ... }' },
 ]
 
 const Docs = () => {
@@ -92,6 +97,14 @@ const Docs = () => {
         Timeline scope allows to control animations outside the element which defines the timeline.
       </Paragraph>
       <DocsTable items={scopeClasses} />
+      <Heading size={3} id="documentation-fallback">
+        Fallback Styling
+      </Heading>
+      <Paragraph>
+        Use the modifier <Code>no-animations:</Code> to apply fallback styling in browsers which do
+        not support scroll-driven animations yet.
+      </Paragraph>
+      <DocsTable items={supportsClasses} />
     </div>
   )
 }

@@ -110,15 +110,16 @@ const Animations = () => {
       </CodeBlock>
       <Heading size={3}>Browser Support</Heading>
       <Paragraph>
-        Scroll-driven animations are not broadly supported yet. I added two <Code>@supports</Code>{' '}
-        rules to use them as modifiers for fallback styling.
+        Scroll-driven animations are not broadly supported yet. I decided to apply an
+        animation-first approach. Use a modifier <Code>no-animations</Code>
+        for fallback styling.
       </Paragraph>
       <CodeBlock
         Icon={Github}
         linkHref={
-          'https://github.com/adamplesnik/tailwind-job-application/blob/main/tailwind.config.js#L28'
+          'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L73'
         }
-        linkText={'tailwind-job-application/tailwind.config.js'}
+        linkText={'tailwindcss-scroll-driven-animations/src/index.ts'}
       >
         {codeExampleSupports}
       </CodeBlock>
