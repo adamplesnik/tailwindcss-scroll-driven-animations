@@ -108,11 +108,12 @@ const Animations = () => {
       >
         {codeExampleScope}
       </CodeBlock>
-      <Heading size={3}>Browser Support</Heading>
+      <Heading size={3} href="/docs#documentation-fallback" hrefType="documentation">
+        Fallback Styling
+      </Heading>
       <Paragraph>
         Scroll-driven animations are not broadly supported yet. I decided to apply an
-        animation-first approach. Use a modifier <Code>no-animations</Code>
-        for fallback styling.
+        animation-first approach. Use a modifier <Code>no-animations</Code> for fallback styling.
       </Paragraph>
       <CodeBlock
         Icon={Github}
