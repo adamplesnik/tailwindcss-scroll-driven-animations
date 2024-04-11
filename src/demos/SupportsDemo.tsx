@@ -26,7 +26,7 @@ const SupportsDemo = () => {
         <Code>animate...</Code>
         <Code>timeline</Code>
         <Code>-translate-y-20</Code>
-        <Code>no-animations:translate-0</Code>
+        <Code>no-animations:translate-y-0</Code>
       </div>
       <div className="no-animations:mt-0 -mt-12 p-4 sm:p-8">
         <Skeleton />
