@@ -50,4 +50,4 @@ Timeline scope allows to control animated elements outside the parent which defi
 
 ### Browser Support
 
-Scroll-driven animations are not broadly supported yet. Use `@supports` rules for fallback styling.
+Scroll-driven animations are not broadly supported yet. Use the `no-animations:...` variant for fallback styling.

@@ -1,7 +1,7 @@
 import plugin from 'tailwindcss/plugin'
 
 export = plugin(
-  function ({ matchUtilities, theme }) {
+  function ({ matchUtilities, addVariant, theme }) {
     matchUtilities(
       {
         timeline: (value, { modifier }) => ({
@@ -69,6 +69,8 @@ export = plugin(
         modifiers: 'any',
       }
     )
+
+    addVariant('no-animations', '@supports not (animation-range: cover)')
   },
 
   {
@@ -83,9 +85,8 @@ export = plugin(
 )
 
 function splitAndCombine(values: string, modifiers: string | null) {
-  const defaultValueArray = ['0', '100%']
   const valueArray = (values || '').split(' ')
-  const modifierArray = (modifiers || defaultValueArray.join(',')).split(',')
+  const modifierArray = (modifiers || ['0,100%'].join(',')).split(',')
 
   const combinedValues = [valueArray[0], modifierArray[0], valueArray[1], modifierArray[1]]
 
