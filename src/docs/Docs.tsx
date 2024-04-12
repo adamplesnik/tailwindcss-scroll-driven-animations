@@ -4,7 +4,15 @@ import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 import MultiRangeDemo from '../demos/MultiRangeDemo'
 import SupportsDemo from '../demos/SupportsDemo'
-import { multiRange, multiRangeKeyframes, supports } from '../utils/demoExamples'
+import TimelineOverrideDemo from '../demos/TimelineOverrideDemo'
+import {
+  keyframes101,
+  keyframes102,
+  keyframes103,
+  multiRange,
+  multiRangeKeyframes,
+  supports,
+} from '../utils/demoExamples'
 import DocsTable from './DocsTable'
 
 const animationTimelineClasses = [
@@ -51,6 +59,25 @@ const Docs = () => {
       <Heading size={2} id="documentation">
         Documentation
       </Heading>
+      <Heading size={3} id="documentation-101">
+        How to Make Your CSS Animation Scroll-driven
+      </Heading>
+      <Paragraph>
+        CSS animations consist of two components, a set of keyframes and a style describing the
+        animation. Let's declare a simple <Code>@opacity</Code> keyframe set and apply it to an
+        element we want to control by a scroll timeline.
+      </Paragraph>
+      <CodeBlock language="css">{keyframes101}</CodeBlock>
+      <CodeBlock language="html">{keyframes102}</CodeBlock>
+      <Paragraph>
+        To effectively control the animation, make sure to declare the timeline in the code after
+        the animation. By default, the shorthand <Code>animation</Code> property sets the{' '}
+        <Code>animation-timeline: auto</Code> unless set otherwise. However, using this plugin and
+        Tailwind CSS animations ensures that the declaration order is correct.
+      </Paragraph>
+      <CodeBlock language="css">{keyframes103}</CodeBlock>
+      <Paragraph>Scroll the container.</Paragraph>
+      <TimelineOverrideDemo />
       <Heading size={3} href="#timeline" hrefType="demo" id="documentation-animation-timeline">
         Animation Timeline
       </Heading>
@@ -59,7 +86,6 @@ const Docs = () => {
         animation.
       </Paragraph>
       <DocsTable items={animationTimelineClasses} />
-
       <Heading size={3} href="#range" hrefType="demo" id="documentation-scroll-timeline">
         Scroll Timeline
       </Heading>
@@ -68,7 +94,6 @@ const Docs = () => {
         element.
       </Paragraph>
       <DocsTable items={scrollTimelineClasses} />
-
       <Heading size={3} href="#range" hrefType="demo" id="documentation-view-timeline">
         View Timeline
       </Heading>
@@ -85,7 +110,7 @@ const Docs = () => {
         on the animated element.
       </Paragraph>
       <DocsTable items={rangeClasses} />
-      <Paragraph size="small" className="pt-6">
+      <Paragraph className="pt-6">
         Scroll the container to see each how range utility class affects the animation.
       </Paragraph>
       <MultiRangeDemo />

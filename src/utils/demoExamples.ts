@@ -82,3 +82,29 @@ export const supports = `<div>
   </div>
   ...   
 </div>`
+
+export const keyframes101 = `@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}`
+
+export const keyframes102 = `<div class="animate-opacity timeline">
+  <!-- The animation should be controlled by the timeline. -->
+</div>`
+
+export const keyframes103 = `
+.timeline { /* This timeline would be overriden */
+  animation-timeline: scroll(y);
+}
+
+.animate-opacity {
+  animation: opacity 8s ease-in-out both;
+}
+
+.timeline { /* This is the correct order */
+  animation-timeline: scroll(y);
+}`

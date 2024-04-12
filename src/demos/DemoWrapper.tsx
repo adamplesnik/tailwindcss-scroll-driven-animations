@@ -26,9 +26,8 @@ const DemoWrapper = ({
         addWithSpace(className)
       }
     >
-      {children}
       {actionButton && (
-        <div className="absolute right-3 top-3">
+        <div className="sticky top-0 z-10 -mb-10 flex justify-end pr-2 pt-2">
           <ActionButton
             Icon={Repeat}
             IconOnClick={StepForward}
@@ -37,6 +36,7 @@ const DemoWrapper = ({
           />
         </div>
       )}
+      {children}
     </div>
   )
 }
