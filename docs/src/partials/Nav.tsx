@@ -5,9 +5,9 @@ import CenterLayout from '../layouts/CenterLayout.tsx'
 
 const Nav = () => {
   return (
-    <div className="sticky top-0 z-50 border-b border-b-slate-200/50 bg-white/20 text-zinc-800 shadow-lg backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-slate-800/60 dark:text-zinc-300">
-      <CenterLayout className="flex items-stretch gap-2">
-        <span>scrollmations</span>
+    <div className="sticky top-0 z-50 border-b border-b-slate-200/50 bg-white/20 text-zinc-800 shadow-lg backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-zinc-900/60 dark:text-zinc-300">
+      <CenterLayout className="flex items-center gap-2">
+        <span className="text-sm font-semibold">scrollmations</span>
         <NavLink to="/#plugin">Plugin</NavLink>
         <NavLink to="/docs#documentation">Docs</NavLink>
         <NavLink to="https://adamplesnik.com">

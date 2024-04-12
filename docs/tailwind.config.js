@@ -10,6 +10,8 @@ export default {
       animation: {
         gradient: 'gradient auto ease-in-out forwards',
         reveal: 'reveal auto ease-in-out forwards',
+        rise: 'rise auto cubic-bezier(0.57, 0.1, 0.46, 0.99) forwards',
+        'scale-y': 'scale-y auto ease-in forwards',
       },
     },
   },
