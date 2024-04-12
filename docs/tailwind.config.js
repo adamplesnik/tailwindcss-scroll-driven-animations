@@ -5,7 +5,11 @@ export default {
     files: ['./index.html', './src/**/*.{ts,tsx}'],
   },
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        gradient: 'gradient auto ease-in-out forwards',
+      },
+    },
   },
   plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations')],
 }

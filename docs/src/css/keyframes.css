@@ -1,0 +1,13 @@
+@keyframes gradient {
+  from {
+    background-size: 33% 100%;
+  }
+
+  50% {
+    background-size: 100% 100%;
+  }
+
+  to {
+    background-size: 400% 400%;
+  }
+}
