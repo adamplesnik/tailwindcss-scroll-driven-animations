@@ -1,6 +1,5 @@
 @keyframes gradient {
   from {
-    opacity: 0;
     background-size: 33% 100%;
   }
   10% {

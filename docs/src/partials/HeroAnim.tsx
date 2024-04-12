@@ -1,8 +1,6 @@
 import { ArrowDown } from 'lucide-react'
 import ChartColumn from '../components/ChartColumn'
 import Code from '../components/Code'
-import CodeBlock from '../components/CodeBlock'
-import Paragraph from '../components/Paragraph'
 import TimelineMarker from '../components/TimelineMarker'
 import CenterLayout from '../layouts/CenterLayout'
 
@@ -19,13 +17,7 @@ const columns = [
 
 const gradient = `<div class="animate-gradient timeline range/0,2000px"></div>`
 const html = `<div class="animate-reveal timeline-view"></div>`
-const chart = `<div class="animate-rise timeline/chart range-on-entry/60px,320px"></div>`
-const css = `@keyframes reveal {    
-  50% {
-    opacity: 1;
-    transform: scale(3);
-  }
-}`
+const chart = `<div class="animate-rise timeline/chart range-on-entry/60px,80dvh"></div>`
 
 const HeroAnim = () => {
   return (
@@ -35,27 +27,41 @@ const HeroAnim = () => {
           <ArrowDown size={24} className="animate-bounce" />
         </div>
       </CenterLayout>
-      <div className="h-[2000px]">
-        <CenterLayout className="animate-gradient timeline range/0,2000px sticky top-40  bg-gradient-to-r from-violet-200/0 via-red-400/70 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-5xl font-bold text-transparent dark:via-red-600/70 sm:text-7xl md:text-9xl">
-          Scroll Superpower.
-        </CenterLayout>
-      </div>
+      <CenterLayout className="h-[2000px]">
+        <div className="relative h-full w-full">
+          <TimelineMarker
+            textStart="timeline"
+            textEnd="from 0"
+            className="absolute left-0 top-24 w-full"
+          />
+          <div className="animate-gradient no-animations:opacity-100 timeline range/0,2000px sticky top-40 bg-gradient-to-r from-violet-200/0 via-red-400/70 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-5xl font-bold text-transparent opacity-0 dark:via-red-600/70 sm:text-7xl md:text-9xl">
+            Scroll Superpower.
+          </div>
+          <TimelineMarker
+            textStart="timeline"
+            textEnd="to 2000px"
+            className="absolute left-0 bottom-8 w-full"
+          />
+        </div>
+      </CenterLayout>
       <CenterLayout>
-        <Code language="html" className="mx-auto mb-48 block w-fit">
+        <Code language="html" className="mx-auto mb-72 block w-fit">
           {gradient}
         </Code>
       </CenterLayout>
-      <div>
-        <div className="h-dvh sticky top-0  w-full bg-gradient-to-r from-slate-200/0 via-zinc-400/50 to-cyan-300/10">
-          <CenterLayout className="h-dvh relative flex flex-col justify-between px-4 py-14 sm:px-8">
+      <div className="mb-72">
+        <div className="h-dvh sticky top-0 w-full">
+          <CenterLayout className="h-dvh relative flex flex-col justify-between px-4 py-16 sm:px-8">
             <TimelineMarker textStart="timeline-view" textEnd={'100%'} />
+            <TimelineMarker textEnd={'75%'} />
             <TimelineMarker textEnd={'50%'} />
+            <TimelineMarker textEnd={'25%'} />
             <TimelineMarker textStart="timeline-view" textEnd={'0%'} />
           </CenterLayout>
         </div>
         <div className="min-h-dvh">
           <CenterLayout className="relative z-20">
-            <div className="animate-reveal timeline-view mx-auto w-fit text-center opacity-0">
+            <div className="animate-reveal timeline-view no-animations:opacity-100 mx-auto w-fit text-center opacity-0">
               <div className="text-md text-zinc-950 w-full font-medium dark:text-zinc-200 sm:text-lg md:text-xl">
                 'Luke, he is your father.'
               </div>
@@ -66,40 +72,35 @@ const HeroAnim = () => {
           </CenterLayout>
         </div>
       </div>
-      <div>
-        <div className="h-dvh scope/chart sticky top-0 mt-20 flex w-full items-center bg-gradient-to-t from-fuchsia-200/50 to-red-300/0">
+      <div className="mb-72">
+        <div className="h-dvh scope/chart sticky top-0 mt-20 flex w-full items-center">
           <CenterLayout className="h-dvh flex flex-col items-center justify-center px-20">
-            <div className="relative flex h-2/3 w-full items-center justify-between py-2.5 pl-20 pr-2">
+            <div className="relative flex h-2/3 w-full items-center justify-between py-2.5 pl-32 pr-20">
               {columns.map((column, i) => (
                 <ChartColumn className={column} key={i} />
               ))}
-              <TimelineMarker textStart="100%" className="absolute left-0 top-0 w-full" />
               <TimelineMarker
-                textStart="50%"
+                textStart="entry + 80dvh"
+                textEnd="100%"
+                className="absolute left-0 top-0 w-full"
+              />
+              <TimelineMarker
+                textEnd="50%"
                 className="top-50% absolute left-0 w-full -translate-y-1"
               />
-              <TimelineMarker textStart="0%" className="absolute left-0 bottom-0 w-full" />
+              <TimelineMarker
+                textStart="entry +60px"
+                textEnd="0%"
+                className="absolute left-0 bottom-0 w-full"
+              />
+              <TimelineMarker textStart="entry" className="absolute left-0 -bottom-12 w-full" />
             </div>
-            <Code className="view-timeline/chart mx-auto mt-12 block w-fit" language="html">
+            <Code className="view-timeline/chart mx-auto mt-14 block w-fit" language="html">
               {chart}
             </Code>
           </CenterLayout>
         </div>
         <div className="min-h-dvh"></div>
-      </div>
-      <div>
-        <CenterLayout>
-          <CodeBlock language="css" className="backdrop-blur-sm">
-            {css}
-          </CodeBlock>
-          <CodeBlock language="html" className="backdrop-blur-sm">
-            {html}
-          </CodeBlock>
-          <Paragraph>
-            Unofficial plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven
-            animations.
-          </Paragraph>
-        </CenterLayout>
       </div>
     </>
   )

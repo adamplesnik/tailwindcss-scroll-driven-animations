@@ -4,10 +4,10 @@ import CenterLayout from './CenterLayout'
 
 function Page({ children }: PropsWithChildren<PageProps>) {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <>
       <CenterLayout className="p-8">{children}</CenterLayout>
       <ScrollRestoration />
-    </div>
+    </>
   )
 }
 
