@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         gradient: 'gradient auto ease-in-out forwards',
+        reveal: 'reveal auto ease-in-out forwards',
       },
     },
   },

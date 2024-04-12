@@ -1,6 +1,10 @@
 @keyframes gradient {
   from {
+    opacity: 0;
     background-size: 33% 100%;
+  }
+  10% {
+    opacity: 1;
   }
 
   50% {
@@ -9,5 +13,12 @@
 
   to {
     background-size: 400% 400%;
+  }
+}
+
+@keyframes reveal {
+  50% {
+    opacity: 1;
+    transform: scale(3);
   }
 }

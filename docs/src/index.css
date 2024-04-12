@@ -1,4 +1,5 @@
 @import 'css/keyframes.css';
+@import 'css/prism.css';
 
 @tailwind base;
 @tailwind components;
