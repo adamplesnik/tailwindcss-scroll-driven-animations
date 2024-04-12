@@ -1,3 +1,4 @@
+import Code from '../components/Code'
 import CodeBlock from '../components/CodeBlock'
 import Paragraph from '../components/Paragraph'
 import TimelineMarker from '../components/TimelineMarker'
@@ -16,33 +17,47 @@ const css = `@keyframes reveal {
 const HeroAnim = () => {
   return (
     <>
+      <CenterLayout>
+        <div>Scroll down</div>
+      </CenterLayout>
       <div className="h-[2000px]">
-        <CenterLayout className="animate-gradient timeline range/0,2000px sticky top-40 bg-gradient-to-r from-violet-200/0 via-red-400/50 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-9xl font-bold text-transparent">
+        <CenterLayout className="animate-gradient timeline range/0,2000px sticky top-40 bg-gradient-to-r from-violet-200/0 via-red-400/50 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-center text-9xl font-bold text-transparent">
           Scroll Superpower.
         </CenterLayout>
       </div>
       <div>
-        <div className="h-svh sticky top-0 flex w-full flex-col justify-between bg-gradient-to-r from-slate-200/0 via-zinc-400/50 to-cyan-300/10 px-8 py-4">
-          <TimelineMarker number={100} text="End of the animation" />
-          <TimelineMarker number={50} />
-          <TimelineMarker number={0} text="Start of the animation" />
+        <div className="h-svh sticky top-0  w-full bg-gradient-to-r from-slate-200/0 via-zinc-400/50 to-cyan-300/10">
+          <CenterLayout className="h-svh relative flex flex-col justify-between px-8 py-14">
+            <TimelineMarker textStart="timeline-view" textEnd={'100%'} />
+            <TimelineMarker textEnd={'50%'} />
+            <TimelineMarker textStart="timeline-view" textEnd={'0%'} />
+          </CenterLayout>
         </div>
         <div className="min-h-svh">
           <CenterLayout className="relative z-20">
-            <div className="animate-reveal timeline-view mx-auto mb-24 w-fit rounded-lg p-8 text-center text-xl font-medium opacity-0">
-              'Luke, he is your father.'
+            <div className="animate-reveal timeline-view mx-auto w-fit text-center opacity-0">
+              <div className="text-xl font-medium">'Luke, he is your father.'</div>
             </div>
-            <CodeBlock language="css" className="backdrop-blur-sm">
-              {css}
-            </CodeBlock>
-            <CodeBlock language="html" className="backdrop-blur-sm">
+            <Code className="mx-auto mt-12 block w-fit" language="html">
               {html}
-            </CodeBlock>
+            </Code>
           </CenterLayout>
         </div>
       </div>
       <div>
+        <div className="h-svh sticky top-0 mt-20 w-full bg-gradient-to-r from-pink-200/0 via-red-400/50 to-cyan-300/10">
+          <CenterLayout className="h-svh">ho</CenterLayout>
+        </div>
+        <div className="min-h-svh"></div>
+      </div>
+      <div>
         <CenterLayout>
+          <CodeBlock language="css" className="backdrop-blur-sm">
+            {css}
+          </CodeBlock>
+          <CodeBlock language="html" className="backdrop-blur-sm">
+            {html}
+          </CodeBlock>
           <Paragraph>
             Unofficial plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven
             animations.

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'selector',
   content: {
     relative: true,
     files: ['./index.html', './src/**/*.{ts,tsx}'],
