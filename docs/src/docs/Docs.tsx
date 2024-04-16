@@ -1,3 +1,4 @@
+import { Minus } from 'lucide-react'
 import Code from '../components/Code'
 import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
@@ -59,6 +60,27 @@ const Docs = () => {
       <Heading size={2} id="documentation">
         Documentation
       </Heading>
+      <Paragraph>
+        The plugin provides utilities for a subset of CSS scroll-driven animation properties:
+      </Paragraph>
+      <ul className="mb-4">
+        <li>
+          <Minus className="inline" />
+          <Code>animation-timeline</Code>
+        </li>
+        <li>
+          <Minus className="inline" />
+          <Code>scroll-timeline</Code>, <Code>view-timeline</Code>
+        </li>
+        <li>
+          <Minus className="inline" />
+          <Code>animation-range</Code>
+        </li>
+        <li>
+          <Minus className="inline" />
+          <Code>timeline-scope</Code>
+        </li>
+      </ul>
       <Heading size={3} id="documentation-101">
         How to Make Your CSS Animation Scroll-driven
       </Heading>

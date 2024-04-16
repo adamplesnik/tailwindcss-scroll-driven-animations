@@ -2,22 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
-import HomeView from './views/HomeView'
 import DocsView from './views/DocsView'
+import TechView from './views/TechView'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomeView />,
-    errorElement: <HomeView />,
+    element: <DocsView />,
+    errorElement: <DocsView />,
   },
   {
-    path: '/usage',
-    element: <DocsView />,
-  },
-  {
-    path: '/docs',
-    element: <DocsView />,
+    path: '/tech',
+    element: <TechView />,
   },
 ])
 

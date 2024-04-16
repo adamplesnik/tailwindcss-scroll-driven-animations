@@ -2,7 +2,7 @@ import Page from '../layouts/Page.tsx'
 import Animations from '../partials/Animations.tsx'
 import MainTitle from '../partials/MainTitle.tsx'
 
-function HomeView() {
+function TechView() {
   return (
     <Page>
       <MainTitle />
@@ -11,4 +11,4 @@ function HomeView() {
   )
 }
 
-export default HomeView
+export default TechView

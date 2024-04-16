@@ -17,28 +17,6 @@ const Animations = () => {
       <Heading size={2} id={'plugin'}>
         Plugin
       </Heading>
-      <Paragraph>
-        The plugin provides utilities for a subset of CSS scroll-driven animation properties:
-      </Paragraph>
-      <ul className="mb-4">
-        <li>
-          <Minus className="inline" />
-          <Code>animation-timeline</Code>
-        </li>
-        <li>
-          <Minus className="inline" />
-          <Code>scroll-timeline</Code>, <Code>view-timeline</Code>
-        </li>
-        <li>
-          <Minus className="inline" />
-          <Code>animation-range</Code>
-        </li>
-        <li>
-          <Minus className="inline" />
-          <Code>timeline-scope</Code>
-        </li>
-      </ul>
-
       <Heading size={3} id={'code'} href="/docs#documentation-animation-timeline">
         Animation Timeline
       </Heading>
