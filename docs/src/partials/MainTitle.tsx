@@ -7,7 +7,7 @@ const MainTitle = () => {
     <>
       <Heading size={1}>Scroll-driven Animations for Tailwind CSS</Heading>
       <Paragraph size={'small'} className={'pb-12 pt-6 text-zinc-600 dark:text-zinc-400'}>
-        Bratislava, Slovakia,{' '}
+        Created by Adam Plesník, Bratislava, Slovakia,{' '}
         <Link href="https://adamplesnik.com" target="_blank" borderWidth="narrow">
           adamplesnik.com
         </Link>
