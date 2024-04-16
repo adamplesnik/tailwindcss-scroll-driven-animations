@@ -1,8 +1,6 @@
 import { Github } from 'lucide-react'
-import Code from '../components/Code.tsx'
 import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
-import Paragraph from '../components/Paragraph.tsx'
 import {
   codeExampleRange,
   codeExampleScope,
