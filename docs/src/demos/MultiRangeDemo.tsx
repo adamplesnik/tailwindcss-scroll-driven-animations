@@ -1,7 +1,7 @@
 import Code from '../components/Code'
 import DemoAnimationExampleRow from '../components/DemoAnimationExampleRow'
 import Skeleton from '../components/Skeleton'
-import DemoWrapper from '../demos/DemoWrapper'
+import DemoWrapper from './DemoWrapper'
 import DemoTriggerLine from './DemoTriggerLine'
 
 const skeletonCollection = [
