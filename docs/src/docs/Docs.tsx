@@ -5,16 +5,21 @@ import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 import MultiRangeDemo from '../demos/MultiRangeDemo'
 import SupportsDemo from '../demos/SupportsDemo'
-import TimelineOverrideDemo from '../demos/TimelineOverrideDemo'
 import {
-  keyframes101,
-  keyframes102,
-  keyframes103,
+  appearDemo,
+  appearKeyframes,
   multiRange,
   multiRangeKeyframes,
+  progressBarDemo,
+  progressBarKeyframes,
+  rangeDemo,
+  rangeKeyframes,
   supports,
 } from '../utils/demoExamples'
 import DocsTable from './DocsTable'
+import ProgressBarDemo from '../demos/ProgressBarDemo'
+import AppearDemo from '../demos/AppearDemo'
+import RangeDemo from '../demos/RangeDemo'
 
 const animationTimelineClasses = [
   { className: 'timeline', code: 'animation-timeline: scroll(y)' },
@@ -57,7 +62,7 @@ const supportsClasses = [
 const Docs = () => {
   return (
     <div>
-      <Heading size={2} id="documentation">
+      <Heading size={1} id="documentation">
         Documentation
       </Heading>
       <Paragraph>
@@ -81,34 +86,37 @@ const Docs = () => {
           <Code>timeline-scope</Code>
         </li>
       </ul>
-      <Heading size={3} id="documentation-101">
-        How to Make Your CSS Animation Scroll-driven
-      </Heading>
-      <Paragraph>
-        CSS animations consist of two components, a set of keyframes and a style describing the
-        animation. Let's declare a simple <Code>@opacity</Code> keyframe set and apply it to an
-        element we want to control by a scroll timeline.
-      </Paragraph>
-      <CodeBlock language="css">{keyframes101}</CodeBlock>
-      <CodeBlock language="html">{keyframes102}</CodeBlock>
-      <Paragraph>
-        To effectively control the animation, make sure to declare the timeline in the code after
-        the animation. By default, the shorthand <Code>animation</Code> property sets the{' '}
-        <Code>animation-timeline: auto</Code> unless set otherwise. However, using this plugin and
-        Tailwind CSS animations ensures that the declaration order is correct.
-      </Paragraph>
-      <CodeBlock language="css">{keyframes103}</CodeBlock>
-      <Paragraph>Scroll the container.</Paragraph>
-      <TimelineOverrideDemo />
-      <Heading size={3} href="#timeline" hrefType="demo" id="documentation-animation-timeline">
+
+      <Heading size={2} id="documentation-animation-timeline">
         Animation Timeline
       </Heading>
       <Paragraph>
-        Utility class specifying the timeline that is used to control the progress of a CSS
-        animation.
+        The single most impressive feature of scroll-driven animations is an anonymous animation
+        timeline. It allows to easily trigger anything just by scrolling the page. Use the{' '}
+        <Code>timeline</Code> utility which defaults to <Code>animation-timeline: scroll(y)</Code>{' '}
+        and also provides an option to set custom timeline name with a modifier.
       </Paragraph>
       <DocsTable items={animationTimelineClasses} />
-      <Heading size={3} href="#range" hrefType="demo" id="documentation-scroll-timeline">
+      <Heading size={3}>Anonymous Scroll Timeline Demo</Heading>
+      <Paragraph>
+        This demo showcases how to create a simple progress bar just by adding one utility class to
+        the element. We define the anonymous scroll timeline by adding <Code>timeline</Code> to the
+        progress bar.
+      </Paragraph>
+      <ProgressBarDemo />
+      <CodeBlock language="html">{progressBarDemo}</CodeBlock>
+      <CodeBlock language="css">{progressBarKeyframes}</CodeBlock>
+      <Heading size={3}>Anonymous View Timeline Demo</Heading>
+      <Paragraph>
+        This demo showcases how to make the element appear after entering the view frame. We define
+        the anonymous view timeline by adding <Code>timeline-view</Code> to this element.
+      </Paragraph>
+      <AppearDemo />
+      <CodeBlock language="html">{appearDemo}</CodeBlock>
+      <CodeBlock language="css">{appearKeyframes}</CodeBlock>
+
+      <Heading size={2}>Named Timelines</Heading>
+      <Heading size={3} id="documentation-scroll-timeline">
         Scroll Timeline
       </Heading>
       <Paragraph>
@@ -116,7 +124,7 @@ const Docs = () => {
         element.
       </Paragraph>
       <DocsTable items={scrollTimelineClasses} />
-      <Heading size={3} href="#range" hrefType="demo" id="documentation-view-timeline">
+      <Heading size={3} id="documentation-view-timeline">
         View Timeline
       </Heading>
       <Paragraph>
@@ -124,7 +132,7 @@ const Docs = () => {
         another scrollable element.
       </Paragraph>
       <DocsTable items={viewTimelineClasses} />
-      <Heading size={3} id="documentation-range">
+      <Heading size={2} id="documentation-range">
         Animation Range
       </Heading>
       <Paragraph>
@@ -132,20 +140,32 @@ const Docs = () => {
         on the animated element.
       </Paragraph>
       <DocsTable items={rangeClasses} />
-      <Paragraph className="pt-6">
+      <Heading size={3}>Animation Range Demo</Heading>
+      <Paragraph>
         Scroll the container to see each how range utility class affects the animation.
       </Paragraph>
       <MultiRangeDemo />
       <CodeBlock language="html">{multiRange}</CodeBlock>
       <CodeBlock language="css">{multiRangeKeyframes}</CodeBlock>
-      <Heading size={3} href="#range" hrefType="demo" id="documentation-scope">
+      <Heading size={2} id="documentation-scope">
         Timeline Scope
       </Heading>
       <Paragraph>
         Timeline scope allows to control animations outside the element which defines the timeline.
       </Paragraph>
       <DocsTable items={scopeClasses} />
-      <Heading size={3} id="documentation-fallback">
+      <Heading size={3}>Range, Scope and Animation Timeline Name Demo</Heading>
+      <Paragraph>
+        This demo showcases the usage of the plugin to reveal the navigation bar. The{' '}
+        <Code>view-timeline/navbar</Code> utility sets up the animation timeline, which is then
+        scoped out of the defining element by <Code>scope/navbar</Code>. The navigation bar is
+        controlled by this timeline with the <Code>timeline/navbar</Code> utility. Utility class{' '}
+        <Code>range-on-exit</Code> is set to limit the timeline duration.
+      </Paragraph>
+      <RangeDemo />
+      <CodeBlock language="html">{rangeDemo}</CodeBlock>
+      <CodeBlock language="css">{rangeKeyframes}</CodeBlock>
+      <Heading size={2} id="documentation-fallback">
         Fallback Styling
       </Heading>
       <Paragraph>
@@ -153,6 +173,7 @@ const Docs = () => {
         not support scroll-driven animations yet.
       </Paragraph>
       <DocsTable items={supportsClasses} />
+      <Heading size={3}>Fallback Demo</Heading>
       <SupportsDemo />
       <CodeBlock language="html">{supports}</CodeBlock>
     </div>
