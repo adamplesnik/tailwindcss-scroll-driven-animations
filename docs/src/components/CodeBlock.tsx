@@ -44,7 +44,7 @@ const CodeBlock = ({
 export interface CodeProps {
   children: PropsWithChildren
   Icon?: LucideIcon | undefined
-  language?: 'javascript' | 'css' | 'html'
+  language?: 'javascript' | 'css' | 'html' | 'bash'
   linkHref?: string | undefined
   linkText?: string | undefined
 }

@@ -23,6 +23,7 @@
     "@swc/cli": "^0.3.10",
     "@swc/core": "^1.4.11",
     "@types/jest": "^29.5.12",
+    "babel-plugin-prismjs": "^2.1.0",
     "prettier": "^3.2.5",
     "swcify": "^1.0.1",
     "tailwindcss": "^0.0.0-insiders.3ba51d1",

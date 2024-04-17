@@ -14,7 +14,9 @@ const Installation = () => {
     <div>
       <Heading size={2}>Installation</Heading>
       <Paragraph>Install the plugin from npm.</Paragraph>
-      <CodeBlock>npm install @adam.plesnik/tailwindcss-scroll-driven-animations</CodeBlock>
+      <CodeBlock language="bash">
+        npm install @adam.plesnik/tailwindcss-scroll-driven-animations
+      </CodeBlock>
       <Paragraph> Then add the plugin to your tailwind.config.js.</Paragraph>
       <CodeBlock>{plugin}</CodeBlock>
     </div>
