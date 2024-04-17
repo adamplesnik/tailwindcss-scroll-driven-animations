@@ -83,16 +83,13 @@ export const supports = `<div>
   ...   
 </div>`
 
-export const keyframes101 = `@keyframes opacity {
-  from {
-    opacity: 0;
-  }
+export const keyframes101 = `@keyframes translate-down {
   to {
-    opacity: 1;
+    transform: translateY(0);
   }
 }`
 
-export const keyframes102 = `<div class="animate-opacity timeline">
+export const keyframes102 = `<div class="animate-translate-down timeline">
   <!-- The animation should be controlled by the timeline. -->
 </div>`
 
@@ -101,8 +98,8 @@ export const keyframes103 = `
   animation-timeline: scroll(y);
 }
 
-.animate-opacity {
-  animation: opacity 8s ease-in-out both;
+.animate-translate-down {
+  animation: translate-down 3s cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards;
 }
 
 .timeline { /* This is the correct order */

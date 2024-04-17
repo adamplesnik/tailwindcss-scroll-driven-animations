@@ -22,8 +22,8 @@ const HowToView = () => {
       </Heading>
       <Paragraph>
         CSS animations consist of two components, a set of keyframes and a style describing the
-        animation. Let's declare a simple <Code>@opacity</Code> keyframe set and apply it to an
-        element we want to control by a scroll timeline.
+        animation. Let's declare a simple <Code>translate-down</Code> keyframe set and apply it to
+        an element we want to control by a scroll timeline.
       </Paragraph>
       <CodeBlock language="css">{keyframes101}</CodeBlock>
       <CodeBlock language="html">{keyframes102}</CodeBlock>
