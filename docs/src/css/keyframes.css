@@ -22,15 +22,6 @@
   }
 }
 
-@keyframes scale-y {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
 @keyframes rise {
   to {
     height: 100%;

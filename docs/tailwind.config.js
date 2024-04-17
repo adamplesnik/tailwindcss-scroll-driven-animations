@@ -21,9 +21,8 @@ module.exports = {
         'translate-up': 'translate-up auto ease-in-out forwards',
 
         gradient: 'gradient auto ease-in-out forwards',
-        reveal: 'reveal auto ease-in-out forwards',
+        reveal: 'reveal auto cubic-bezier(0.65, 0.05, 0.17, 0.99) forwards',
         rise: 'rise auto cubic-bezier(0.57, 0.1, 0.46, 0.99) forwards',
-        'scale-y': 'scale-y auto ease-in forwards',
       },
       transitionTimingFunction: {
         bounce: 'cubic-bezier(0.26, 0.53, 1, 0.63)',
