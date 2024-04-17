@@ -1,10 +1,11 @@
 {
   "name": "@adam.plesnik/tailwindcss-scroll-driven-animations",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
     "dev-docs": "npm run --workspace=docs dev",
-    "build": "swc ./src/index.ts --out-dir ./dist"
+    "build": "swc ./src/index.ts --out-dir ./dist",
+    "test": "vitest"
   },
   "workspaces": [
     "docs"
@@ -24,11 +25,13 @@
   "devDependencies": {
     "@swc/cli": "^0.3.10",
     "@swc/core": "^1.4.11",
+    "@types/jest": "^29.5.12",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "swcify": "^1.0.1",
     "tailwindcss": "^0.0.0-insiders.3ba51d1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "vitest": "^1.5.0"
   },
   "description": "A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.",
   "files": [

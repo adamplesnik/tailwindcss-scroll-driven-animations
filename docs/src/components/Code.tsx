@@ -1,15 +1,15 @@
-import Prism from 'prismjs'
-import { PropsWithChildren, useEffect } from 'react'
-import { addWithSpace } from '../utils/addWithSpace'
+import Prism from "prismjs";
+import { PropsWithChildren, useEffect } from "react";
+import { addWithSpace } from "../utils/addWithSpace";
 
 const Code = ({
   children,
-  language = 'css',
-  className = '',
+  language = "css",
+  className = "",
 }: PropsWithChildren<InlineCodeProps>) => {
   useEffect(() => {
-    Prism.highlightAll()
-  }, [])
+    Prism.highlightAll();
+  }, []);
   return (
     <code
       className={
@@ -19,13 +19,13 @@ const Code = ({
     >
       {children}
     </code>
-  )
-}
+  );
+};
 
 export interface InlineCodeProps {
-  children: PropsWithChildren
-  language?: 'javascript' | 'css' | 'html'
-  className?: string
+  children: PropsWithChildren;
+  language?: "javascript" | "css" | "html";
+  className?: string;
 }
 
-export default Code
+export default Code;

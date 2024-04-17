@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "tailwindcss-scroll-driven-animations-docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,15 +9,27 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
   "dependencies": {
-    "framer-motion": "^11.0.28",
-    "lucide-react": "^0.368.0",
+    "@vercel/analytics": "^1.2.2",
+    "framer-motion": "^11.0.24",
+    "lucide-react": "^0.363.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.2.5",
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.2.6",
+    "@types/node": "^20.11.30",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
@@ -29,7 +41,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
-    "react-router-dom": "^6.22.3",
+    "postcss-import": "^16.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
