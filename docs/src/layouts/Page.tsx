@@ -1,9 +1,8 @@
-import { Analytics } from "@vercel/analytics/react";
-import { PropsWithChildren } from "react";
-import { ScrollRestoration } from "react-router-dom";
-import PageBackground from "../components/PageBackground";
-import Footer from "../partials/Footer";
-import Nav from "../partials/Nav";
+import { PropsWithChildren } from 'react'
+import { ScrollRestoration } from 'react-router-dom'
+import PageBackground from '../components/PageBackground'
+import Footer from '../partials/Footer'
+import Nav from '../partials/Nav'
 
 function Page({ children }: PropsWithChildren<PageProps>) {
   return (
@@ -15,13 +14,12 @@ function Page({ children }: PropsWithChildren<PageProps>) {
         <Footer />
       </div>
       <ScrollRestoration />
-      <Analytics />
     </div>
-  );
+  )
 }
 
 export interface PageProps {
-  children: PropsWithChildren;
+  children: PropsWithChildren
 }
 
-export default Page;
+export default Page
