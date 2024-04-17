@@ -9,7 +9,7 @@ import {
   codeExampleView,
 } from '../utils/codeExamples.ts'
 
-const Animations = () => {
+const Tech = () => {
   return (
     <>
       <Heading size={1} id={'plugin'}>
@@ -79,4 +79,4 @@ const Animations = () => {
   )
 }
 
-export default Animations
+export default Tech

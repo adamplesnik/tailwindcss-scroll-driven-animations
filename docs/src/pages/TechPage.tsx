@@ -1,10 +1,10 @@
 import Page from '../layouts/Page.tsx'
-import Animations from '../partials/Animations.tsx'
+import Tech from '../partials/Tech.tsx'
 
 function TechPage() {
   return (
     <Page>
-      <Animations />
+      <Tech />
     </Page>
   )
 }
