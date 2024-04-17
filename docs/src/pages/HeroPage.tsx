@@ -2,7 +2,7 @@ import Page from '../layouts/Page.tsx'
 import HeroAnim from '../partials/HeroAnim.tsx'
 import Nav from '../partials/Nav.tsx'
 
-const HomePage = () => {
+const HeroPage = () => {
   return (
     <>
       <Nav />
@@ -12,4 +12,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HeroPage

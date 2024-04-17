@@ -8,7 +8,7 @@ import Installation from '../partials/Installation'
 import MainTitle from '../partials/MainTitle'
 import { keyframes101, keyframes102, keyframes103 } from '../utils/demoExamples'
 
-const HowToView = () => {
+const HowToPage = () => {
   return (
     <Page>
       <MainTitle />
@@ -40,4 +40,4 @@ const HowToView = () => {
   )
 }
 
-export default HowToView
+export default HowToPage

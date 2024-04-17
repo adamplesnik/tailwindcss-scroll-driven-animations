@@ -3,23 +3,28 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
-import DocsView from './views/DocsView'
-import HowToView from './views/HowToView'
-import TechView from './views/TechView'
+import DocsPage from './pages/DocsPage'
+import HeroPage from './pages/HeroPage'
+import HowToPage from './pages/HowToPage'
+import TechPage from './pages/TechPage'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HowToView />,
-    errorElement: <HowToView />,
+    element: <HowToPage />,
+    errorElement: <HowToPage />,
   },
   {
     path: '/docs',
-    element: <DocsView />,
+    element: <DocsPage />,
   },
   {
     path: '/tech',
-    element: <TechView />,
+    element: <TechPage />,
+  },
+  {
+    path: '/hero',
+    element: <HeroPage />,
   },
 ])
 

@@ -2,7 +2,7 @@ import { WandSparkles } from 'lucide-react'
 import Docs from '../docs/Docs'
 import Page from '../layouts/Page'
 
-const DocsView = () => {
+const DocsPage = () => {
   return (
     <Page>
       <div className="hidden gap-4 rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm no-animations:flex dark:border-amber-600 dark:bg-stone-700/30">
@@ -18,4 +18,4 @@ const DocsView = () => {
   )
 }
 
-export default DocsView
+export default DocsPage
