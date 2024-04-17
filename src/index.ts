@@ -1,7 +1,7 @@
 import plugin from 'tailwindcss/plugin'
 
 export = plugin(
-  function ({ matchUtilities, addVariant, theme }) {
+  function scrollDrivenAnimations({ matchUtilities, addVariant, theme }) {
     matchUtilities(
       {
         timeline: (value, { modifier }) => ({
@@ -86,7 +86,7 @@ export = plugin(
 
 function splitAndCombine(values: string, modifiers: string | null) {
   const valueArray = (values || '').split(' ')
-  const modifierArray = (modifiers || ['0,100%'].join(',')).split(',')
+  const modifierArray = (modifiers || ['0-100%'].join('-')).split('-')
 
   const combinedValues = [valueArray[0], modifierArray[0], valueArray[1], modifierArray[1]]
 
