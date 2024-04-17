@@ -1,7 +1,7 @@
 import plugin from 'tailwindcss/plugin'
 
 export = plugin(
-  function ({ matchUtilities, addVariant, theme }) {
+  function scrollDrivenAnimations({ matchUtilities, addVariant, theme }) {
     matchUtilities(
       {
         timeline: (value, { modifier }) => ({
