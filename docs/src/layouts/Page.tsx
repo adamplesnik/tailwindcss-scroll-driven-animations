@@ -3,16 +3,18 @@ import { ScrollRestoration } from 'react-router-dom'
 import PageBackground from '../components/PageBackground'
 import Footer from '../partials/Footer'
 import Nav from '../partials/Nav'
+import CenterLayout from './CenterLayout'
 
 function Page({ children }: PropsWithChildren<PageProps>) {
   return (
     <div className="flex flex-col items-center justify-center">
       <PageBackground />
       <Nav />
-      <div className="relative z-10 w-full max-w-screen-lg p-8 md:p-16 lg:p-20">
+      <CenterLayout className="pt-12">
         <div className="w-full">{children}</div>
         <Footer />
-      </div>
+      </CenterLayout>
+
       <ScrollRestoration />
     </div>
   )
