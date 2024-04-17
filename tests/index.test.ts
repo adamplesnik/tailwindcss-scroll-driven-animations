@@ -1,49 +1,23 @@
 import { expect, test } from 'vitest'
-import { css, html, run } from './utils'
+import { expectedCss } from './expect'
+import { run, strip } from './utils'
+import { contentToTest } from './content'
 
-test('Test', async () => {
+test('Test all util combinations and @support', async () => {
   let config = {
     content: [
       {
-        raw: html`
-          <div>
-            <div class="timeline"></div>
-            <div class="timeline-auto"></div>
-            <div class="timeline-none"></div>
-            <div class="timeline-scroll-x"></div>
-            <div class="timeline-view"></div>
-            <div class="timeline/test"></div>
-          </div>
-        `,
+        raw: contentToTest,
       },
     ],
     theme: {},
     corePlugins: { preflight: false },
   }
 
-  let input = `
+  let input = String.raw`
     @tailwind utilities;
   `
 
   const result = await run(input, config)
-  expect(result.css).toMatch(css`
-    .timeline {
-      animation-timeline: scroll(y);
-    }
-    .timeline-auto {
-      animation-timeline: auto;
-    }
-    .timeline-none {
-      animation-timeline: none;
-    }
-    .timeline-scroll-x {
-      animation-timeline: scroll(x);
-    }
-    .timeline-view {
-      animation-timeline: view();
-    }
-    .timeline\/test {
-      animation-timeline: --test;
-    }
-  `)
+  expect(strip(result.css)).toEqual(strip(expectedCss))
 })
