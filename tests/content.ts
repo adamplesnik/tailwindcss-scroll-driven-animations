@@ -27,10 +27,10 @@ export const contentToTest = String.raw`
   <div class="range-on-exit"></div>
   <div class="range-contain"></div>
 
-  <div class="range/10px-100px"></div>
-  <div class="range-on-entry/10px-100px"></div>
-  <div class="range-on-exit/10px-100px"></div>
-  <div class="range-contain/10px-100px"></div>
+  <div class="range/10px_100px"></div>
+  <div class="range-on-entry/10px_100px"></div>
+  <div class="range-on-exit/10px_100px"></div>
+  <div class="range-contain/10px_100px"></div>
 
   <div class="no-animations:px-0"></div>
 `

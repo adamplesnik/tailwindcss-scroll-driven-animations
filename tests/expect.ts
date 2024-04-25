@@ -62,22 +62,22 @@ export const expectedCss = String.raw`
 .range-contain {
   animation-range: contain 0 contain 100%
 }
-.range-contain\/10px-100px {
+.range-contain\/10px_100px {
   animation-range: contain 10px contain 100px
 }
 .range-on-entry {
   animation-range: entry 0 entry 100%
 }
-.range-on-entry\/10px-100px {
+.range-on-entry\/10px_100px {
   animation-range: entry 10px entry 100px
 }
 .range-on-exit {
   animation-range: exit 0 exit 100%
 }
-.range-on-exit\/10px-100px {
+.range-on-exit\/10px_100px {
   animation-range: exit 10px exit 100px
 }
-.range\/10px-100px {
+.range\/10px_100px {
   animation-range: cover 10px cover 100px
 }
 @supports not (animation-range: cover) {
