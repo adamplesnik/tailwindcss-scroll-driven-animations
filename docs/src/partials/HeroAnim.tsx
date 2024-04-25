@@ -34,13 +34,13 @@ const HeroAnim = () => {
             textEnd="from 0"
             className="absolute left-0 top-24 w-full"
           />
-          <div className="animate-gradient no-animations:opacity-100 timeline range/0,2000px sticky top-40 bg-gradient-to-r from-violet-200/0 via-red-400/70 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-5xl font-bold text-transparent opacity-0 dark:via-red-600/70 sm:text-7xl md:text-9xl">
+          <div className="sticky top-40 animate-gradient bg-gradient-to-r from-violet-200/0 via-red-400/70 to-cyan-300/0 bg-clip-text bg-no-repeat pb-12 text-5xl font-bold text-transparent opacity-0 timeline range/0,2000px no-animations:opacity-100 sm:text-7xl md:text-9xl dark:via-red-600/70">
             Scroll Superpower.
           </div>
           <TimelineMarker
             textStart="timeline"
             textEnd="to 2000px"
-            className="absolute left-0 bottom-8 w-full"
+            className="absolute bottom-8 left-0 w-full"
           />
         </div>
       </CenterLayout>
@@ -50,8 +50,8 @@ const HeroAnim = () => {
         </Code>
       </CenterLayout>
       <div className="mb-72">
-        <div className="h-dvh sticky top-0 w-full">
-          <CenterLayout className="h-dvh relative flex flex-col justify-between px-4 py-16 sm:px-8">
+        <div className="sticky top-0 h-dvh w-full">
+          <CenterLayout className="relative flex h-dvh flex-col justify-between px-4 py-16 sm:px-8">
             <TimelineMarker textStart="timeline-view" textEnd={'100%'} />
             <TimelineMarker textEnd={'75%'} />
             <TimelineMarker textEnd={'50%'} />
@@ -61,8 +61,8 @@ const HeroAnim = () => {
         </div>
         <div className="min-h-dvh">
           <CenterLayout className="relative z-20">
-            <div className="animate-reveal timeline-view no-animations:opacity-100 mx-auto w-fit text-center opacity-0">
-              <div className="text-md text-zinc-950 w-full font-medium dark:text-zinc-200 sm:text-lg md:text-xl">
+            <div className="mx-auto w-fit animate-reveal text-center opacity-0 timeline-view no-animations:opacity-100">
+              <div className="text-md w-full font-medium text-zinc-950 sm:text-lg md:text-xl dark:text-zinc-200">
                 'Luke, he is your father.'
               </div>
             </div>
@@ -73,8 +73,8 @@ const HeroAnim = () => {
         </div>
       </div>
       <div className="mb-72">
-        <div className="h-dvh scope/chart sticky top-0 mt-20 flex w-full items-center">
-          <CenterLayout className="h-dvh flex flex-col items-center justify-center px-20">
+        <div className="sticky top-0 mt-20 flex h-dvh w-full items-center scope/chart">
+          <CenterLayout className="flex h-dvh flex-col items-center justify-center px-20">
             <div className="relative flex h-2/3 w-full items-center justify-between py-2.5 pl-32 pr-20">
               {columns.map((column, i) => (
                 <ChartColumn className={column} key={i} />
@@ -91,11 +91,11 @@ const HeroAnim = () => {
               <TimelineMarker
                 textStart="entry +60px"
                 textEnd="0%"
-                className="absolute left-0 bottom-0 w-full"
+                className="absolute bottom-0 left-0 w-full"
               />
-              <TimelineMarker textStart="entry" className="absolute left-0 -bottom-12 w-full" />
+              <TimelineMarker textStart="entry" className="absolute -bottom-12 left-0 w-full" />
             </div>
-            <Code className="view-timeline/chart mx-auto mt-14 block w-fit" language="html">
+            <Code className="mx-auto mt-14 block w-fit view-timeline/chart" language="html">
               {chart}
             </Code>
           </CenterLayout>
