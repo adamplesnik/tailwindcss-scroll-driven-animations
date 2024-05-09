@@ -6,11 +6,14 @@ import Logo from '../components/Logo.tsx'
 
 const Nav = () => {
   return (
-    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center border-b border-b-slate-200/50 bg-white/20 text-zinc-800 shadow-lg backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-slate-800/60 dark:text-zinc-300">
-      <div className="flex w-full max-w-screen-lg items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
-        <NavLink className="mr-4 flex items-center gap-1 self-center text-sm font-semibold" to="/">
-          <Logo alt={2} />
-          scrolldriven.dev
+    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center bg-white/20 text-zinc-800 shadow-xl shadow-black/5 backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-slate-800/60 dark:text-zinc-300">
+      <div className="flex w-full max-w-screen-lg items-stretch gap-2 px-8 py-3 md:px-16 lg:px-20">
+        <NavLink
+          className="mr-2 flex items-center gap-1 self-center text-sm font-medium text-zinc-950 dark:text-zinc-50"
+          to="/"
+        >
+          <Logo />
+          <span className="mr-2 hidden sm:block">scrolldriven.dev</span>
         </NavLink>
         <HeaderNavAnchor to="/">How To</HeaderNavAnchor>
         <HeaderNavAnchor to="/docs">Docs</HeaderNavAnchor>
