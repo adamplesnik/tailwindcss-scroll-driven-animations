@@ -7,7 +7,7 @@ const HeaderNavAnchor = ({ children, to, className, external = false }: HeaderNa
     <NavLink
       to={to}
       className={({ isActive }) =>
-        'flex items-center justify-center text-sm font-medium text-zinc-900 transition-opacity duration-200 hover:opacity-100 dark:text-zinc-100 ' +
+        'flex items-center justify-center px-2 text-sm font-medium text-zinc-900 transition-opacity duration-200 hover:opacity-100 dark:text-zinc-100 ' +
         (isActive ? 'opacity-100 ' : 'opacity-70 ') +
         addWithSpace(className)
       }
