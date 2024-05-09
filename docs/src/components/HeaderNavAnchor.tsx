@@ -1,20 +1,15 @@
-import { PropsWithChildren } from 'react'
-import { NavLink } from 'react-router-dom'
+import { HTMLAttributes, PropsWithChildren } from 'react'
+import { NavLink, NavLinkProps } from 'react-router-dom'
+import { addWithSpace } from '../utils/addWithSpace'
 
-const HeaderNavAnchor = ({
-  children,
-  to: href,
-  className = '',
-  external = false,
-}: PropsWithChildren<HeaderNavAnchorProps>) => {
+const HeaderNavAnchor = ({ children, to, className, external = false }: HeaderNavAnchorProps) => {
   return (
     <NavLink
-      to={href}
+      to={to}
       className={({ isActive }) =>
-        'flex items-center justify-center rounded-full px-2 text-sm font-medium transition-colors duration-200 md:min-w-12 ' +
-        'hover:bg-fuchsia-400/40 dark:hover:bg-slate-500/60 ' +
-        (isActive ? 'bg-fuchsia-400/30 dark:bg-slate-500/50 ' : '') +
-        (className != '' ? ` ${className}` : '')
+        'flex items-center justify-center text-sm font-medium text-zinc-900 transition-opacity duration-200 hover:opacity-100 dark:text-zinc-100 ' +
+        (isActive ? 'opacity-100 ' : 'opacity-70 ') +
+        addWithSpace(className)
       }
       target={external ? '_blank' : ''}
     >
@@ -23,10 +18,10 @@ const HeaderNavAnchor = ({
   )
 }
 
-export interface HeaderNavAnchorProps {
+export type HeaderNavAnchorProps = {
   children: PropsWithChildren
   to: string
-  className?: string | undefined
   external?: boolean
-}
+} & HTMLAttributes<NavLinkProps>
+
 export default HeaderNavAnchor

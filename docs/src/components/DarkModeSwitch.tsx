@@ -16,17 +16,17 @@ const DarkModeSwitch = () => {
 
   return (
     <div
-      className="flex size-8 cursor-pointer flex-col overflow-hidden rounded-full transition-colors hover:bg-white/40 dark:hover:bg-slate-500/60"
+      className="flex size-7 cursor-pointer flex-col overflow-hidden text-zinc-900 opacity-70 transition-opacity duration-200 hover:opacity-100 dark:text-zinc-100"
       onClick={switchMode}
     >
       <motion.div
-        initial={{ y: !darkMode ? 0 : '-2rem' }}
-        animate={{ y: !darkMode ? 0 : '-2rem' }}
+        initial={{ y: darkMode ? 0 : '-1.75rem' }}
+        animate={{ y: darkMode ? 0 : '-1.75rem' }}
         transition={{ ease: [0.65, 0.05, 0.17, 0.99], duration: 0.5, delay: 0.2 }}
         className="group flex flex-col"
       >
-        <Sun className="size-8 p-1 transition-transform duration-700 ease-line group-hover:rotate-[22deg]" />
-        <Moon className="size-8 p-1 transition-transform duration-700 ease-line group-hover:-rotate-[22deg]" />
+        <Moon className="size-7 p-1 transition-transform duration-700 ease-line group-hover:rotate-[22deg]" />
+        <Sun className="size-7 p-1 transition-transform duration-700 ease-line group-hover:rotate-[22deg]" />
       </motion.div>
     </div>
   )
