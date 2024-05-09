@@ -1,11 +1,17 @@
 import { Github } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
+import Logo from '../components/Logo.tsx'
 
 const Nav = () => {
   return (
     <div className="sticky top-0 z-20 flex w-full items-stretch justify-center border-b border-b-slate-200/50 bg-white/20 text-zinc-800 shadow-lg backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-slate-800/60 dark:text-zinc-300">
       <div className="flex w-full max-w-screen-lg items-stretch gap-2 px-8 py-2 md:px-16 lg:px-20">
+        <NavLink className="mr-4 flex items-center gap-1 self-center text-sm font-semibold" to="/">
+          <Logo alt={2} />
+          scrolldriven.dev
+        </NavLink>
         <HeaderNavAnchor to="/">How To</HeaderNavAnchor>
         <HeaderNavAnchor to="/docs">Docs</HeaderNavAnchor>
         <HeaderNavAnchor to="/tech">Tech</HeaderNavAnchor>
