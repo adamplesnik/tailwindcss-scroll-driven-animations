@@ -25,9 +25,6 @@ module.exports = {
         line: 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
       },
     },
-    supports: {
-      animations: 'animation-timeline: scroll(y)',
-    },
   },
   plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations')],
 }
