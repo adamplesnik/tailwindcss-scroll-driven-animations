@@ -17,7 +17,7 @@ const Nav = () => {
         </NavLink>
         <HeaderNavAnchor to="/docs">Docs</HeaderNavAnchor>
         <HeaderNavAnchor to="/tech">Tech</HeaderNavAnchor>
-        <HeaderNavAnchor to="https://showcase.scrolldriven.dev">Showcase ↗</HeaderNavAnchor>
+        <HeaderNavAnchor to="https://showcase.scrolldriven.dev" external>Showcase ↗</HeaderNavAnchor>
         <div className="flex flex-1 items-center justify-end gap-0.5">
           <DarkModeSwitch />
           <HeaderNavAnchor
