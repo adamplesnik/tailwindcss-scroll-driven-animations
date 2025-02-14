@@ -1,6 +1,6 @@
 {
   "name": "@adam.plesnik/tailwindcss-scroll-driven-animations",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
     "dev-docs": "npm run --workspace=docs dev",
