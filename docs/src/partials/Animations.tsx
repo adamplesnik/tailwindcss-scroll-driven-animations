@@ -1,4 +1,3 @@
-import { Github } from 'lucide-react'
 import CodeBlock from '../components/CodeBlock.tsx'
 import Heading from '../components/Heading.tsx'
 import {
@@ -19,7 +18,6 @@ const Animations = () => {
         Animation Timeline
       </Heading>
       <CodeBlock
-        Icon={Github}
         linkHref={
           'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L5'
         }
@@ -31,7 +29,6 @@ const Animations = () => {
         Scroll and View Timeline
       </Heading>
       <CodeBlock
-        Icon={Github}
         linkHref={
           'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L37'
         }
@@ -43,7 +40,6 @@ const Animations = () => {
         Range
       </Heading>
       <CodeBlock
-        Icon={Github}
         linkHref={
           'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L56'
         }
@@ -55,7 +51,6 @@ const Animations = () => {
         Scope
       </Heading>
       <CodeBlock
-        Icon={Github}
         linkHref={
           'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L49'
         }
@@ -67,7 +62,6 @@ const Animations = () => {
         Fallback Styling
       </Heading>
       <CodeBlock
-        Icon={Github}
         linkHref={
           'https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/blob/main/src/index.ts#L73'
         }
