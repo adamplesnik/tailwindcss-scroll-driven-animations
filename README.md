@@ -6,7 +6,7 @@
 
 **Unofficial** and experimental plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
 
-`unofficial` `experimental` `chrome-115+`
+`unofficial` `experimental`
 
 ## Installation
 
@@ -54,4 +54,4 @@ Timeline scope allows to control animated elements outside the parent which defi
 
 ### Browser Support
 
-Scroll-driven animations are not broadly supported yet. Use the `no-animations:...` variant for fallback styling.
+Scroll-driven animations are supported as of May 2026, but should be used with caution. Use the `no-animations:...` variant for fallback styling.
