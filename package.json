@@ -5,7 +5,7 @@
   "scripts": {
     "dev-docs": "npm run --workspace=docs dev",
     "build": "swc ./src/index.ts --out-dir ./dist",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "workspaces": [
     "docs"
