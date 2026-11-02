@@ -50,8 +50,5 @@
   "bugs": {
     "url": "https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/issues"
   },
-  "homepage": "https://scrolldriven.adamplesnik.com",
-  "dependencies": {
-    "vite": "8.3.5"
-  }
+  "homepage": "https://scrolldriven.adamplesnik.com"
 }
