@@ -67,7 +67,7 @@ const CodeBlock = ({
           }
         >
           {Icon && <Icon size={14} strokeWidth={2} />}
-          <Link href={linkHref} target={'_blank'} borderWidth={'narrow'}>
+          <Link href={linkHref} target={'_blank'}>
             {linkText ? linkText : linkHref}
           </Link>
         </div>
