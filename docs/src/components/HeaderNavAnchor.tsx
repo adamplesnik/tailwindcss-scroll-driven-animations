@@ -8,8 +8,8 @@ const HeaderNavAnchor = ({ children, to, className, external = false }: HeaderNa
       to={to}
       className={({ isActive }) =>
         clsx(
-          'flex items-center justify-center px-2 text-sm font-medium text-zinc-900 transition-opacity duration-200 hover:opacity-100 dark:text-zinc-100',
-          isActive ? 'opacity-100' : 'opacity-70',
+          'flex items-center  justify-center border-b-2 px-0.5 text-sm font-medium text-zinc-900 transition-[opacity,border-color] duration-200 hover:opacity-100 dark:text-zinc-100',
+          isActive ? ' border-current' : 'border-transparent opacity-70 hover:border-current',
           className
         )
       }
