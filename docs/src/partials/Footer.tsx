@@ -7,12 +7,11 @@ const Footer = () => {
       <div className="flex flex-col gap-2 sm:items-end">
         <Link
           target="_blank"
-          borderWidth="narrow"
           href="https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
         >
           github.com/tailwindcss-scroll-driven-animations
         </Link>
-        <Link target="_blank" borderWidth="narrow" href="https://adamplesnik.com">
+        <Link target="_blank" href="https://adamplesnik.com">
           adamplesnik.com
         </Link>
       </div>

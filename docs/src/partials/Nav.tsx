@@ -6,8 +6,8 @@ import Logo from '../components/Logo.tsx'
 
 const Nav = () => {
   return (
-    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center bg-white/20 text-zinc-700 shadow-xl shadow-black/5 backdrop-blur-sm dark:border-b-slate-600/50 dark:bg-slate-800/60 dark:text-zinc-400">
-      <div className="flex w-full max-w-screen-lg items-stretch gap-4 px-8 py-3 md:px-16 lg:px-20">
+    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center bg-white/5 backdrop-blur-sm ">
+      <div className="flex w-full max-w-screen-lg items-stretch gap-4 px-8 py-3 md:px-12">
         <NavLink
           className="flex items-center gap-2 self-center text-sm font-medium text-zinc-900 dark:text-zinc-100"
           to="/"
