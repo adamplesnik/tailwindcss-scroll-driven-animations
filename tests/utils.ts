@@ -1,22 +1,21 @@
 import path from 'path'
 import postcss from 'postcss'
-import tailwind, { Config } from 'tailwindcss'
-import { expect } from 'vitest'
-import scrollDrivenAnimations from '../src/index'
+import tailwindcss from '@tailwindcss/postcss'
 
-export function run(input: string, config: Config, plugin = tailwind) {
-  let { currentTestName } = expect.getState()
+export function run(input: string, content: string) {
+  const candidates = [...content.matchAll(/class="([^"]*)"/g)].flatMap((m) => m[1].split(/\s+/))
+  const pluginPath = path.resolve(__dirname, '../src/index.ts')
 
-  config.plugins ??= []
-  if (!config.plugins.includes(scrollDrivenAnimations)) {
-    config.plugins.push(scrollDrivenAnimations)
-  }
-
-  return postcss(plugin(config)).process(input, {
-    from: `${path.resolve(__filename)}?test=${currentTestName}`,
-  })
+  return postcss(tailwindcss({ optimize: false })).process(
+    `@import 'tailwindcss/utilities' source(none);
+@theme { --spacing: 0.25rem; }
+@plugin '${pluginPath}';
+@source inline(${JSON.stringify(candidates.join(' '))});
+${input}`,
+    { from: path.resolve(__dirname, 'input.css') }
+  )
 }
 
 export function strip(str: string) {
-  return str.replace(/\s/g, '').replace(/;/g, '')
+  return str.replace(/\/\*![\s\S]*?\*\//, '').replace(/\s/g, '').replace(/;/g, '')
 }

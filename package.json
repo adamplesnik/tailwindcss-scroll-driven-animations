@@ -1,11 +1,11 @@
 {
   "name": "@adam.plesnik/tailwindcss-scroll-driven-animations",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "Adam Plesnik <adam@adamplesnik.com>",
   "scripts": {
     "dev-docs": "npm run --workspace=docs dev",
     "build": "swc ./src/index.ts --out-dir ./dist",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "workspaces": [
     "docs"
@@ -17,19 +17,19 @@
     "trailingComma": "es5"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.4.0"
+    "tailwindcss": ">=4.0.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.6.0",
     "@swc/core": "^1.4.11",
-    "@types/jest": "^29.5.12",
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.5.32",
     "prettier": "^3.2.5",
-    "swcify": "^1.0.1",
-    "tailwindcss": "^0.0.0-insiders.3ba51d1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.4.3",
-    "vitest": "^1.5.0"
+    "vitest": "^5.0.5"
   },
-  "description": "A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.",
+  "description": "A plugin for Tailwind CSS v4+ that provides utilities for scroll-driven animations.",
   "files": [
     "dist"
   ],
@@ -50,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/adamplesnik/tailwindcss-scroll-driven-animations/issues"
   },
-  "homepage": "https://scrolldriven.adamplesnik.com"
+  "homepage": "https://scrolldriven.adamplesnik.com",
+  "dependencies": {
+    "vite": "8.3.5"
+  }
 }
