@@ -1,8 +1,8 @@
-import { Github } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
 import Logo from '../components/Logo.tsx'
-import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -16,15 +16,13 @@ const Nav = () => {
           <span className="mr-2 hidden sm:block">scrolldriven.dev</span>
         </NavLink>
         <HeaderNavAnchor to="/docs">Docs</HeaderNavAnchor>
-        <HeaderNavAnchor to="/tech">Tech</HeaderNavAnchor>
-        <HeaderNavAnchor to="https://showcase.scrolldriven.dev" external>Showcase ↗</HeaderNavAnchor>
         <div className="flex flex-1 items-center justify-end gap-0.5">
           <DarkModeSwitch />
           <HeaderNavAnchor
             to="https://github.com/adamplesnik/tailwindcss-scroll-driven-animations"
             external
           >
-            <Github className="p-0.5 hover:animate-bounce-bottom" />
+            Github <ArrowUpRight size={16} className="ml-1" />
           </HeaderNavAnchor>
         </div>
       </div>
