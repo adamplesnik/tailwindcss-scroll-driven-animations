@@ -20,3 +20,7 @@
 .punctuation {
   @apply opacity-40;
 }
+
+.token.string {
+  @apply text-zinc-700 dark:text-zinc-400;
+}
