@@ -4,7 +4,7 @@
 !['Checks'](https://flat.badgen.net/github/checks/adamplesnik/tailwindcss-scroll-driven-animations)
 !['Stars'](https://flat.badgen.net/github/stars/adamplesnik/tailwindcss-scroll-driven-animations)
 
-**Unofficial** and experimental plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
+**Unofficial** and experimental plugin for Tailwind CSS v4+ that provides utilities for scroll-driven animations.
 
 `unofficial` `experimental`
 
@@ -16,16 +16,14 @@ Install the plugin from npm:
 npm install @adam.plesnik/tailwindcss-scroll-driven-animations
 ```
 
-Then add the plugin to your `tailwind.config.js`:
+Then register the plugin in your main CSS file with the `@plugin` directive:
 
-```js
-module.exports = {
-  plugins: [
-    require('@adam.plesnik/tailwindcss-scroll-driven-animations'),
-    // ...
-  ],
-}
+```css
+@import 'tailwindcss';
+@plugin '@adam.plesnik/tailwindcss-scroll-driven-animations';
 ```
+
+Using Tailwind CSS v3? Stay on the previous release of this plugin (v0.3.x), which supports v3.4+.
 
 ## Usage
 
