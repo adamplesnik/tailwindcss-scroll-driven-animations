@@ -1,5 +1,5 @@
+import clsx from 'clsx'
 import { PropsWithChildren } from 'react'
-import { addWithSpace } from '../utils/addWithSpace'
 
 const DemoPlaceholderContent = ({
   children,
@@ -7,10 +7,10 @@ const DemoPlaceholderContent = ({
 }: PropsWithChildren<DemoWrapperProps>) => {
   return (
     <div
-      className={
-        'm-4 rounded-lg border border-dashed border-fuchsia-400 p-4 dark:border-cyan-700' +
-        addWithSpace(className)
-      }
+      className={clsx(
+        'm-4 rounded-lg border border-dashed border-fuchsia-400 p-4 dark:border-cyan-700',
+        className
+      )}
     >
       {children}
     </div>

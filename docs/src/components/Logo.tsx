@@ -1,5 +1,5 @@
+import clsx from 'clsx'
 import { HTMLAttributes } from 'react'
-import { addWithSpace } from '../utils/addWithSpace'
 
 const Logo = ({ className }: HTMLAttributes<HTMLDivElement>) => {
   return (
@@ -9,7 +9,7 @@ const Logo = ({ className }: HTMLAttributes<HTMLDivElement>) => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      className={'overflow-visible' + addWithSpace(className)}
+      className={clsx('overflow-visible', className)}
     >
       <path
         d="M7 19H5C3.34315 19 2 17.6569 2 16V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V7"

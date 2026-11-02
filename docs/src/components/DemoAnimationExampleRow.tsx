@@ -1,4 +1,4 @@
-import { addWithSpace } from '../utils/addWithSpace'
+import clsx from 'clsx'
 import Code from './Code'
 
 const DemoAnimationExampleRow = ({ animations, timeline }: DemoAnimationExampleRowProps) => {
@@ -15,11 +15,11 @@ const DemoAnimationExampleRow = ({ animations, timeline }: DemoAnimationExampleR
         <span className="absolute left-1/2 top-1.5 size-1 -translate-x-1/2 rotate-90 rounded-full bg-current font-mono text-xs opacity-30 sm:opacity-50"></span>
         <span className="absolute right-1 font-mono text-xs opacity-50">100%</span>
         <div
-          className={
-            'h-4 w-0 animate-scale-to-right rounded-full bg-sky-500/70 dark:bg-fuchsia-500/60' +
-            addWithSpace(animations) +
-            addWithSpace(timeline)
-          }
+          className={clsx(
+            'h-4 w-0 animate-scale-to-right rounded-full bg-sky-500/70 dark:bg-fuchsia-500/60',
+            animations,
+            timeline
+          )}
         ></div>
       </div>
     </div>
