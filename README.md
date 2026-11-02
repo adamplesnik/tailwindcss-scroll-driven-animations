@@ -23,7 +23,24 @@ Then register the plugin in your main CSS file with the `@plugin` directive:
 @plugin '@adam.plesnik/tailwindcss-scroll-driven-animations';
 ```
 
-Using Tailwind CSS v3? Stay on the previous release of this plugin (v0.3.x), which supports v3.4+.
+### Tailwind CSS v3
+
+Tailwind CSS v3.4+ is supported by the v0.3.x releases of this plugin. Install that version:
+
+```sh
+npm install @adam.plesnik/tailwindcss-scroll-driven-animations@0.3
+```
+
+Then add the plugin to your `tailwind.config.js`:
+
+```js
+module.exports = {
+  plugins: [
+    require('@adam.plesnik/tailwindcss-scroll-driven-animations'),
+    // ...
+  ],
+}
+```
 
 ## Usage
 
