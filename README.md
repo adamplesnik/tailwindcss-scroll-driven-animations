@@ -3,6 +3,8 @@
 !['License'](https://flat.badgen.net/github/license/adamplesnik/tailwindcss-scroll-driven-animations)
 !['Checks'](https://flat.badgen.net/github/checks/adamplesnik/tailwindcss-scroll-driven-animations)
 !['Stars'](https://flat.badgen.net/github/stars/adamplesnik/tailwindcss-scroll-driven-animations)
+!['Downloads'](https://flat.badgen.net/npm/dw/@adam.plesnik/tailwindcss-scroll-driven-animations)
+
 
 **Unofficial** and experimental plugin for Tailwind CSS v4+ that provides utilities for scroll-driven animations.
 
