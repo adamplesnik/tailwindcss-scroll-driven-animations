@@ -1,4 +1,4 @@
-# Publishes the plugin to npm and creates a GitHub release whenever the version
+# Stages the plugin on npm and creates a GitHub release whenever the version
 # in the root package.json changes on main. Changes in docs/ never trigger it.
 
 name: Release
@@ -29,7 +29,7 @@ jobs:
           node-version: 24.x
           cache: 'npm'
 
-      # Trusted publishing needs npm 11.5.1 or newer
+      # Trusted publishing and `npm stage` need a recent npm
       - run: npm install -g npm@latest
 
       - name: Check what needs releasing
@@ -64,9 +64,11 @@ jobs:
       - if: steps.check.outputs.publish == 'true'
         run: npm test
 
-      - name: Publish to npm
+      # Staged versions go live only after approval with 2FA:
+      # `npm stage approve <stage-id>` or on npmjs.com
+      - name: Stage npm publish
         if: steps.check.outputs.publish == 'true'
-        run: npm publish --access public
+        run: npm stage publish --access public
 
       - name: Create GitHub release
         if: steps.check.outputs.release == 'true'
