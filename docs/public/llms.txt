@@ -1,0 +1,142 @@
+# Scroll-driven Animations for Tailwind CSS
+
+> Unofficial, experimental Tailwind CSS plugin (`@adam.plesnik/tailwindcss-scroll-driven-animations`) that adds utilities for CSS scroll-driven animations: `animation-timeline`, `scroll-timeline`, `view-timeline`, `animation-range` and `timeline-scope`, plus a `no-animations` variant for fallback styling. Version 0.4+ supports Tailwind CSS v4; version 0.3.x supports Tailwind CSS v3.4+.
+
+The plugin does not ship any keyframes or animations. Define them as usual in Tailwind CSS (for example `--animate-*` theme variables in v4) and add the plugin's utilities to drive them by scrolling instead of time.
+
+## Installation
+
+Tailwind CSS v4:
+
+```sh
+npm install @adam.plesnik/tailwindcss-scroll-driven-animations
+```
+
+```css
+@import 'tailwindcss';
+@plugin '@adam.plesnik/tailwindcss-scroll-driven-animations';
+```
+
+Tailwind CSS v3.4+ (use the 0.3 release):
+
+```sh
+npm install @adam.plesnik/tailwindcss-scroll-driven-animations@0.3
+```
+
+```js
+// tailwind.config.js
+module.exports = {
+  plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations')],
+}
+```
+
+## Utilities
+
+Timeline names are passed as a modifier after a slash and get the `--` prefix automatically: `timeline/navbar` sets `animation-timeline: --navbar`.
+
+### Animation timeline
+
+| Class | CSS |
+| --- | --- |
+| `timeline` | `animation-timeline: scroll(y)` |
+| `timeline-scroll-x` | `animation-timeline: scroll(x)` |
+| `timeline-view` | `animation-timeline: view()` |
+| `timeline-auto` | `animation-timeline: auto` |
+| `timeline-none` | `animation-timeline: none` |
+| `timeline/{name}` | `animation-timeline: --{name}` |
+
+### Scroll timeline (set on the scrollable element)
+
+| Class | CSS |
+| --- | --- |
+| `scroll-timeline/{name}` | `scroll-timeline: --{name} y` |
+| `scroll-timeline-x/{name}` | `scroll-timeline: --{name} x` |
+| `scroll-timeline-block/{name}` | `scroll-timeline: --{name} block` |
+
+### View timeline (set on the subject inside a scrollable element)
+
+| Class | CSS |
+| --- | --- |
+| `view-timeline/{name}` | `view-timeline: --{name} y` |
+| `view-timeline-x/{name}` | `view-timeline: --{name} x` |
+| `view-timeline-block/{name}` | `view-timeline: --{name} block` |
+
+### Animation range (set on the animated element)
+
+| Class | CSS |
+| --- | --- |
+| `range` | `animation-range: cover 0 cover 100%` |
+| `range-contain` | `animation-range: contain 0 contain 100%` |
+| `range-on-entry` | `animation-range: entry 0 entry 100%` |
+| `range-on-exit` | `animation-range: exit 0 exit 100%` |
+| `range/{start}_{end}` | `animation-range: cover {start} cover {end}` |
+
+The `{start}_{end}` modifier works with every range utility, for example `range-on-entry/10px_100px` sets `animation-range: entry 10px entry 100px`.
+
+### Timeline scope
+
+| Class | CSS |
+| --- | --- |
+| `scope/{name}` | `timeline-scope: --{name}` |
+
+Use it on a common ancestor so that elements outside the one defining a named timeline can use it.
+
+### Fallback variant
+
+| Variant | CSS |
+| --- | --- |
+| `no-animations:*` | `@supports not (animation-range: cover) { ... }` |
+
+## Examples
+
+Progress bar driven by the page scroll:
+
+```html
+<div class="animate-scale-to-right timeline"></div>
+```
+
+Element that animates as it enters the viewport:
+
+```html
+<div class="animate-appear timeline-view"></div>
+```
+
+Navigation bar revealed when another element leaves the viewport, using a named view timeline shared through `scope`:
+
+```html
+<div class="scope/navbar">
+  <div class="animate-translate-down timeline/navbar range-on-exit -translate-y-16 no-animations:translate-y-0">
+    Navigation bar
+  </div>
+  <div class="view-timeline/navbar">Controlling element</div>
+</div>
+```
+
+```css
+@theme {
+  --animate-translate-down: translate-down 3s linear forwards;
+
+  @keyframes translate-down {
+    to {
+      translate: 0;
+    }
+  }
+}
+```
+
+## Notes
+
+- The `animation` shorthand resets `animation-timeline` to `auto`, so the timeline must be declared after the animation. Tailwind CSS outputs `animate-*` utilities before this plugin's utilities, so combining them in one `class` attribute works.
+- In Tailwind CSS v4, `translate-*` utilities set the CSS `translate` property, so keyframes that undo them must animate `translate`, not `transform`.
+- Scroll-driven animations are not supported in every browser yet. Use the `no-animations:` variant for fallback styles.
+
+## Docs
+
+- [How to make a CSS animation scroll-driven](https://scrolldriven.dev/): installation and the basics of driving an animation with a timeline
+- [Documentation](https://scrolldriven.dev/docs): every utility with live demos
+
+## Links
+
+- [npm package](https://www.npmjs.com/package/@adam.plesnik/tailwindcss-scroll-driven-animations)
+- [GitHub repository](https://github.com/adamplesnik/tailwindcss-scroll-driven-animations)
+- [MDN: CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations)

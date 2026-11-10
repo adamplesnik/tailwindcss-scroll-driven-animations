@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Separator from '../components/Separator'
 import DocsTableRow from './DocsTableRow'
 
@@ -10,11 +11,11 @@ const DocsTable = ({ items }: DocsTableProps) => {
         <div className="flex-1 pr-2 sm:pl-2">Code</div>
       </div>
       <Separator />
-      {items.map((item, index) => (
-        <>
-          <DocsTableRow className={item.className} code={item.code} key={index} />
-          <Separator key={'sep' + index} />
-        </>
+      {items.map((item) => (
+        <Fragment key={item.className}>
+          <DocsTableRow className={item.className} code={item.code} />
+          <Separator />
+        </Fragment>
       ))}
     </div>
   )

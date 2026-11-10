@@ -4,7 +4,7 @@ import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-jsx'
 import 'prismjs/components/prism-typescript'
 import 'prismjs/components/prism-tsx'
-import { PropsWithChildren, useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import Link from './Link.tsx'
 import clsx from 'clsx'
 
@@ -15,13 +15,13 @@ const CodeBlock = ({
   linkHref = '',
   linkText = '',
   clipboard = false,
-}: PropsWithChildren<CodeProps>) => {
+}: CodeProps) => {
   const codeRef = useRef<HTMLElement>(null)
   const [copied, setCopied] = useState(false)
 
-  useEffect(() => {
-    Prism.highlightAll()
-  }, [])
+  // Highlighted during render, so prerendered HTML and hydration match. Without a
+  // `language-*` class, Prism's automatic highlighting leaves the element alone.
+  const highlighted = Prism.highlight(children, Prism.languages[language], language)
 
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(codeRef.current?.textContent ?? '')
@@ -37,10 +37,9 @@ const CodeBlock = ({
     >
       <code
         ref={codeRef}
-        className={`language-${language} block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300`}
-      >
-        {children}
-      </code>
+        className="block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300"
+        dangerouslySetInnerHTML={{ __html: highlighted }}
+      />
       {clipboard && (
         <a
           className="absolute right-2 top-2 flex rounded-sm p-1 opacity-60 transition-opacity hover:bg-zinc-300 hover:opacity-100 dark:hover:bg-zinc-700"
@@ -81,7 +80,7 @@ const CodeBlock = ({
 }
 
 export interface CodeProps {
-  children: PropsWithChildren
+  children: string
   Icon?: LucideIcon | undefined
   language?: 'javascript' | 'css' | 'html' | 'bash'
   linkHref?: string | undefined

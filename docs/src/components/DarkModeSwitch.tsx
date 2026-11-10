@@ -1,8 +1,21 @@
 import { motion } from 'framer-motion'
 import { Moon, Sun } from 'lucide-react'
-import { MouseEventHandler, useState } from 'react'
+import { MouseEventHandler, useState, useSyncExternalStore } from 'react'
+
+const noopSubscribe = () => () => {}
 
 const DarkModeSwitch = () => {
+  // The mode is only known in the browser; prerendered HTML gets a same-size placeholder
+  const isClient = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  )
+
+  return isClient ? <DarkModeSwitchClient /> : <div className="size-7" />
+}
+
+const DarkModeSwitchClient = () => {
   const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
   const storageModeDark = localStorage.getItem('mode') === 'dark'
   const [darkMode, setDarkMode] = useState(storageModeDark || systemDarkMode ? true : false)
