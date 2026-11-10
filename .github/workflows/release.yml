@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: 24.x
           cache: 'npm'
-          registry-url: 'https://registry.npmjs.org'
 
       # Trusted publishing needs npm 11.5.1 or newer
       - run: npm install -g npm@latest
