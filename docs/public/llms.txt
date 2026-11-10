@@ -134,7 +134,6 @@ Navigation bar revealed when another element leaves the viewport, using a named 
 
 - [How to make a CSS animation scroll-driven](https://scrolldriven.dev/): installation and the basics of driving an animation with a timeline
 - [Documentation](https://scrolldriven.dev/docs): every utility with live demos
-- [Tech](https://scrolldriven.dev/tech): the plugin source behind each utility
 
 ## Links
 
