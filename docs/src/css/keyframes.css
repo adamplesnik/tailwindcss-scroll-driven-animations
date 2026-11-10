@@ -50,7 +50,7 @@
 
 @keyframes translate-down {
   to {
-    transform: translateY(0);
+    translate: 0;
   }
 }
 
