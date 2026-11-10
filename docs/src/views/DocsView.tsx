@@ -2,6 +2,15 @@ import { WandSparkles } from 'lucide-react'
 import Docs from '../docs/Docs'
 import Page from '../layouts/Page'
 
+export const meta = () => [
+  { title: 'Documentation – Scroll-driven Animations Plugin for Tailwind CSS' },
+  {
+    name: 'description',
+    content:
+      'Documentation and live demos of every utility in the scroll-driven animations plugin for Tailwind CSS: timeline, scroll-timeline, view-timeline, range, scope and the no-animations variant.',
+  },
+]
+
 const DocsView = () => {
   return (
     <Page>

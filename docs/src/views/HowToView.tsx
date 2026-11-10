@@ -8,6 +8,15 @@ import Installation from '../partials/Installation'
 import MainTitle from '../partials/MainTitle'
 import { keyframes101, keyframes102, keyframes103 } from '../utils/demoExamples'
 
+export const meta = () => [
+  { title: 'Scroll-driven Animations Plugin for Tailwind CSS' },
+  {
+    name: 'description',
+    content:
+      'Unofficial Tailwind CSS plugin with utilities for CSS scroll-driven animations: animation timelines, scroll and view timelines, animation ranges and timeline scope.',
+  },
+]
+
 const HowToView = () => {
   return (
     <Page>
