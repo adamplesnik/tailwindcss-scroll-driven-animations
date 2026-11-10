@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { ArrowRight } from 'lucide-react'
 import { PropsWithChildren } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router'
 
 const Heading = ({
   size = 1,

@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 
-export = plugin(
+const scrollDrivenAnimations: ReturnType<typeof plugin> = plugin(
   function scrollDrivenAnimations({ matchUtilities, addVariant, theme }) {
     matchUtilities(
       {
@@ -83,6 +83,8 @@ export = plugin(
     },
   }
 )
+
+export = scrollDrivenAnimations
 
 function splitAndCombine(values: string, modifiers: string | null) {
   const valueArray = (values || '').split(' ')

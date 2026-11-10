@@ -20,14 +20,14 @@
     "tailwindcss": ">=4.0.0"
   },
   "devDependencies": {
-    "@swc/cli": "^0.6.0",
-    "@swc/core": "^1.4.11",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@swc/cli": "^0.8.2",
+    "@swc/core": "^1.16.22",
+    "@tailwindcss/postcss": "^4.3.5",
     "postcss": "^8.5.32",
-    "prettier": "^3.2.5",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^5.4.3",
-    "vitest": "^5.0.5"
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
   },
   "description": "A plugin for Tailwind CSS v4+ that provides utilities for scroll-driven animations.",
   "files": [

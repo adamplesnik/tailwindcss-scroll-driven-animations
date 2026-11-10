@@ -23,7 +23,7 @@ const ActionButton = ({
     >
       <div
         className={
-          'ease-custom relative flex size-6 items-center justify-center rounded-full bg-gradient-to-tr from-slate-400 to-indigo-500 text-zinc-100 opacity-80 ' +
+          'ease-custom relative flex size-6 items-center justify-center rounded-full bg-linear-to-tr from-slate-400 to-indigo-500 text-zinc-100 opacity-80 ' +
           'overflow-hidden transition-[transform,opacity] duration-300 group-hover:scale-125 group-hover:opacity-100 ' +
           (clicked ? 'scale-125' : 'group-hover:scale-125')
         }

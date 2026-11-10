@@ -5,11 +5,10 @@ import { Repeat, StepForward } from 'lucide-react'
 
 const replayButtonClick = (element: string) => {
   const wrapper = document.getElementById(element)
-  wrapper &&
-    wrapper.getAnimations({ subtree: true }).forEach((anim) => {
-      anim.cancel()
-      anim.play()
-    })
+  wrapper?.getAnimations({ subtree: true }).forEach((anim) => {
+    anim.cancel()
+    anim.play()
+  })
 }
 
 const DemoWrapper = ({

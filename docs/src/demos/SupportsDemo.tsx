@@ -22,7 +22,7 @@ const skeletonCollection = [
 const SupportsDemo = () => {
   return (
     <DemoWrapper className="mt-4 h-48">
-      <div className="no-animations:translate-y-0 sticky left-4 top-0 flex w-fit -translate-y-20 animate-translate-down flex-wrap gap-2 rounded-b-lg bg-sky-400/40 p-4 backdrop-blur timeline sm:left-8 dark:bg-fuchsia-600/40">
+      <div className="no-animations:translate-y-0 sticky left-4 top-0 flex w-fit -translate-y-20 animate-translate-down flex-wrap gap-2 rounded-b-lg bg-sky-400/40 p-4 backdrop-blur-sm timeline sm:left-8 dark:bg-fuchsia-600/40">
         <Code>animate...</Code>
         <Code>timeline</Code>
         <Code>-translate-y-20</Code>

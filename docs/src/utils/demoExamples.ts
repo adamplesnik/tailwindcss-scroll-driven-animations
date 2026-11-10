@@ -29,7 +29,7 @@ export const rangeDemo = `<div class="scope/navbar">
 
 export const rangeKeyframes = `@keyframes translate-down {
   to {
-    transform: translateY(0);
+    translate: 0;
   }
 }`
 
@@ -85,7 +85,7 @@ export const supports = `<div>
 
 export const keyframes101 = `@keyframes translate-down {
   to {
-    transform: translateY(0);
+    translate: 0;
   }
 }`
 
