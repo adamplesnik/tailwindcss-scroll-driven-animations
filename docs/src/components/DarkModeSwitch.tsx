@@ -6,8 +6,7 @@ const DarkModeSwitch = () => {
   const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
   const storageModeDark = localStorage.getItem('mode') === 'dark'
   const [darkMode, setDarkMode] = useState(storageModeDark || systemDarkMode ? true : false)
-  const classList = document.documentElement.classList
-  darkMode ? classList.add('dark') : classList.remove('dark')
+  document.documentElement.classList.toggle('dark', darkMode)
 
   const switchMode = () => {
     localStorage.setItem('mode', darkMode ? 'light' : 'dark')

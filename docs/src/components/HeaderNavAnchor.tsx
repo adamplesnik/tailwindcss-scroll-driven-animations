@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { HTMLAttributes, PropsWithChildren } from 'react'
-import { NavLink, NavLinkProps } from 'react-router-dom'
+import { NavLink, NavLinkProps } from 'react-router'
 
 const HeaderNavAnchor = ({ children, to, className, external = false }: HeaderNavAnchorProps) => {
   return (

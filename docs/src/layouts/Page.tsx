@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { ScrollRestoration } from 'react-router-dom'
+import { ScrollRestoration } from 'react-router'
 import Nav from '../partials/Nav'
 import Footer from '../partials/Footer'
 import { Analytics } from '@vercel/analytics/react'

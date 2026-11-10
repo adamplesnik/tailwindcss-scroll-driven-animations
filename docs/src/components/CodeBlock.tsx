@@ -1,5 +1,9 @@
 import { CheckCheck, Copy, LucideIcon } from 'lucide-react'
 import Prism from 'prismjs'
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-jsx'
+import 'prismjs/components/prism-typescript'
+import 'prismjs/components/prism-tsx'
 import { PropsWithChildren, useEffect, useRef, useState } from 'react'
 import Link from './Link.tsx'
 import clsx from 'clsx'
@@ -39,7 +43,7 @@ const CodeBlock = ({
       </code>
       {clipboard && (
         <a
-          className="absolute right-2 top-2 flex rounded p-1 opacity-60 transition-opacity hover:bg-zinc-300 hover:opacity-100 dark:hover:bg-zinc-700"
+          className="absolute right-2 top-2 flex rounded-sm p-1 opacity-60 transition-opacity hover:bg-zinc-300 hover:opacity-100 dark:hover:bg-zinc-700"
           href="#copy"
           title="Copy co clipboard"
           onClick={(e) => {

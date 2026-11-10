@@ -5,7 +5,7 @@ const DemoAnimationExampleRow = ({ animations, timeline }: DemoAnimationExampleR
   const animationClasses = animations.split(' ')
   return (
     <div className="flex items-center gap-2 sm:flex-col sm:items-start">
-      <div className="w-36 flex-shrink-0">
+      <div className="w-36 shrink-0">
         {animationClasses.map((animation) => (
           <Code key={animation}>{animation}</Code>
         ))}

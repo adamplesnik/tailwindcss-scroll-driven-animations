@@ -1,12 +1,12 @@
 import { ArrowUpRight } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router'
 import DarkModeSwitch from '../components/DarkModeSwitch.tsx'
 import HeaderNavAnchor from '../components/HeaderNavAnchor.tsx'
 import Logo from '../components/Logo.tsx'
 
 const Nav = () => {
   return (
-    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center bg-white/5 backdrop-blur-sm ">
+    <div className="sticky top-0 z-20 flex w-full items-stretch justify-center bg-white/5 backdrop-blur-xs ">
       <div className="flex w-full max-w-screen-lg items-stretch gap-4 px-8 py-3 md:px-12">
         <NavLink
           className="flex items-center gap-2 self-center text-sm font-medium text-zinc-900 dark:text-zinc-100"

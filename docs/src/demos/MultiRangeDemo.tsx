@@ -21,7 +21,7 @@ const skeletonCollection = [
 const MultiRangeDemo = () => {
   return (
     <DemoWrapper className="flex flex-col gap-4 scope/demo sm:flex-row sm:gap-12">
-      <div className="sticky top-0 flex flex-1 flex-col gap-2 bg-zinc-100/20 p-4 backdrop-blur sm:gap-6 sm:bg-transparent dark:bg-zinc-800/20 dark:sm:bg-transparent">
+      <div className="sticky top-0 flex flex-1 flex-col gap-2 bg-zinc-100/20 p-4 backdrop-blur-sm sm:gap-6 sm:bg-transparent dark:bg-zinc-800/20 dark:sm:bg-transparent">
         <DemoAnimationExampleRow animations="range-on-entry" timeline="timeline/demo" />
         <DemoAnimationExampleRow animations="range" timeline="timeline/demo" />
         <DemoAnimationExampleRow animations="range-contain" timeline="timeline/demo" />
