@@ -22,8 +22,8 @@ const HowToView = () => {
     <Page>
       <MainTitle />
       <Paragraph>
-        Unofficial and experimental plugin for Tailwind CSS v3.4+ that provides utilities for
-        scroll-driven animations.
+        Unofficial and experimental plugin that provides utilities for scroll-driven animations in
+        Tailwind CSS v4+. An earlier release of the plugin supports Tailwind CSS v3.4+.
       </Paragraph>
       <Installation />
       <Heading size={2} id="documentation-101">
